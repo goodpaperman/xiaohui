@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TreeMenuDemo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/TreeMenuDemo.res" /d "NDEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenuDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP133.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/TreeMenuDemo.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\ChildFrm.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\CoolTreeCtrl.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\SIDEPANE.CPP"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\SIZECBAR.CPP"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenu.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenuDemo.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenuDemoDoc.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenuDemoView.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenuFrame.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP133.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP134.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/TreeMenuDemo.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP134.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP135.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/TreeMenuDemo.pdb" /machine:I386 /out:"Release/TreeMenuDemo.exe" 
+.\Release\ChildFrm.obj
+.\Release\CoolTreeCtrl.obj
+.\Release\MainFrm.obj
+.\Release\SIDEPANE.OBJ
+.\Release\SIZECBAR.OBJ
+.\Release\StdAfx.obj
+.\Release\TreeMenu.obj
+.\Release\TreeMenuDemo.obj
+.\Release\TreeMenuDemoDoc.obj
+.\Release\TreeMenuDemoView.obj
+.\Release\TreeMenuFrame.obj
+.\Release\TreeMenuDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP135.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+CoolTreeCtrl.cpp
+MainFrm.cpp
+SIDEPANE.CPP
+SIZECBAR.CPP
+TreeMenu.cpp
+TreeMenuDemo.cpp
+TreeMenuDemoDoc.cpp
+TreeMenuDemoView.cpp
+TreeMenuFrame.cpp
+Generating Code...
+E:\codes\mfc\09.xiaohui\02\04.tree\Demo.08\TreeMenu.cpp(202) : warning C4700: local variable 'htiRoot' used without having been initialized
+Linking...
+
+
+
+<h3>Results</h3>
+TreeMenuDemo.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

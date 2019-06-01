@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MidiSample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/MidiSample.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\5\01.sound\Demo.06\MidiSample.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPAC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MidiSample.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.06\MIDI.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.06\MidiSample.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.06\MidiSampleDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPAC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPAD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MidiSample.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.06\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPAD.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MidiSample.pdb" /debug /machine:I386 /out:"Debug/MidiSample.exe" /pdbtype:sept  .\Debug\MIDI.obj .\Debug\MidiSample.obj .\Debug\MidiSampleDlg.obj .\Debug\StdAfx.obj .\Debug\MidiSample.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MIDI.cpp
+MidiSample.cpp
+linking with multimedia library
+MidiSampleDlg.cpp
+linking with multimedia library
+Generating Code...
+linking with multimedia library
+Linking...
+
+
+
+<h3>Results</h3>
+MidiSample.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

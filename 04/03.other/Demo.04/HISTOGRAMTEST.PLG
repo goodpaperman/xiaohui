@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HistogramTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/HistogramTest.res" /d "_DEBUG" "D:\Code\MFC\4\03.other\Demo.04\HistogramTest.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP117.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/HistogramTest.pdb" /debug /machine:I386 /out:"Debug/HistogramTest.exe" /pdbtype:sept 
+.\Debug\HistogramCtrl.obj
+.\Debug\HistogramTest.obj
+.\Debug\HistogramTestDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\HistogramTest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP117.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+HistogramTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GfxList - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x410 /fo"Debug/GfxList.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxList.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP324.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/GfxList.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxCategoryManager.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxColumnManager.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxCustomizeColumnDlg.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxFormatColumnDlg.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxHeaderCtrl.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxInCombo.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxInComboEdit.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxInComboList.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxInComboStatic.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxInEdit.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxList.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxListCtrl.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxListTip.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\GfxPopupMenu.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\SuperGrid1Doc.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\SuperGrid1View.cpp"
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\TestDialog.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP324.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP325.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/GfxList.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\01\02.listview\Demo.03\Gfx_list\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP325.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP326.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/GfxList.pdb" /debug /machine:I386 /out:"Debug/GfxList.exe" /pdbtype:sept 
+.\Debug\GfxCategoryManager.obj
+.\Debug\GfxColumnManager.obj
+.\Debug\GfxCustomizeColumnDlg.obj
+.\Debug\GfxFormatColumnDlg.obj
+.\Debug\GfxHeaderCtrl.obj
+.\Debug\GfxInCombo.obj
+.\Debug\GfxInComboEdit.obj
+.\Debug\GfxInComboList.obj
+.\Debug\GfxInComboStatic.obj
+.\Debug\GfxInEdit.obj
+.\Debug\GfxList.obj
+.\Debug\GfxListCtrl.obj
+.\Debug\GfxListTip.obj
+.\Debug\GfxPopupMenu.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\SuperGrid1Doc.obj
+.\Debug\SuperGrid1View.obj
+.\Debug\TestDialog.obj
+.\Debug\GfxList.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP326.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GfxCategoryManager.cpp
+GfxColumnManager.cpp
+GfxCustomizeColumnDlg.cpp
+GfxFormatColumnDlg.cpp
+GfxHeaderCtrl.cpp
+GfxInCombo.cpp
+GfxInComboEdit.cpp
+GfxInComboList.cpp
+GfxInComboStatic.cpp
+GfxInEdit.cpp
+GfxList.cpp
+GfxListCtrl.cpp
+GfxListTip.cpp
+GfxPopupMenu.cpp
+MainFrm.cpp
+SuperGrid1Doc.cpp
+SuperGrid1View.cpp
+TestDialog.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GfxList.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

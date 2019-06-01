@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AutoCompletion - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP89.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/AutoCompletion.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\3\01.combobox\Demo.01\AutoCompletionComboBox.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP89.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/AutoCompletion.pdb" /debug /machine:I386 /out:"Debug/AutoCompletion.exe" /pdbtype:sept 
+.\Debug\AutoCompletion.obj
+.\Debug\AutoCompletionComboBox.obj
+.\Debug\AutoCompletionDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\AutoCompletion.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP8A.tmp"
+<h3>Output Window</h3>
+Compiling...
+AutoCompletionComboBox.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+AutoCompletion.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

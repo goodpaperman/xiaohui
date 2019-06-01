@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DirTreeDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/DirTreeDemo.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\DirTreeDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP92.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DirTreeDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\DirTreeCtrl.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\DirTreeDemo.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\DirTreeDemoDoc.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\DirTreeDemoView.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\LeftView.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\SortStringArray.cpp"
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\TreeDialog.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP92.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DirTreeDemo.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\2\04.tree\Demo.11\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP93.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DirTreeDemo.pdb" /debug /machine:I386 /out:"Debug/DirTreeDemo.exe" /pdbtype:sept 
+.\Debug\DirTreeCtrl.obj
+.\Debug\DirTreeDemo.obj
+.\Debug\DirTreeDemoDoc.obj
+.\Debug\DirTreeDemoView.obj
+.\Debug\LeftView.obj
+.\Debug\MainFrm.obj
+.\Debug\SortStringArray.obj
+.\Debug\StdAfx.obj
+.\Debug\TreeDialog.obj
+.\Debug\DirTreeDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP94.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DirTreeCtrl.cpp
+DirTreeDemo.cpp
+DirTreeDemoDoc.cpp
+DirTreeDemoView.cpp
+LeftView.cpp
+MainFrm.cpp
+SortStringArray.cpp
+TreeDialog.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DirTreeDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PieDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/PieDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\4\03.other\Demo.07\PieDemoDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP93.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/PieDemo.pdb" /debug /machine:I386 /out:"Debug/PieDemo.exe" /pdbtype:sept 
+.\Debug\ColourPicker.obj
+.\Debug\ColourPopup.obj
+.\Debug\PieChartCtrl.obj
+.\Debug\PieDemo.obj
+.\Debug\PieDemoDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\PieDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP94.tmp"
+<h3>Output Window</h3>
+Compiling...
+PieDemoDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+PieDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

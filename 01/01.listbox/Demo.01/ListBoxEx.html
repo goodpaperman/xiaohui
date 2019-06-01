@@ -1,0 +1,139 @@
+<!--#include virtual="header.shtml" -->
+
+<h3 align="center"><font color="#AOAO99">
+
+A VisualStudio-like ListBox class
+
+</font></h3>
+
+<hr>
+
+<p>This article was contributed by 
+   <a href="mailto:passig@geocities.com">Stefano Passiglia</a>.</p>
+
+<p><img src="ListBoxEx.gif" alt="Sample Image"></p>
+
+<p><u>Environment:</u> VC6 SP1, NT4 SP5, WIN 95/98</p>
+
+<p></p>
+
+
+<p>
+
+This article presents an extended listbox control. Its look and feel resembles
+the one that you can find in the Tools->Options dialog of Visual Studio environment.<br>
+As you can see from the picture, this new listbox allows in-place item editing,
+and adds also the possibility to show a "browse" button near the edit field.<br>
+Moreover, since it is derived from a drag listbox, it is also possible to reorder
+items through drag and drop, or through Alt+Up/Alt+Down keys.<br>
+<br>
+I also wrote a simple "buddy" class, that you can see in the upper part of the
+picture, that makes the control even easier to use.
+</p>
+
+<p>
+<b>How To Use It</b><br><br>
+To use this listbox class, simply drop a normal listbox on a dialog and
+associate it with a CListBoxEx class:
+<pre><font color="#990000"><tt>
+// This class overrides the OnBrowseButton method.
+class CMyListBoxEx: public CListBoxEx
+{
+public:
+
+   virtual void OnBrowseButton( int iItem )
+   {
+      iItem;
+      CSHBrowseDlg dlgBrowse;
+      if ( dlgBrowse.DoModal() ) SetEditText( dlgBrowse.GetFullPath() );
+   };
+};
+
+class CListBoxExDemoDlg : public CDialog
+{
+// Construction
+public:
+	CListBoxExDemoDlg(CWnd* pParent = NULL);	// standard constructor
+
+// Dialog Data
+	//{{AFX_DATA(CListBoxExDemoDlg)
+	enum { IDD = IDD_LISTBOXEXDEMO_DIALOG };
+	CMyListBoxEx	m_ListBoxEx;
+	//}}AFX_DATA
+	
+	.....
+};
+
+</tt></font></pre>
+It's as easy as that! The OnBrowseButton() is called synchronously when the user clicks on
+the "..." button. Other events that are called are OnBeginEditing() and OnEndEditing().<br>
+<br>
+If you want to use also the buddy class, drop a button on the dialog,
+change its properties and make it owner-draw and with a client edge. <br>
+Then, in your dialog OnInitDialog() subclass the button control in this way:
+<pre><font color="#990000"><tt>
+   // Add the listbox buddy
+   m_ListBoxExBuddy.SubclassDlgItem( IDC_LISTBUDDY, this );
+   m_ListBoxExBuddy.SetListbox( &m_ListBoxEx );
+</tt></font></pre>
+</p>
+
+<br>
+<p>
+<b>Other improvements</b><br><br>
+I added a lot of (I think) useful methods, that add quite a bit of 
+functionality to the raw listbox and make it a bit more user-friendly:
+
+<pre><font color="#990000"><tt>
+   // Editing & drag are anabled by default
+   void AllowEditing( BOOL bAllowEditing = TRUE )
+   {
+      m_bAllowEditing = bAllowEditing;
+   };
+
+   void AllowDrag( BOOL bAllowDrag = TRUE )
+   {
+      m_bAllowDrag = bAllowDrag;
+   };
+
+   // Editing methods
+   void BeginEditing( int iItem );
+   void EndEditing( BOOL fCancel );
+
+   // Add a new empty string and begin editing
+   void EditNew();
+
+   void SetEditStyle( DWORD dwEditStyle );
+
+   HWND GetEditHandle() const;
+
+   void SetEditText( const CString & strNewText ) const;
+
+   // Item methods
+   int MoveItemUp( int iItem );
+   int MoveItemDown( int iItem );
+   void SwapItems( int iFirstItem, int iSecondItem );
+   
+   void SetItem( int iItem, LPCTSTR szItemText, DWORD dwItemData );
+   void SetItemText( int iItem, LPCTSTR szItemText );
+
+   // Virtual (overridables) events
+   virtual BOOL OnBeginEditing( int iItem );
+   virtual BOOL OnEndEditing( int iItem, BOOL fCanceled );
+
+   virtual void OnBrowseButton( int iItem );
+</tt></font></pre>
+
+</p>
+
+
+<h3>Downloads</h3>
+<a href="ListBoxEx_demo.zip">Download demo project - XXX Kb</a><br>
+<a href="ListBoxEx_src.zip">Download source - XXX Kb</a>
+
+<h3>History</h3>
+Date Posted: February 1, 2000<br>
+<!-- only on an update  Last Updated: May 17, 1999 -->
+
+<!--#include virtual="footer.shtml" -->
+

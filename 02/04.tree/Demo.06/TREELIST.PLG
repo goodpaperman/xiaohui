@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TreeList - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\Debug/TreeList.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\TreeList.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP140.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Debug/TREELIST.pch" /Yu"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\Doc.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\TreeList.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\ViewList.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\ViewTree.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP140.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP141.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Debug/TREELIST.pch" /Yc"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.06\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP141.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP142.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:".\Debug/TREELIST.pdb" /debug /machine:I386 /out:".\Debug/TREELIST.exe" 
+.\Debug\Doc.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\TreeList.obj
+.\Debug\ViewList.obj
+.\Debug\ViewTree.obj
+.\Debug\TreeList.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP142.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Doc.cpp
+MainFrm.cpp
+TreeList.cpp
+ViewList.cpp
+ViewTree.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TREELIST.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

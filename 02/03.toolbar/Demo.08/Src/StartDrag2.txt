@@ -1,0 +1,101 @@
+
+void CDockContext::StartDrag(CPoint pt)
+{
+	ASSERT_VALID(m_pBar);
+	m_bDragging = TRUE;
+
+	InitLoop();
+
+	// GetWindowRect returns screen coordinates(not mirrored),
+	// so if the desktop is mirrored then turn off mirroring
+	// for the desktop dc so that we get correct focus rect drawn.
+	// This layout change should be remembered, just in case ...
+
+	if (m_pDC->GetLayout() & LAYOUT_RTL)
+		m_pDC->SetLayout(LAYOUT_LTR);
+
+	if (m_pBar->m_dwStyle & CBRS_SIZE_DYNAMIC)
+	{
+		// get true bar size (including borders)
+		CRect rect;
+		m_pBar->GetWindowRect(rect);
+		m_ptLast = pt;
+		CSize sizeHorz = m_pBar->CalcDynamicLayout(0, LM_HORZ | LM_HORZDOCK);
+		CSize sizeVert = m_pBar->CalcDynamicLayout(0, LM_VERTDOCK);
+		CSize sizeFloat = m_pBar->CalcDynamicLayout(0, LM_HORZ | LM_MRUWIDTH);
+
+		m_rectDragHorz = CRect(rect.TopLeft(), sizeHorz);
+		m_rectDragVert = CRect(rect.TopLeft(), sizeVert);
+
+		// calculate frame dragging rectangle
+		m_rectFrameDragHorz = CRect(rect.TopLeft(), sizeFloat);
+		m_rectFrameDragVert = CRect(rect.TopLeft(), sizeFloat);
+
+		CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz);
+		CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert);
+
+		m_rectFrameDragHorz.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2);
+		m_rectFrameDragVert.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2);
+	}
+	else if (m_pBar->m_dwStyle & CBRS_SIZE_FIXED)
+	{
+		// get true bar size (including borders)
+		CRect rect;
+		m_pBar->GetWindowRect(rect);
+		m_ptLast = pt;
+		CSize sizeHorz = m_pBar->CalcDynamicLayout(-1, LM_HORZ | LM_HORZDOCK);
+		CSize sizeVert = m_pBar->CalcDynamicLayout(-1, LM_VERTDOCK);
+
+		// calculate frame dragging rectangle
+		m_rectFrameDragHorz = m_rectDragHorz = CRect(rect.TopLeft(), sizeHorz);
+		m_rectFrameDragVert = m_rectDragVert = CRect(rect.TopLeft(), sizeVert);
+
+		CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz);
+		CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert);
+		m_rectFrameDragHorz.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2);
+		m_rectFrameDragVert.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2);
+	}
+	else
+	{
+		// get true bar size (including borders)
+		CRect rect;
+		m_pBar->GetWindowRect(rect);
+		m_ptLast = pt;
+		BOOL bHorz = HORZF(m_dwStyle);
+		DWORD dwMode = !bHorz ? (LM_HORZ | LM_HORZDOCK) : LM_VERTDOCK;
+		CSize size = m_pBar->CalcDynamicLayout(-1, dwMode);
+
+		// calculate inverted dragging rect
+		if (bHorz)
+		{
+			m_rectDragHorz = rect;
+			m_rectDragVert = CRect(CPoint(pt.x - rect.Height()/2, rect.top), size);
+		}
+		else // vertical orientation
+		{
+			m_rectDragVert = rect;
+			m_rectDragHorz = CRect(CPoint(rect.left, pt.y - rect.Width()/2), size);
+		}
+
+		// calculate frame dragging rectangle
+		m_rectFrameDragHorz = m_rectDragHorz;
+		m_rectFrameDragVert = m_rectDragVert;
+
+		CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz);
+		CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert);
+		m_rectFrameDragHorz.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2);
+		m_rectFrameDragVert.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2);
+	}
+
+	// adjust rectangles so that point is inside
+	_AfxAdjustRectangle(m_rectDragHorz, pt);
+	_AfxAdjustRectangle(m_rectDragVert, pt);
+	_AfxAdjustRectangle(m_rectFrameDragHorz, pt);
+	_AfxAdjustRectangle(m_rectFrameDragVert, pt);
+
+	// initialize tracking state and enter tracking loop
+	m_dwOverDockStyle = CanDock();
+	Move(pt);   // call it here to handle special keys
+	Track();
+}
+

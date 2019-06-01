@@ -1,0 +1,122 @@
+//Microsoft Developer Studio generated resource script.
+//
+// Translation to french by Yann_STEPHAN@hp.com
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "../StringRes.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""../StringRes.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+// Game Over = Fin du Jeu but we prefer GAME OVER
+// Board = It depends of contexte
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GameOver            "Game Over"
+    IDS_TxtScore            "Score:"
+    IDS_TxtLines            "Lignes:"
+    IDS_TxtLevel            "Niveau:"
+    IDS_TxtStart            "Début"
+    IDS_TxtStop             "Fin"
+    IDS_TxtPause            "Pause"
+    IDS_TxtResume           "Reprendre"
+    IDS_HeaderScore         "Score"
+    IDS_HeaderName          "Nom"
+    IDS_HeaderLevel         "Niveau"
+    IDS_TxtSquareWidth      "Largeur du carré:"
+    IDS_TxtSquareHeight     "Hauteur du carré:"
+    IDS_TxtGrid             "Grille"
+    IDS_TxtEnableSound      "Valider le son"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TxtEnableMusic      "Valider la musique"
+    IDS_TxtSoundCardRequired "Valider le son / Une carte son nécessaire pour la musique."
+    IDS_TxtSplashAgain      "Montre moi encore cette image excitante !!!"
+    IDS_TxtBoard            "Carte"
+    IDS_TxtSound            "Son"
+    IDS_TxtExFigureSet      "Utiliser les piéces étendues."
+    IDS_TxtChaikovsky       "Chaikovsky"
+    IDS_TxtScorpions        "Scorpions"
+    IDS_TxtKalinka          "Kalinka"
+    IDS_License             "Ceci est un logiciel gratuit.|Vous pouvez le diffuser|par n'importe quel moyen|car il n'est pas vendu,| et sans avoir le consentement des auteurs.|"
+    IDS_Concept             "Concept\n|Concept original,|Conçu et programmé|par Alexey Pajitnov.|"
+    IDS_Warrantee           "Garantie\n|Aucune garantie,|manifestée ou sous-entendue,|est présente dans ce logiciel;|l'utilisation est à votre propre risque,|ainsi que les responsabilitées pour|les dommages (si ils en existents)|resultant de l'|utilisation de ce logiciel reste|entièrement à la charge de l'utilisateur.|"
+    IDS_Disclosure          "Divulgation\n|La plupart des resources|(images, sons and musiques)|utilisées dans ce jeu ont été récupérées|quelque part sur le Web.|"
+    IDS_SplashImage         "Image de départ\n|Lars Stroschen|www.propeller-island.net4.com/moskau/|"
+    IDS_Credits             "Credits\n|Ce programme n'existerait pas|sans le travail des 'codegurus'|du monde entier.|Mille mercis à Super Guru de |www.codeguru.com|Zafir Anjum|et tous les 'codegurus'|qui ont codés un bout du jeu.|"
+    IDS_TxtEndGame          "Fin du Jeu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TitleGamePage       "Jeu"
+    IDS_TitleScorePage      "Score"
+    IDS_TitleOptionsPage    "Options"
+    IDS_TitleAboutPage      "A propos"
+    IDS_HelpPageDlg         "Aide"
+    IDS_HelpPrelude         "Comment jouer à ce jeu.|Les touches suivantes peuvent être utilisées|durant le ""JEU""|et lancer le jeu.||"
+    IDS_HelpKeys            "ENTREE|démarrer, arreter, fair une pause, reprendre||GAUCHE|bouger une pièce sur la gauche||DROITE|bouger une pièce sur la droite||HAUT|faire tourner la pièce dans le|sens des aiguilles d'une montre||DOWN|faire tourner la pièce dans le sens|contraire des aiguilles d'une montre||ESPACE|placer la pièce|"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

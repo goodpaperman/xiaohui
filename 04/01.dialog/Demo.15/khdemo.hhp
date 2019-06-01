@@ -1,0 +1,27 @@
+; 1.0 compatibility used to decrease file size since
+; this help file does not use full-text search
+
+[OPTIONS]
+Compatibility=1.0
+Compiled file=khdemo.chm
+Default topic=html\IDC_INTRO.htm
+Display compile progress=No
+Language=0x409 English (United States)
+
+
+[FILES]
+html\*.htm
+
+[ALIAS]
+IDC_CHECK1=html\IDC_CHECK1.htm
+IDC_EDIT1=html\IDC_EDIT1.htm
+IDC_INTRO=html\IDC_INTRO.htm
+IDC_RADIO1=html\IDC_RADIO1.htm
+IDC_RADIO2=html\IDC_RADIO2.htm
+IDD_DIALOG_DEMO2=html/IDD_DIALOG_DEMO2.htm
+
+[MAP]
+#include "resource.h"
+
+[INFOTYPES]
+

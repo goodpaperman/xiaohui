@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SyntaxColorDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'D:\Code\MFC\4\02.edit\Demo.02\MyMenu.h'
+
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP205.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Debug/SyntaxColorDemo.pch" /Yu"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"D:\Code\MFC\4\02.edit\Demo.02\MainFrm.cpp"
+"D:\Code\MFC\4\02.edit\Demo.02\SyntaxColorDemo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP205.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP206.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:".\Debug/SyntaxColorDemo.pdb" /debug /machine:I386 /out:".\Debug/SyntaxColorDemo.exe" 
+.\Debug\ColorEditWnd.obj
+.\Debug\Colorize.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\SyntaxColorDemo.obj
+.\Debug\SyntaxColorDemoDoc.obj
+.\Debug\SyntaxColorDemoView.obj
+.\Debug\SyntaxColorDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP206.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+SyntaxColorDemo.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SyntaxColorDemo.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Zoom32 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPE5.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_X86_" /FR"Debug/" /Fp"Debug/Zoom32.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.08\Zoomview.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPE5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPE6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Zoom32.pdb" /debug /machine:IX86 /out:"Debug/Zoom32.exe" /pdbtype:sept 
+.\Debug\Mainfrm.obj
+.\Debug\Stdafx.obj
+.\Debug\Test.obj
+.\Debug\Testdoc.obj
+.\Debug\Testview.obj
+.\Debug\Zoomview.obj
+.\Debug\Test.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPE6.tmp"
+<h3>Output Window</h3>
+Compiling...
+Zoomview.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Zoom32.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

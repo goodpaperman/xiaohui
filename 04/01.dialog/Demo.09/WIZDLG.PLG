@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WizDlg - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x410 /fo"Release/WizDlg.res" /d "NDEBUG" /d "_AFXDLL" "D:\Code\MFC\4\01.Dialog\Demo.09\WizDlg.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/WizDlg.pdb" /machine:I386 /out:"Release/WizDlg.exe" 
+.\Release\MainFrm.obj
+.\Release\NetButton.obj
+.\Release\StdAfx.obj
+.\Release\TestPage1.obj
+.\Release\TestPage2.obj
+.\Release\TestPage3.obj
+.\Release\WizardDlg.obj
+.\Release\WizDlg.obj
+.\Release\WizDlgDoc.obj
+.\Release\WizDlgView.obj
+.\Release\WizDlg.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+WizDlg.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

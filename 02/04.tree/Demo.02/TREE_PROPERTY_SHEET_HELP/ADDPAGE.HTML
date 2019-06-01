@@ -1,0 +1,125 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h3>CTreePropertySheet::AddPage
+<hr></h3>
+<font face="Arial" size=2>
+<h5>
+<table>
+<tr>
+<td valign=top>
+<nobr>CTreePropertySheet::AddPage(</nobr>
+</td>
+<td>
+const CString& sCaption,<br>
+int nType = tps_item_node,<br>
+UINT nIDTemplate = ((UINT)-1),<br>
+const CString& sCaptionDescr = CString(""),<br>
+CDialog *pDlg = NULL);
+</td>
+</tr>
+</table>
+</h5>
+<h4>Parameters</h4>
+<table width=100% style="font-face=Arial; font-size=x-small;">
+<colgroup>
+<col width=15% valign=top></col>
+</colgroup>
+
+<tr>
+<td><i>
+sCaption
+</i></td><td>
+The caption of this item. Appears in the tree control and as main
+dialog caption (if pWnd!=NULL)
+</td></tr>
+
+<tr>
+<td><i>
+nType
+</i></td><td>
+The type of this item. Can be one of these values:<br>
+<table style="font-face=Arial; font-size=x-small;">
+<colgroup><col valign=top></colgroup>
+<tr><td>
+<i>tps_item_branch</i>
+</td><td>
+This item has sub-items. All following items are one level
+below this item, until a 'tps_item_endbranch' is found.
+</td></tr>
+<tr><td>
+<i>tps_item_node</i>
+</td><td>
+This item is a simple node in the tree.
+</td></tr>
+<tr><td>
+<i>tps_item_endbranch</i>
+</td><td>
+This item is the last item of the current sub-branch(which was
+initiated with an tps_item_branch). All following items are on the
+same level as the corresponding 'tps_item_branch' entry.
+</td></tr>
+</table>
+</td></tr>
+
+<tr>
+<td><i>
+nIDTemplate
+</i></td><td>
+Contains the ID number of a dialog-box template resource.
+</td></tr>
+
+<tr>
+<td><i>
+sCaptionDescr
+</i></td><td>
+Defines an additional description to the main caption of this item.
+This is only shown if the dialog belonging to this item is currently
+selected.
+</td></tr>
+
+<tr>
+<td><i>
+pDlg
+</i></td><td>
+Contains a CDialog derivated class for this dialog, for example to
+do the DDX/DDV handling.<br>If NULL, a standard CDialog is used.
+</td></tr>
+
+</table>
+<h4>Remarks</h4>
+Call this function to add dialog pages to the CTreePropertySheet.<br>
+The nType parameter specifies how to insert the page into the tree.
+Consider this example:
+<br><br>
+<table style="font-face=Arial; font-size=x-small;">
+<colgroup>
+<col width=40%>
+</colgroup>
+<tr><td><nobr><b>(tree control contents)</b></nobr></td><td>
+<b>(code)</b>
+</tr>
+<tr><td><nobr>+ Main preferences</nobr></td><td>
+<i>AddPage("Main preferences",tps_item_branch);</i>
+</tr>
+<tr><td><nobr>&nbsp&nbsp&nbsp&nbsp- Directories</nobr></td><td>
+<i>AddPage("Directories",tps_item_node);</i>
+</tr>
+<tr><td><nobr>&nbsp&nbsp&nbsp&nbsp- User information</nobr></td><td>
+<i>AddPage("User information",tps_item_node);</i>
+</tr>
+<tr><td><nobr>&nbsp&nbsp&nbsp&nbsp- Plugins</nobr></td><td>
+<i>AddPage("Plugins",tps_item_endbranch);</i>
+</tr>
+<tr><td><nobr>- Security</nobr></td><td>
+<i>AddPage("Security",tps_item_node);</i>
+</tr>
+</b>
+</table>
+
+</font>
+<br><br>
+</body>
+</html>

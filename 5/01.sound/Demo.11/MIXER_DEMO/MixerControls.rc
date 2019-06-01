@@ -1,0 +1,471 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\MixerControls.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MixerControls.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPEAKER_DIALOG DIALOGEX 0, 0, 459, 146
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 10, "Haettenschweiler", 0, 0, 0x1
+BEGIN
+    CTEXT           "Static",IDC_STATIC,15,110,30,13,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CONTROL         "Spin1",IDC_GAIN_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_TABSTOP,50,90,13,14
+    CONTROL         "Slider1",IDC_MAIN_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,20,25,15,65
+    CONTROL         "Slider1",IDC_MAIN_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,10,15,35,10
+    CONTROL         "Slider1",IDC_MAIN_BASS,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,95,25,15,65
+    CONTROL         "Slider1",IDC_MAIN_TREBLE,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,25,15,65
+    CONTROL         "Slider1",IDC_AUX_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,326,25,16,64
+    CONTROL         "Slider1",IDC_AUX_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,315,15,35,10
+    CONTROL         "Slider1",IDC_SYNTH_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,227,25,16,64
+    CONTROL         "Slider1",IDC_SYNTH_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,217,15,34,10
+    CONTROL         "Slider1",IDC_MIKE_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,376,25,16,64
+    CONTROL         "Slider1",IDC_MIKE_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,365,15,35,10
+    CONTROL         "Slider1",IDC_CD_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,277,25,16,64
+    CONTROL         "Slider1",IDC_CD_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,266,15,34,10
+    CONTROL         "Slider1",IDC_WAVE_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,166,25,16,64
+    CONTROL         "Slider1",IDC_WAVE_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,155,15,35,10
+    CONTROL         "Mute",IDC_MAIN_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,15,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mute",IDC_AUX_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,320,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mute",IDC_SYNTH_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,221,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mute",IDC_MIKE_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,370,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mute",IDC_CD_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,270,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mute",IDC_WAVE_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,160,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Stereo Enh",IDC_ENHANCE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,155,115,130,10
+    CTEXT           "Bass",IDC_BASS_STATIC,90,15,25,8,SS_CENTERIMAGE
+    CTEXT           "Treble",IDC_TREBLE_STATIC,115,15,25,10
+    LTEXT           "",IDC_PEAK_STATIC,190,30,11,55,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "Gain",IDC_GAIN_STATIC,50,110,75,13,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,0,0,460,
+                    1
+    GROUPBOX        "Static",IDC_MAIN_STATIC,5,5,140,125,BS_CENTER
+    GROUPBOX        "Static",IDC_LINEIN_STATIC,310,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_SYNTH_STATIC,210,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_MIKE_STATIC,360,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_CD_STATIC,260,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_WAVE_STATIC,150,5,55,100,BS_CENTER
+    LTEXT           "Static",IDC_NAME_STATIC,5,135,450,10,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "Slider1",IDC_MAIN_LEFT,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,50,25,15,65
+    CONTROL         "Slider1",IDC_MAIN_RIGHT,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,70,25,15,65
+    CONTROL         "Slider1",IDC_PC_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,427,25,16,64
+    CONTROL         "Slider1",IDC_PC_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,417,15,34,10
+    CONTROL         "Mute",IDC_PC_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,421,90,25,10,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Static",IDC_PC_STATIC,410,5,45,100,BS_CENTER
+    ICON            IDR_MAINFRAME,IDC_STATIC,415,110,20,20
+    CTEXT           "L",IDC_STATIC,50,15,10,8,SS_CENTERIMAGE
+    CTEXT           "R",IDC_STATIC,70,15,10,8,SS_CENTERIMAGE
+END
+
+IDD_WAVEIN_DIALOG DIALOGEX 0, 0, 279, 146
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_APPWINDOW
+FONT 10, "Haettenschweiler", 0, 0, 0x1
+BEGIN
+    CTEXT           "Static",IDC_STATIC,15,30,30,13,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CONTROL         "Spin1",IDC_GAIN_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_TABSTOP,25,45,13,14
+    CONTROL         "Slider1",IDC_SYNTH_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,96,25,16,64
+    CONTROL         "Slider1",IDC_SYNTH_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,84,15,36,10
+    CONTROL         "Slider1",IDC_CD_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,146,25,16,64
+    CONTROL         "Slider1",IDC_CD_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,135,15,35,10
+    CONTROL         "Slider1",IDC_AUX_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,195,25,16,65
+    CONTROL         "Slider1",IDC_AUX_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,184,15,36,10
+    CONTROL         "Slider1",IDC_MIKE_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,246,25,16,64
+    CONTROL         "Slider1",IDC_MIKE_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,234,15,36,10
+    CONTROL         "Gain",IDC_MIKE_GAIN,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,241,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Midi",IDC_SYNTH_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,85,115,29,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "CD",IDC_CD_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,135,115,35,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Line-In",IDC_LINEIN_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,185,115,35,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mike",IDC_MIKE_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,235,115,35,10,
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_PEAK_STATIC,55,30,10,55,SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,0,0,280,
+                    1
+    GROUPBOX        "Static",IDC_MAIN_STATIC,5,5,70,100,BS_CENTER
+    GROUPBOX        "Static",IDC_MIKE_STATIC,230,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_LINEIN_STATIC,180,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_SYNTH_STATIC,80,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_CD_STATIC,130,5,45,100,BS_CENTER
+    LTEXT           "Static",IDC_NAME_STATIC,5,135,270,10,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Static",IDC_INPUT_STATIC,5,105,270,25
+    LTEXT           "Gain",IDC_GAIN_STATIC,15,15,55,13,SS_CENTERIMAGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,15,80,26,18
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 172, 118
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Mixer Controls"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 157, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About this program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Dismiss",IDOK,54,41,50,14
+    CTEXT           "Mixer Controls\nMixer Demo Program\nCopyright Langis Pitre, 1998",
+                    IDC_STATIC,40,10,110,25
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,10,21,20
+END
+
+IDD_INFO_DIALOG DIALOGEX 0, 0, 407, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Mixer Device Information"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_INFO_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    5,5,135,210
+    LISTBOX         IDC_INFO_LIST,145,5,255,210,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_VOICE_DIALOG DIALOGEX 0, 0, 279, 146
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_APPWINDOW
+FONT 10, "Haettenschweiler"
+BEGIN
+    CTEXT           "Static",IDC_STATIC,15,30,30,13,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CONTROL         "Spin1",IDC_GAIN_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_TABSTOP,25,45,13,14
+    CONTROL         "Slider1",IDC_SYNTH_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,96,25,16,64
+    CONTROL         "Slider1",IDC_SYNTH_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,84,15,36,10
+    CONTROL         "Slider1",IDC_CD_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,146,25,16,64
+    CONTROL         "Slider1",IDC_CD_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,135,15,35,10
+    CONTROL         "Slider1",IDC_AUX_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,195,25,16,65
+    CONTROL         "Slider1",IDC_AUX_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,184,15,36,10
+    CONTROL         "Slider1",IDC_MIKE_VOLUME,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,246,25,16,64
+    CONTROL         "Slider1",IDC_MIKE_BALANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,234,15,36,10
+    CONTROL         "Gain",IDC_MIKE_GAIN,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,241,90,25,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Synth",IDC_SYNTH_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,85,115,35,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "CD",IDC_CD_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,135,115,35,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Line-In",IDC_LINEIN_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,185,115,35,10,
+                    WS_EX_STATICEDGE
+    CONTROL         "Mike",IDC_MIKE_SELECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,235,115,35,10,
+                    WS_EX_STATICEDGE
+    LTEXT           "",IDC_PEAK_STATIC,55,30,10,55,SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,0,0,280,
+                    1
+    GROUPBOX        "Static",IDC_MAIN_STATIC,5,5,70,100,BS_CENTER
+    GROUPBOX        "Static",IDC_MIKE_STATIC,230,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_LINEIN_STATIC,180,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_SYNTH_STATIC,80,5,45,100,BS_CENTER
+    GROUPBOX        "Static",IDC_CD_STATIC,130,5,45,100,BS_CENTER
+    LTEXT           "Static",IDC_NAME_STATIC,5,135,270,10,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Static",IDC_INPUT_STATIC,5,105,270,25
+    LTEXT           "Gain",IDC_GAIN_STATIC,15,15,55,13,SS_CENTERIMAGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,15,80,26,18
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Audio Mixer Interface Demo Program\0"
+            VALUE "CompanyName", "Langis Pitre\0"
+            VALUE "FileDescription", "MixerControls  Application\0"
+            VALUE "FileVersion", "1, 1, 0, 1\0"
+            VALUE "InternalName", "MixerControls\0"
+            VALUE "LegalCopyright", "Copyright (C) Langis Pitre 1998\0"
+            VALUE "OriginalFilename", "MixerControls.EXE\0"
+            VALUE "ProductName", "MixerControls Application\0"
+            VALUE "ProductVersion", "1, 1, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SPEAKER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_WAVEIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_ABOUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_INFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_VOICE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Device &Info...",             ID_INFO
+        MENUITEM "Device &Caps...",             ID_INFO_DLG
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Playback window",            ID_SPEAKERS, CHECKED
+        MENUITEM "&Recording window",           ID_WAVEIN
+        MENUITEM "&Voice-In window",            ID_VOICEIN
+    END
+    POPUP "&Help", HELP
+    BEGIN
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREE_BITMAP         BITMAP  DISCARDABLE     "res\\tree_bit.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\MixerControls.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

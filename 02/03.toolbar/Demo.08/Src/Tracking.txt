@@ -1,0 +1,125 @@
+
+BOOL CExDockContext::Tracking()
+{
+
+	// don't handle if capture already set
+	if (::GetCapture() != NULL)
+		return FALSE;
+
+	// set capture to the window which received this message
+	m_pBar->SetCapture();
+	ASSERT(m_pBar == CWnd::GetCapture());
+
+#ifndef _MAC
+	// get messages until capture lost or cancelled/accepted
+	while (CWnd::GetCapture() == m_pBar)
+	{
+		MSG msg;
+		if (!::GetMessage(&msg, NULL, 0, 0))
+		{
+			AfxPostQuitMessage(msg.wParam);
+			break;
+		}
+
+		switch (msg.message)
+		{
+		case WM_NCLBUTTONUP:
+			m_pBar->SendMessage(WM_NCLBUTTONUP,
+				msg.wParam,
+				msg.lParam);
+			return TRUE;
+		case WM_LBUTTONUP:
+			if (m_bDragging)
+				EndDrag();
+			else
+				EndResize();
+			return TRUE;
+		case WM_MOUSEMOVE:
+			if (m_bDragging)
+				Move(msg.pt);
+			else
+				Stretch(msg.pt);
+			break;
+		case WM_KEYUP:
+			if (m_bDragging)
+				OnKey((int)msg.wParam, FALSE);
+			break;
+		case WM_KEYDOWN:
+			if (m_bDragging)
+				OnKey((int)msg.wParam, TRUE);
+			if (msg.wParam == VK_ESCAPE)
+			{
+				CancelLoop();
+				return FALSE;
+			}
+			break;
+		case WM_RBUTTONDOWN:
+			CancelLoop();
+			return FALSE;
+
+		// just dispatch rest of the messages
+		default:
+			DispatchMessage(&msg);
+			break;
+		}
+	}
+#else
+	Point   ptCur = {0};
+
+	// get messages until capture lost or cancelled/accepted
+	while (CWnd::GetCapture() == m_pBar)
+	{
+		EventRecord     er;
+
+		if (OSEventAvail(everyEvent, &er))
+		{
+			GetNextEvent(everyEvent, &er);
+			switch (er.what)
+			{
+			case mouseUp:
+				if (m_bDragging)
+					EndDrag();
+				else
+					EndResize();
+				return TRUE;
+
+			case keyDown:
+			case keyUp:
+			case autoKey:
+			case app2Evt:
+			{
+				MSG     msg;
+
+				if (WrapEvent(&er, &msg, PM_REMOVE))
+				{
+					if (m_bDragging)
+						OnKey((int)msg.wParam, msg.message == WM_KEYDOWN);
+					if (msg.message == WM_KEYUP && msg.wParam == VK_ESCAPE)
+					{
+						CancelLoop();
+						return FALSE;
+					}
+				}
+				break;
+			}
+
+			default:
+				break;
+			}
+		}
+		else
+		{
+			if (!EqualPt(er.where, ptCur))
+			{
+				POINT pt = {er.where.h, er.where.v};
+				if (m_bDragging)
+					Move(pt);
+				else
+					Stretch(pt);
+			}
+		}
+	}
+#endif
+	CancelLoop();
+	return FALSE;
+}

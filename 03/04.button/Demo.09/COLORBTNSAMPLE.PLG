@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: colorBtnSample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPF8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/colorBtnSample.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\3\04.button\Demo.09\colorbtn.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPF8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPF9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/colorBtnSample.pdb" /debug /machine:I386 /out:"Debug/colorBtnSample.exe" /pdbtype:sept 
+.\Debug\colorbtn.obj
+.\Debug\colorBtnSample.obj
+.\Debug\colorBtnSampleDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\colorBtnSample.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPF9.tmp"
+<h3>Output Window</h3>
+Compiling...
+colorbtn.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+colorBtnSample.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

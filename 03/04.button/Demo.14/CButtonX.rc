@@ -1,0 +1,250 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CButtonX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CButtonX.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CButtonX"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CHotButton",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000, Rick Shide, VISTAinfo Inc",
+                    IDC_STATIC,40,25,190,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "mailto:ricksh@vistainfo.com",IDC_MAILTO,41,41,114,8
+    LTEXT           "http://www.vistainfo.com",IDC_WEBSITE,41,52,104,8
+END
+
+IDD_HOTBUTTON_DIALOG DIALOGEX 0, 0, 298, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CButtonX"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Contacts",IDC_CONTACTS,10,9,96,17,BS_VCENTER | 
+                    BS_NOTIFY
+    CONTROL         "Hot X",IDC_HOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,
+                    38,53,10
+    CONTROL         "Use Bitmap",IDC_USE_BITMAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,54,64,10
+    GROUPBOX        "Bitmap",IDC_STATIC,109,3,118,89,WS_GROUP
+    CONTROL         "X",IDC_X_BMP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,114,10,21,10
+    CONTROL         "Check",IDC_CHECK_BMP,"Button",BS_AUTORADIOBUTTON,114,21,
+                    37,10
+    CONTROL         "Folder",IDC_FOLDER_BMP,"Button",BS_AUTORADIOBUTTON,114,
+                    32,35,10
+    CONTROL         "Paper",IDC_PAPER_BMP,"Button",BS_AUTORADIOBUTTON,114,44,
+                    35,10
+    CONTROL         "Printer",IDC_PRINTER_BMP,"Button",BS_AUTORADIOBUTTON,
+                    114,56,46,10
+    CONTROL         "Red Flag",IDC_REDFLAG_BMP,"Button",BS_AUTORADIOBUTTON,
+                    114,68,45,10
+    CONTROL         "Banned",IDC_BANNED_BMP,"Button",BS_AUTORADIOBUTTON,114,
+                    80,41,10
+    CONTROL         "Right Arrow",IDC_RARROW,"Button",BS_AUTORADIOBUTTON,171,
+                    10,59,10
+    CONTROL         "Left Arrow",IDC_LARROW,"Button",BS_AUTORADIOBUTTON,171,
+                    21,54,10
+    CONTROL         "LED",IDC_LED,"Button",BS_AUTORADIOBUTTON,171,33,30,10
+    CONTROL         "Ellipse...",IDC_ELLIPSE,"Button",BS_AUTORADIOBUTTON,171,
+                    45,54,10
+    CONTROL         "Binoculars",IDC_BINOC,"Button",BS_AUTORADIOBUTTON,171,
+                    57,54,10
+    CONTROL         "Clock",IDC_CLOCK_BMP,"Button",BS_AUTORADIOBUTTON,171,68,
+                    34,10
+    CONTROL         "App Defined",IDC_APP_DEFINED,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,171,80,55,10
+    PUSHBUTTON      "About",IDC_ABOUT,244,50,38,20
+    DEFPUSHBUTTON   "OK",IDOK,238,2,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,238,20,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CButtonX MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CButtonX\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CButtonX.EXE\0"
+            VALUE "ProductName", "CButtonX Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_HOTBUTTON_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HOT_INTERNAL        BITMAP  DISCARDABLE     "res\\HotInternal.bmp"
+IDB_HOT_CONTACT         BITMAP  DISCARDABLE     "res\\hot_cont.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CButtonX..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CButtonX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

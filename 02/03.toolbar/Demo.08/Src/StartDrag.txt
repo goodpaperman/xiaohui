@@ -1,0 +1,124 @@
+
+void CExDockContext::StartDrag(CPoint pt) 
+{ 
+     ASSERT_VALID(m_pBar); 
+
+	 m_bDragging = TRUE; 
+     InitLoop(); 
+
+     if (m_pBar->m_dwStyle & CBRS_SIZE_DYNAMIC) 
+     { 
+          // get true bar size (including borders) 
+          CRect rect; 
+          m_pBar->GetWindowRect(rect); 
+
+          // This is our added funtionality 
+          // This overridable allows you 
+          // to adjust the window rect so that 
+          // you can hide controls like a caption 
+          // bar from view 
+          AdjustWindowForFloat(rect); 
+
+          m_ptLast = pt; 
+          CSize sizeHorz = m_pBar->CalcDynamicLayout(0, LM_HORZ | LM_HORZDOCK); 
+          CSize sizeVert = m_pBar->CalcDynamicLayout(0, LM_VERTDOCK); 
+          CSize sizeFloat = m_pBar->CalcDynamicLayout(0, LM_HORZ | LM_MRUWIDTH); 
+
+          m_rectDragHorz = CRect(rect.TopLeft(), sizeHorz); 
+          m_rectDragVert = CRect(rect.TopLeft(), sizeVert); 
+
+          // calculate frame dragging rectangle 
+          m_rectFrameDragHorz = CRect(rect.TopLeft(), sizeFloat); 
+          m_rectFrameDragVert = CRect(rect.TopLeft(), sizeFloat); 
+
+#ifdef _MAC 
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz, 
+               WS_THICKFRAME | WS_CAPTION, WS_EX_FORCESIZEBOX); 
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert, 
+               WS_THICKFRAME | WS_CAPTION, WS_EX_FORCESIZEBOX); 
+#else 
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz); 
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert); 
+#endif 
+          m_rectFrameDragHorz.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2); 
+          m_rectFrameDragVert.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2); 
+     } 
+     else if (m_pBar->m_dwStyle & CBRS_SIZE_FIXED) 
+     { 
+          // get true bar size (including borders) 
+          CRect rect; 
+          m_pBar->GetWindowRect(rect); 
+
+          // This is our added funtionality 
+          // This overridable allows you 
+          // to adjust the window rect so that 
+          // you can hide controls like a caption 
+          // bar from view 
+          AdjustWindowForFloat(rect); 
+
+          m_ptLast = pt; 
+          CSize sizeHorz = m_pBar->CalcDynamicLayout(-1, LM_HORZ | LM_HORZDOCK); 
+          CSize sizeVert = m_pBar->CalcDynamicLayout(-1, LM_VERTDOCK); 
+
+          // calculate frame dragging rectangle 
+          m_rectFrameDragHorz = m_rectDragHorz = CRect(rect.TopLeft(), sizeHorz); 
+          m_rectFrameDragVert = m_rectDragVert = CRect(rect.TopLeft(), sizeVert); 
+
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz); 
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert); 
+          m_rectFrameDragHorz.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2); 
+          m_rectFrameDragVert.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2); 
+     } 
+     else 
+     { 
+          // get true bar size (including borders) 
+          CRect rect; 
+          m_pBar->GetWindowRect(rect); 
+
+          // This is our added funtionality 
+          // This overridable allows you 
+          // to adjust the window rect so that 
+          // you can hide controls like a caption 
+          // bar from view 
+          AdjustWindowForFloat(rect); 
+
+          m_ptLast = pt; 
+          BOOL bHorz = HORZF(m_dwStyle); 
+          DWORD dwMode = !bHorz ? (LM_HORZ | LM_HORZDOCK) : LM_VERTDOCK; 
+          CSize size = m_pBar->CalcDynamicLayout(-1, dwMode); 
+
+          // calculate inverted dragging rect 
+          if (bHorz) 
+          { 
+               m_rectDragHorz = rect; 
+               m_rectDragVert = CRect(CPoint(pt.x - rect.Height()/2, rect.top), size); 
+          } 
+          else // vertical orientation 
+          { 
+               m_rectDragVert = rect; 
+               m_rectDragHorz = CRect(CPoint(rect.left, pt.y - rect.Width()/2), size); 
+          } 
+
+          // calculate frame dragging rectangle 
+          m_rectFrameDragHorz = m_rectDragHorz; 
+          m_rectFrameDragVert = m_rectDragVert; 
+
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragHorz); 
+          CMiniFrameWnd::CalcBorders(&m_rectFrameDragVert); 
+          m_rectFrameDragHorz.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2); 
+          m_rectFrameDragVert.InflateRect(-afxData.cxBorder2, -afxData.cyBorder2); 
+     } 
+
+     // adjust rectangles so that point is inside 
+     AdjustRectangle(m_rectDragHorz, pt); 
+     AdjustRectangle(m_rectDragVert, pt); 
+     AdjustRectangle(m_rectFrameDragHorz, pt); 
+     AdjustRectangle(m_rectFrameDragVert, pt); 
+
+     // initialize tracking state and enter tracking loop 
+     m_dwOverDockStyle = CanDock(); 
+     Move(pt);   // call it here to handle special keys 
+
+	 // Here we call our new function Tracking
+     Tracking(); 
+} 

@@ -1,0 +1,58 @@
+	if( GetFocus() != this ) SetFocus();
+
+	if (pCategoryManager != NULL) 
+	{
+		int index, colnum;
+		if ((index = HitTestEx(point, &colnum)) != -1)
+		{
+			int cate = pCategoryManager->IsListItemACategory(GetListCtrl().GetItemData(index));
+			if (cate >= 0)
+			{
+				if (colnum > 0)
+				{
+					if (pCategoryManager->pCategory[cate].bExpanded)
+					{
+						pCategoryManager->RemoveCategoryItems(cate, index, this);
+						CRect rcAllLabels;
+						GetListCtrl().GetItemRect(index,rcAllLabels,LVIR_BOUNDS);
+						CRect rc;
+						GetClientRect(&rc);
+						if (rc.right > rcAllLabels.right)
+						{
+							rc.left = rcAllLabels.right;
+							rc.top = rcAllLabels.bottom;
+							InvalidateRect(rc, true);
+						}
+					}
+					else
+					{
+						pCategoryManager->FillCategoryItems(cate, index, this);
+					}
+
+					pCategoryManager->pCategory[cate].bExpanded = !(pCategoryManager->pCategory[cate].bExpanded);
+
+					CRect rcLittleBox;
+					GetSubItemRect(index, 0, rcLittleBox);
+					rcLittleBox.bottom ++;
+					rcLittleBox.right ++;
+					InvalidateRect(rcLittleBox, false);
+
+					if (dwFlag&fScrollBarAlways) 
+					{
+						ShowScrollBar(SB_BOTH);
+						int iPageItem = GetListCtrl().GetCountPerPage();
+						int iItemCount = GetListCtrl().GetItemCount();
+						if (iItemCount < iPageItem) EnableScrollBar(SB_VERT, ESB_DISABLE_BOTH);
+						else EnableScrollBar(SB_VERT, ESB_ENABLE_BOTH);
+
+						CRect rcAllLabels;
+						GetListCtrl().GetItemRect(0,rcAllLabels,LVIR_BOUNDS);
+
+						EnableScrollBar(SB_HORZ, rcAllLabels.Width() < m_cxClient ? ESB_DISABLE_BOTH : ESB_ENABLE_BOTH);
+					}
+
+					return;
+				}
+			}
+		}
+	}

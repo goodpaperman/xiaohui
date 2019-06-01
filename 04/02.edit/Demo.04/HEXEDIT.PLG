@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HexEdit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A7.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "DEMO" /Fp"Debug/HexEdit.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A7.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/HexEdit.pdb" /debug /machine:I386 /out:"Debug/HexEdit.exe" /pdbtype:sept  .\Debug\HexEdit.obj .\Debug\HexEditCtrl.obj .\Debug\HexEditDlg.obj .\Debug\StdAfx.obj .\Debug\HexEdit.res "
+<h3>Output Window</h3>
+Compiling...
+HexEditCtrl.cpp
+D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp(31) : warning C4244: '=' : conversion from 'int' to 'unsigned char', possible loss of data
+D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp(1123) : warning C4244: 'argument' : conversion from 'unsigned int' to 'unsigned short', possible loss of data
+D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp(1170) : warning C4244: 'argument' : conversion from 'unsigned int' to 'unsigned short', possible loss of data
+D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp(1195) : warning C4244: 'argument' : conversion from 'unsigned int' to 'unsigned short', possible loss of data
+D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp(1214) : warning C4244: 'argument' : conversion from 'unsigned int' to 'unsigned short', possible loss of data
+D:\Code\MFC\4\02.edit\Demo.04\HexEditCtrl.cpp(1216) : warning C4244: 'argument' : conversion from 'unsigned int' to 'unsigned short', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+HexEdit.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,230 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        VERTGUIDE, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+        HORZGUIDE, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 299, 161
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,256,7,36,14
+    RTEXT           "Time:",IDC_STATIC,205,143,51,11,SS_CENTERIMAGE
+    CTEXT           "",IDC_TIME,263,143,29,11,SS_CENTERIMAGE
+    ICON            IDI_ICON,IDC_STATIC,267,118,20,20
+    EDITTEXT        IDC_STATICINFO,7,7,249,136,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ASCIIFONT
+//
+
+IDR_ASCIIFONT           ASCIIFONT DISCARDABLE   "Zm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+KOULES_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,166
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "A simple game \0"
+            VALUE "CompanyName", "Bit Q\0"
+            VALUE "FileDescription", "Koules\0"
+            VALUE "FileVersion", "1, 0, 0, 166\0"
+            VALUE "InternalName", "Koules\0"
+            VALUE "LegalCopyright", "Copyright _ 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Koules.exe\0"
+            VALUE "PrivateBuild", "345\0"
+            VALUE "ProductName", "Koules for windows\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "5\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MONOMASK
+//
+
+IDR_KOULES              MONOMASK DISCARDABLE    "kou.msk"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RAW
+//
+
+IDR_RAWD2               RAW     DISCARDABLE     "KSRC\\SOUNDS\\Destroy2.raw"
+IDR_RAWCR1              RAW     DISCARDABLE     "KSRC\\SOUNDS\\Creator1.raw"
+IDR_RAWCR2              RAW     DISCARDABLE     "KSRC\\SOUNDS\\Creator2.raw"
+IDR_RAWD1               RAW     DISCARDABLE     "KSRC\\SOUNDS\\Destroy1.raw"
+IDR_RAWCO               RAW     DISCARDABLE     "KSRC\\SOUNDS\\Colize.raw"
+IDR_RAWE                RAW     DISCARDABLE     "KSRC\\SOUNDS\\End.raw"
+IDR_RAWS                RAW     DISCARDABLE     "KSRC\\SOUNDS\\Start.raw"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_KOULESBITMAP        BITMAP  DISCARDABLE     "koules.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CHINASTR            "本软件部分源码是由Linux下同名软件\r\nKoules 移植\r\n请不要将本软件用于任何商业场合\r\n源程序的版本信息:\r\nCopyright (c) 1995   Joe Rumsey\r\n\r\nPermission to use, copy, modify, and distribute this\r\nsoftware and its documentation for any purpose and without\r\nfee is here by granted, provided that the above copyright\r\nnotice appear in all copies and that both that copyright\r\nnotice and this permission notice appear in supporting\r\ndocumentation.  No representations are made about the suitability\r\nof this software for any purpose.  It is provided ""as is"" without\r\nexpress or implied warranty.\r\n                      Copyright (c) 1995   Joe Rumsey"
+    IDS_REGSUB              "SOFTWARE\\Koules\\1.0"
+    IDS_MOUSEREG            "Control Panel\\Mouse"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

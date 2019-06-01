@@ -1,0 +1,63 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h3>CTreePropertySheet::InsertExtraSpace
+<hr></h3>
+<font face="Arial" size=2>
+<h5>
+<table>
+<tr>
+<td valign=top>
+<nobr>CTreePropertySheet::InsertExtraSpace(</nobr>
+</td>
+<td>
+int nVertArrange,<br>
+int row,<br>
+int col,<br>
+int nWidth = -1,<br>
+int nHeight);
+</td>
+</tr>
+</table>
+</h5>
+<h4>Parameters</h4>
+<table width=100% style="font-face=Arial; font-size=x-small;">
+<colgroup>
+<col width=15% valign=top></col>
+</colgroup>
+
+<tr>
+<td><i>
+nVertArrange
+</i></td><td>
+Defines in which pane this control should be inserted.<br>
+Can be <i>tps_above</i> or <i>tps_below</i> - above all standard elements or below them.</td></tr>
+
+<tr>
+<td><i>
+row,col
+</i></td><td>
+Defines the position to place the control.<br>
+Do not assign the same position twice.
+</td></tr>
+
+<tr>
+<td><i>
+nWidth,nHeight
+</i></td><td>
+Defines the space to be reserved for this control.<br>
+nWidth==1 means that this item should consume all unused space in
+the current row.
+</td></tr>
+
+</table>
+
+<h4>Remarks</h4>
+This function inserts a dummy extra control.<br>
+If nWidth equals -1, this dummy control takes up all unused space in
+the current row of extra controls, so the next extra control which 
+is located in the same row will be positioned on the rightmost border.
+</body>
+</html>

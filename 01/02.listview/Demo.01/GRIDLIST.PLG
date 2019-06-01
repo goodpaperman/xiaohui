@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: gridlist - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/gridlist.pch" /YX"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\1\02.listview\Demo.01\GridListCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/gridlist.pdb" /debug /machine:I386 /out:"Debug/gridlist.exe" /pdbtype:sept 
+.\Debug\gridlist.obj
+.\Debug\GridListCtrl.obj
+.\Debug\gridlistDoc.obj
+.\Debug\gridlistView.obj
+.\Debug\InPlaceEdit.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\TestDlg.obj
+.\Debug\gridlist.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E.tmp"
+<h3>Output Window</h3>
+Compiling...
+GridListCtrl.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+gridlist.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

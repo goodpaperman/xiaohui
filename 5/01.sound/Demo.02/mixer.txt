@@ -1,0 +1,754 @@
+
+Mixer: SigmaTel Audio.
+Destination #0 = 音量控制[-65536].
+Source #0 = 波形[0].
+Source #1 = 软件合成器[65536].
+Source #2 = CD 唱机[131072].
+Source #3 = PC 扬声器[196608].
+Destination #1 = 录音控制[-65535].
+Source #0 = 立体声混音[1].
+Source #1 = 线路输入[65537].
+Source #2 = 麦克风[131073].
+Source #3 = 内置式麦克风[196609].
+
+
+Mixer: SigmaTel Audio.
+Destination #0 = 音量控制[4294901760], type = 4.
+Source #0 = 波形[0], type = 4104.
+Source #1 = 软件合成器[65536], type = 4100.
+Source #2 = CD 唱机[131072], type = 4101.
+Source #3 = PC 扬声器[196608], type = 4106.
+Destination #1 = 录音控制[4294901761], type = 7.
+Source #0 = 立体声混音[1], type = 4106.
+Source #1 = 线路输入[65537], type = 4098.
+Source #2 = 麦克风[131073], type = 4099.
+Source #3 = 内置式麦克风[196609], type = 4099.
+Mixer Line with ID 0 is: 波形.
+
+
+Mixer: SigmaTel Audio.
+Destination #0 = 音量控制[4294901760], type = 4.
+Controls:
+主音量[1], type = 1342373889, (65535, 0), step = 192.
+主静音[2], type = 536936450, (1, 0), step = 0.
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (65535, 0), step = 192.
+静音[6], type = 536936450, (1, 0), step = 0.
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (65535, 0), step = 192.
+静音[8], type = 536936450, (1, 0), step = 0.
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (65535, 0), step = 192.
+静音[10], type = 536936450, (1, 0), step = 0.
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (65535, 0), step = 192.
+Destination #1 = 录音控制[4294901761], type = 7.
+Controls:
+多路转换器[0], type = 1879113729, (3, 0), step = 4.
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (65535, 0), step = 192.
+[0], type = 0, (0, 0), step = 0.
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (65535, 0), step = 192.
+[0], type = 0, (0, 0), step = 0.
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (1, 0), step = 0.
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (1, 0), step = 0.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+
+
+
+Mixer: SigmaTel Audio.
+Destination #0 = 音量控制[4294901760], type = 4.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192.
+主静音[2], type = 536936450, (0, 1), step = 0.
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192.
+静音[6], type = 536936450, (0, 1), step = 0.
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192.
+静音[8], type = 536936450, (0, 1), step = 0.
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192.
+静音[10], type = 536936450, (0, 1), step = 0.
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192.
+Destination #1 = 录音控制[4294901761], type = 7.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4.
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192.
+[0], type = 0, (0, 0), step = 0.
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192.
+[0], type = 0, (0, 0), step = 0.
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0.
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+
+
+
+Mixer: SigmaTel Audio.
+Destination #0 = 音量控制[4294901760], type = 4.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192.
+主静音[2], type = 536936450, (0, 1), step = 0.
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192.
+静音[6], type = 536936450, (0, 1), step = 0.
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192.
+静音[8], type = 536936450, (0, 1), step = 0.
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192.
+静音[10], type = 536936450, (0, 1), step = 0.
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192.
+Destination #1 = 录音控制[4294901761], type = 7.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4.
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192.
+[0], type = 0, (0, 0), step = 0.
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192.
+[0], type = 0, (0, 0), step = 0.
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0.
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+Control with Type MIXERCONTROL_CONTROLTYPE_VOLUME is: 音量[5].
+
+
+
+Mixer: SigmaTel Audio.
+
+Destination #0 = 音量控制[4294901760], type = 4.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192.
+Value: 12583.
+主静音[2], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[6], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[8], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[10], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192.
+Value: 32845.
+
+Destination #1 = 录音控制[4294901761], type = 7.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4.
+
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0.
+
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192.
+Value: 16461.
+[0], type = 0, (0, 0), step = 0.
+
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0.
+Value: 0.
+
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0.
+Value: 1.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+Control with Type MIXERCONTROL_CONTROLTYPE_VOLUME & Line ID 0 is: 音量[5].
+
+
+
+
+Mixer: SigmaTel Audio.
+
+Destination #0 = 音量控制[4294901760], type = 4.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192.
+Value: 12321.
+主静音[2], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[6], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[8], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[10], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+
+Destination #1 = 录音控制[4294901761], type = 7.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4.
+
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0.
+
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0.
+
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0.
+Value: 1.
+
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0.
+Value: 1.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+Control with Type MIXERCONTROL_CONTROLTYPE_VOLUME & Line ID 0 is: 音量[5].
+Value: 1.
+
+
+
+/* We need 2 MIXERCONTROLDETAILS_UNSIGNED structs to retrieve the
+   values of a stereo control that is not MIXERCONTROL_CONTROLF_UNIFORM */
+MIXERCONTROLDETAILS_UNSIGNED value[2];
+MIXERCONTROLDETAILS          mixerControlDetails;
+MMSYSTEM                     err;
+
+mixerControlDetails.cbStruct = sizeof(MIXERCONTROLDETAILS);
+
+/* Tell mixerGetControlDetails() which control whose value we
+   want to retrieve. We do this by putting the desired control's
+   ID number in dwControlID. Remember that the "Speaker Out" line's
+   volume slider has an ID of 0x00000000 */
+mixerControlDetails.dwControlID = 0x00000000;
+
+/* We want to retrieve values for both channels */
+mixerControlDetails.cChannels = 2;
+
+/* This is always 0 except for a MIXERCONTROL_CONTROLF_MULTIPLE control */
+mixerControlDetails.cMultipleItems = 0;
+
+/* Give mixerGetControlDetails() the address of the
+   MIXERCONTROLDETAILS_UNSIGNED array into which to return the values */
+mixerControlDetails.paDetails = &value[0];
+
+/* Tell mixerGetControlDetails() how big each MIXERCONTROLDETAILS_UNSIGNED is */
+mixerControlDetails.cbDetails = sizeof(MIXERCONTROLDETAILS_UNSIGNED);
+
+/* Retrieve the current values of both channels */
+if ((err = mixerGetControlDetails((HMIXEROBJ)mixerHandle, &mixerControlDetails, MIXER_GETCONTROLDETAILSF_VALUE)))
+{
+    /* An error */
+    printf("Error #%d calling mixerGetControlDetails()\n", err);
+}
+else
+{
+    printf("The left channel's volume is %lu\n", value[0].dwValue);
+    printf("The right channel's volume is %lu\n", value[1].dwValue);
+}
+To set the values of both channels, you fill in the values of both MIXERCONTROLDETAILS_UNSIGNED structs. Here is an example of setting the left channel's volume to 31 and the right channel's volume to 0. /* We need 2 MIXERCONTROLDETAILS_UNSIGNED structs to set the
+   values of a stereo control that is not MIXERCONTROL_CONTROLF_UNIFORM */
+MIXERCONTROLDETAILS_UNSIGNED value[2];
+MIXERCONTROLDETAILS          mixerControlDetails;
+MMSYSTEM                     err;
+
+mixerControlDetails.cbStruct = sizeof(MIXERCONTROLDETAILS);
+
+/* Tell mixerSetControlDetails() which control whose value we
+   want to set. We do this by putting the desired control's
+   ID number in dwControlID. Remember that the "Speaker Out" line's
+   volume slider has an ID of 0x00000000 */
+mixerControlDetails.dwControlID = 0x00000000;
+
+/* We want to set values for both channels */
+mixerControlDetails.cChannels = 2;
+
+/* This is always 0 except for a MIXERCONTROL_CONTROLF_MULTIPLE control */
+mixerControlDetails.cMultipleItems = 0;
+
+/* Give mixerSetControlDetails() the address of the
+   MIXERCONTROLDETAILS_UNSIGNED structs into which we place the values */
+mixerControlDetails.paDetails = &value[0];
+
+/* Tell mixerSetControlDetails() how big each MIXERCONTROLDETAILS_UNSIGNED is */
+mixerControlDetails.cbDetails = sizeof(MIXERCONTROLDETAILS_UNSIGNED);
+
+/* Store the left channel's value */
+value[0].dwValue = 31;
+
+/* Store the right channel's value */
+value[1].dwValue = 0;
+
+/* Set the left/right values of the volume slider control for this line */
+if ((err = mixerSetControlDetails((HMIXEROBJ)mixerHandle, &mixerControlDetails, MIXER_SETCONTROLDETAILSF_VALUE)))
+{
+    /* An error */
+    printf("Error #%d calling mixerSetControlDetails()\n", err);
+}
+
+
+Mixer: SigmaTel Audio.
+
+Destination #0 = 音量控制[4294901760], type = 4.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192.
+Value: 12321.
+主静音[2], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[6], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[8], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+静音[10], type = 536936450, (0, 1), step = 0.
+Value: 0.
+
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+
+Destination #1 = 录音控制[4294901761], type = 7.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4.
+
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0.
+
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0.
+
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0.
+Value: 1.
+
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0.
+Value: 1.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+Control with Type MIXERCONTROL_CONTROLTYPE_VOLUME & Line ID 0 is: 音量[5].
+Value: 1.
+the left channel volume is: 12321.
+the right channel volume is: 12321.
+
+
+
+/* We need 3 MIXERCONTROLDETAILS_UNSIGNED structs to retrieve the
+   values of this control */
+MIXERCONTROLDETAILS_UNSIGNED value[3];
+MIXERCONTROLDETAILS          mixerControlDetails;
+MMSYSTEM                     err;
+
+mixerControlDetails.cbStruct = sizeof(MIXERCONTROLDETAILS);
+
+/* Tell mixerGetControlDetails() which control whose value we
+   want to retrieve */
+mixerControlDetails.dwControlID = 0x00000002;
+
+/* It's a MIXERCONTROL_CONTROLF_UNIFORM control, so the values
+   for all channels are the same as the first */
+mixerControlDetails.cChannels = 1;
+
+/* There are 3 items per channel */
+mixerControlDetails.cMultipleItems = 3;
+
+/* Give mixerGetControlDetails() the address of the
+   MIXERCONTROLDETAILS_UNSIGNED array into which to return the values */
+mixerControlDetails.paDetails = &value[0];
+
+/* Tell mixerGetControlDetails() how big each MIXERCONTROLDETAILS_UNSIGNED is */
+mixerControlDetails.cbDetails = sizeof(MIXERCONTROLDETAILS_UNSIGNED);
+
+/* Retrieve the current values of all 3 bands */
+if ((err = mixerGetControlDetails((HMIXEROBJ)mixerHandle, &mixerControlDetails, MIXER_GETCONTROLDETAILSF_VALUE)))
+{
+    /* An error */
+    printf("Error #%d calling mixerGetControlDetails()\n", err);
+}
+else
+{
+    printf("The Low band is %lu\n", value[0].dwValue);
+    printf("The Mid band is %lu\n", value[1].dwValue);
+    printf("The High band is %lu\n", value[2].dwValue);
+}
+To set the values of all 3 bands, you fill in the values of the MIXERCONTROLDETAILS_UNSIGNED structs. Here is an example of setting the Low band to 31, the Mid band to 0, and the High band to 62. 
+
+/* We need 3 MIXERCONTROLDETAILS_UNSIGNED structs to set the
+   values of the 3 bands */
+MIXERCONTROLDETAILS_UNSIGNED value[3];
+MIXERCONTROLDETAILS          mixerControlDetails;
+MMSYSTEM                     err;
+
+mixerControlDetails.cbStruct = sizeof(MIXERCONTROLDETAILS);
+
+/* Tell mixerSetControlDetails() which control whose values we
+   want to set */
+mixerControlDetails.dwControlID = 0x00000002;
+
+/* The values for all channels are the same as the first channel */
+mixerControlDetails.cChannels = 1;
+
+/* We're setting all 3 bands */
+mixerControlDetails.cMultipleItems = 3;
+
+/* Give mixerSetControlDetails() the address of the
+   MIXERCONTROLDETAILS_UNSIGNED structs into which we place the values */
+mixerControlDetails.paDetails = &value[0];
+
+/* Tell mixerSetControlDetails() how big each MIXERCONTROLDETAILS_UNSIGNED is */
+mixerControlDetails.cbDetails = sizeof(MIXERCONTROLDETAILS_UNSIGNED);
+
+/* Store the Low band's value */
+value[0].dwValue = 31;
+
+/* Store the Mid band's value */
+value[1].dwValue = 0;
+
+/* Store the High band's value */
+value[2].dwValue = 62;
+
+/* Set the values of the 3 bands for this control */
+if ((err = mixerSetControlDetails((HMIXEROBJ)mixerHandle, &mixerControlDetails, MIXER_SETCONTROLDETAILSF_VALUE)))
+{
+    /* An error */
+    printf("Error #%d calling mixerSetControlDetails()\n", err);
+}
+
+
+Mixer: SigmaTel Audio.
+
+Destination #0 = 音量控制[4294901760], type = 4, channel = 2.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 10000.
+主静音[2], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #0 = 波形[0], type = 4104.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+静音[6], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #1 = 软件合成器[65536], type = 4100.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+静音[8], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #2 = CD 唱机[131072], type = 4101.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+静音[10], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #3 = PC 扬声器[196608], type = 4106.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+
+Destination #1 = 录音控制[4294901761], type = 7, channel = 1.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4, item = 4.
+
+Source #0 = 立体声混音[1], type = 4106.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0, item = 0.
+
+Source #1 = 线路输入[65537], type = 4098.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0, item = 0.
+
+Source #2 = 麦克风[131073], type = 4099.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0, item = 0.
+Value: 1.
+
+Source #3 = 内置式麦克风[196609], type = 4099.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0, item = 0.
+Value: 1.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+Control with Type MIXERCONTROL_CONTROLTYPE_VOLUME & Line ID 0 is: 音量[5].
+Value: 0.
+the left channel volume is: 5000.
+the right channel volume is: 10000.
+the left channel volume is: 5000.
+the right channel volume is: 10000.
+
+
+
+
+/* We need 6 MIXERCONTROLDETAILS_UNSIGNED structs to retrieve the
+   values of this control */
+MIXERCONTROLDETAILS_UNSIGNED value[6];
+/* We need 6 MIXERCONTROLDETAILS_LISTTEXT structs to retrieve the
+   labels of all items */
+MIXERCONTROLDETAILS_LISTTEXT label[6];
+MIXERCONTROLDETAILS          mixerControlDetails;
+MMSYSTEM                     err;
+
+mixerControlDetails.cbStruct = sizeof(MIXERCONTROLDETAILS);
+
+/* Tell mixerGetControlDetails() which control whose value we
+   want to retrieve */
+mixerControlDetails.dwControlID = 0x00000002;
+
+/* Our "Speaker Out" has 2 channels */
+mixerControlDetails.cChannels = 2;
+
+/* There are 3 items per channel */
+mixerControlDetails.cMultipleItems = 3;
+
+/* Give mixerGetControlDetails() the address of the
+   MIXERCONTROLDETAILS_UNSIGNED array into which to return the values */
+mixerControlDetails.paDetails = &value[0];
+
+/* Tell mixerGetControlDetails() how big each MIXERCONTROLDETAILS_UNSIGNED is */
+mixerControlDetails.cbDetails = sizeof(MIXERCONTROLDETAILS_UNSIGNED);
+
+/* Retrieve the current values of all 3 bands for both channels */
+if ((err = mixerGetControlDetails((HMIXEROBJ)mixerHandle, &mixerControlDetails, MIXER_GETCONTROLDETAILSF_VALUE)))
+{
+    /* An error */
+    printf("Error #%d calling mixerGetControlDetails()\n", err);
+}
+else
+{
+    unsigned long   i,n;
+
+    /* Let's fetch the labels of all the items */
+
+    mixerControlDetails.cbStruct = sizeof(MIXERCONTROLDETAILS);
+    mixerControlDetails.dwControlID = 0x00000002;
+    mixerControlDetails.cChannels = 2;
+    mixerControlDetails.cMultipleItems = 3;
+
+    /* Give mixerGetControlDetails() the address of the
+       MIXERCONTROLDETAILS_LISTTEXT array into which to return the labels */
+    mixerControlDetails.paDetails = &label[0];
+
+    /* Tell mixerGetControlDetails() how big each MIXERCONTROLDETAILS_LISTTEXT is */
+    mixerControlDetails.cbDetails = sizeof(MIXERCONTROLDETAILS_LISTTEXT);
+
+    /* Retrieve the labels of all items for both channels, Note
+       that I specify MIXER_GETCONTROLDETAILSF_LISTTEXT */
+    if ((err = mixerGetControlDetails((HMIXEROBJ)mixerHandle, &mixerControlDetails, MIXER_GETCONTROLDETAILSF_LISTTEXT)))
+    {
+        /* An error */
+        printf("Error #%d calling mixerGetControlDetails()\n", err);
+    }
+    else
+    {
+        /* Print the values of all items */
+        for (i = 0; i < 2; i++)
+        {
+            printf("Channel %lu:\n", i+1);
+
+            for (n = 0; n < 3; n++)
+            {
+                printf("\tThe %s item is %lu\n", label[3 * i + n].szName, value[3 * i + n].dwValue);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+Mixer: SigmaTel Audio.
+
+Destination #0 = 音量控制[4294901760], type = 4, channel = 2.
+Controls:
+主音量[1], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 7000.
+主静音[2], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #0 = 波形[0], type = 4104, channel = 2.
+Controls:
+音量[5], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+静音[6], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #1 = 软件合成器[65536], type = 4100, channel = 2.
+Controls:
+音量[7], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+静音[8], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #2 = CD 唱机[131072], type = 4101, channel = 2.
+Controls:
+音量[9], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+静音[10], type = 536936450, (0, 1), step = 0, item = 0.
+Value: 0.
+
+Source #3 = PC 扬声器[196608], type = 4106, channel = 1.
+Controls:
+PC 扬声器音量[11], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+
+Destination #1 = 录音控制[4294901761], type = 7, channel = 1.
+Controls:
+多路转换器[0], type = 1879113729, (0, 3), step = 4, item = 4.
+
+Source #0 = 立体声混音[1], type = 4106, channel = 2.
+Controls:
+立体声混音音量[13], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0, item = 0.
+
+Source #1 = 线路输入[65537], type = 4098, channel = 2.
+Controls:
+线路输入音量[14], type = 1342373889, (0, 65535), step = 192, item = 0.
+Value: 65535.
+[0], type = 0, (0, 0), step = 0, item = 0.
+
+Source #2 = 麦克风[131073], type = 4099, channel = 1.
+Controls:
+麦克风加强[15], type = 536936449, (0, 1), step = 0, item = 0.
+Value: 1.
+
+Source #3 = 内置式麦克风[196609], type = 4099, channel = 1.
+Controls:
+麦克风加强[17], type = 536936449, (0, 1), step = 0, item = 0.
+Value: 1.
+Mixer Line with ID 0 is: 波形.
+Mixer Line with component type MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER is: 软件合成器.
+Control with ID 0 is: 多路转换器.
+Control with Type MIXERCONTROL_CONTROLTYPE_VOLUME & Line ID 0 is: 音量[5].
+Value: 0.
+the left channel volume is: 7000.
+the right channel volume is: 7000.
+the left channel volume is: 7000.
+the right channel volume is: 7000.
+1.内置式麦克风(196609, 4099) is: 0.
+2.麦克风(131073, 4099) is: 1.
+3.线路输入(65537, 4098) is: 0.
+4.立体声混音(1, 4106) is: 0.
+the 1st is: 0.
+the 2nd is: 1.
+the 3rd is: 0.
+the 4th is: 0.

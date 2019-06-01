@@ -1,0 +1,173 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BCGControlBar - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Debug/BCGControlBar.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGControlBar.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPC5.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_AFXEXT" /D "_BCGCONTROLBAR_" /Fp"Debug/BCGControlBar.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGContextMenuManager.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGControlBar.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGExCheckList.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGFrameImpl.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGFrameWnd.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGKeyboardManager.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGMainClientAreaWnd.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGMDIFrameWnd.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGMenuBar.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGMouseManager.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGOleIPFrameWnd.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGPopupMenu.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGPopupMenuBar.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolBar.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarButton.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarComboBoxButton.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarDropSource.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarDropTarget.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolBarImages.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarMenuButton.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarMenuButtonsButton.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGToolbarSystemMenuButton.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ButtonAppearanceDlg.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ButtonsList.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ButtonsTextList.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\CBCGToolbarCustomize.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\CBCGToolbarCustomizePages.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ColorSelector.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\GLOBALS.CPP"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ImageEditDlg.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ImageHash.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ImagePaintArea.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\KeyAssign.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\KeyboardPage.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\KeyHelper.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\MenuHash.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\MenuPage.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\MousePage.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\PaletteCommandFrameWnd.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\Registry.cpp"
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\ToolbarNameDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPC5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPC6.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_AFXEXT" /D "_BCGCONTROLBAR_" /Fp"Debug/BCGControlBar.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPC6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPC7.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\bin/BCGControlBarD.pdb" /debug /machine:I386 /out:"..\bin/BCGControlBarD.dll" /implib:"..\bin/BCGControlBarD.lib" /pdbtype:sept 
+.\Debug\BCGContextMenuManager.obj
+.\Debug\BCGControlBar.obj
+.\Debug\BCGExCheckList.obj
+.\Debug\BCGFrameImpl.obj
+.\Debug\BCGFrameWnd.obj
+.\Debug\BCGKeyboardManager.obj
+.\Debug\BCGMainClientAreaWnd.obj
+.\Debug\BCGMDIFrameWnd.obj
+.\Debug\BCGMenuBar.obj
+.\Debug\BCGMouseManager.obj
+.\Debug\BCGOleIPFrameWnd.obj
+.\Debug\BCGPopupMenu.obj
+.\Debug\BCGPopupMenuBar.obj
+.\Debug\BCGToolBar.obj
+.\Debug\BCGToolbarButton.obj
+.\Debug\BCGToolbarComboBoxButton.obj
+.\Debug\BCGToolbarDropSource.obj
+.\Debug\BCGToolbarDropTarget.obj
+.\Debug\BCGToolBarImages.obj
+.\Debug\BCGToolbarMenuButton.obj
+.\Debug\BCGToolbarMenuButtonsButton.obj
+.\Debug\BCGToolbarSystemMenuButton.obj
+.\Debug\ButtonAppearanceDlg.obj
+.\Debug\ButtonsList.obj
+.\Debug\ButtonsTextList.obj
+.\Debug\CBCGToolbarCustomize.obj
+.\Debug\CBCGToolbarCustomizePages.obj
+.\Debug\ColorSelector.obj
+.\Debug\GLOBALS.OBJ
+.\Debug\ImageEditDlg.obj
+.\Debug\ImageHash.obj
+.\Debug\ImagePaintArea.obj
+.\Debug\KeyAssign.obj
+.\Debug\KeyboardPage.obj
+.\Debug\KeyHelper.obj
+.\Debug\MenuHash.obj
+.\Debug\MenuPage.obj
+.\Debug\MousePage.obj
+.\Debug\PaletteCommandFrameWnd.obj
+.\Debug\Registry.obj
+.\Debug\StdAfx.obj
+.\Debug\ToolbarNameDlg.obj
+.\Debug\BCGControlBar.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPC7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BCGContextMenuManager.cpp
+BCGControlBar.cpp
+BCGExCheckList.cpp
+E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGExCheckList.cpp(85) : warning C4100: 'lParam' : unreferenced formal parameter
+E:\codes\mfc\09.xiaohui\5\03.shell\Demo.01\BCGControlBar\BCGExCheckList.cpp(85) : warning C4100: 'wParam' : unreferenced formal parameter
+BCGFrameImpl.cpp
+BCGFrameWnd.cpp
+BCGKeyboardManager.cpp
+BCGMainClientAreaWnd.cpp
+BCGMDIFrameWnd.cpp
+BCGMenuBar.cpp
+BCGMouseManager.cpp
+BCGOleIPFrameWnd.cpp
+BCGPopupMenu.cpp
+BCGPopupMenuBar.cpp
+Automatically linking with winmm.lib
+BCGToolBar.cpp
+BCGToolbarButton.cpp
+BCGToolbarComboBoxButton.cpp
+BCGToolbarDropSource.cpp
+BCGToolbarDropTarget.cpp
+BCGToolBarImages.cpp
+BCGToolbarMenuButton.cpp
+Generating Code...
+Compiling...
+BCGToolbarMenuButtonsButton.cpp
+BCGToolbarSystemMenuButton.cpp
+ButtonAppearanceDlg.cpp
+ButtonsList.cpp
+ButtonsTextList.cpp
+CBCGToolbarCustomize.cpp
+CBCGToolbarCustomizePages.cpp
+ColorSelector.cpp
+GLOBALS.CPP
+ImageEditDlg.cpp
+ImageHash.cpp
+ImagePaintArea.cpp
+KeyAssign.cpp
+KeyboardPage.cpp
+KeyHelper.cpp
+MenuHash.cpp
+MenuPage.cpp
+MousePage.cpp
+PaletteCommandFrameWnd.cpp
+Registry.cpp
+Generating Code...
+Compiling...
+ToolbarNameDlg.cpp
+Generating Code...
+Linking...
+   Creating library ..\bin/BCGControlBarD.lib and object ..\bin/BCGControlBarD.exp
+
+
+
+<h3>Results</h3>
+BCGControlBarD.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

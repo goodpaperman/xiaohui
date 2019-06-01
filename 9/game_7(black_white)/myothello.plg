@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: myothello - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1885.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/myothello.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\work\myothello\myothelloDlg.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1885.tmp" 
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1886.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/myothello.pdb" /machine:I386 /out:"Release/myothello.exe" 
+.\Release\ChessBoard1.obj
+.\Release\myothello.obj
+.\Release\myothelloDlg.obj
+.\Release\othello.obj
+.\Release\StdAfx.obj
+.\Release\myothello.res
+]
+Creating command line "link.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1886.tmp"
+<h3>Output Window</h3>
+Compiling...
+myothelloDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+myothello.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

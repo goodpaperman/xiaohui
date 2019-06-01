@@ -1,0 +1,4 @@
+November 2007 NTRU Cryptosystems, Inc
+
+This package installs an NTRU TCG Software Stack (TSS) using the Windows Installer.  It installs the NTRU Core TSS (CTSS) version 1.2.1.25 and will replace any version of NTRU Hybrid TSS (HTSS) or any lower-numbered version of NTRU Core TSS that is currently installed.
+

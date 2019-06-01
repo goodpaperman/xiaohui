@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlg_ttbar - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/dlg_ttbar.res" /d "NDEBUG" /d "_AFXDLL" "D:\samples\toolbar_and_tooltips\dlg_ttbar\dlg_ttbar.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPA0.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/dlg_ttbar.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\samples\toolbar_and_tooltips\dlg_ttbar\dlg_ttbar.cpp"
+"D:\samples\toolbar_and_tooltips\dlg_ttbar\dlg_ttbarDlg.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPA0.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP00A1.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/dlg_ttbar.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\samples\toolbar_and_tooltips\dlg_ttbar\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP00A1.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/dlg_ttbar.pdb" /machine:I386 /out:"Release/dlg_ttbar.exe"  .\Release\dlg_ttbar.obj .\Release\dlg_ttbarDlg.obj .\Release\StdAfx.obj .\Release\dlg_ttbar.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+dlg_ttbar.cpp
+dlg_ttbarDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+dlg_ttbar.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

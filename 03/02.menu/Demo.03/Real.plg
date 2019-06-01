@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Real - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/Real.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\3\02.menu\Demo.03\Real.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP190.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Real.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\3\02.menu\Demo.03\Real.cpp"
+"E:\codes\mfc\09.xiaohui\3\02.menu\Demo.03\RealDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP190.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP191.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Real.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\3\02.menu\Demo.03\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP191.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Real.pdb" /debug /machine:I386 /out:"Debug/Real.exe" /pdbtype:sept  .\Debug\Real.obj .\Debug\RealDlg.obj .\Debug\StdAfx.obj .\Debug\Real.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Real.cpp
+RealDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Real.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

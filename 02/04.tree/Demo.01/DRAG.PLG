@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: drag - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/drag.res" /d "_DEBUG" /d "_AFXDLL" "D:\code\drag_expand\drag.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP4280.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/drag.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\code\drag_expand\drag.cpp"
+"D:\code\drag_expand\dragDoc.cpp"
+"D:\code\drag_expand\dragView.cpp"
+"D:\code\drag_expand\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP4280.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP4281.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/drag.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\code\drag_expand\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP4281.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/drag.pdb" /debug /machine:I386 /out:"Debug/drag.exe" /pdbtype:sept  .\Debug\drag.obj .\Debug\dragDoc.obj .\Debug\dragView.obj .\Debug\MainFrm.obj .\Debug\StdAfx.obj .\Debug\drag.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+drag.cpp
+dragDoc.cpp
+dragView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+drag.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

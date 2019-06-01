@@ -1,0 +1,121 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "../StringRes.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""../StringRes.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GameOver            "Nichts geht mehr"
+    IDS_TxtScore            "Punkte:"
+    IDS_TxtLines            "Zeilen:"
+    IDS_TxtLevel            "Level:"
+    IDS_TxtStart            "Start"
+    IDS_TxtStop             "Stop"
+    IDS_TxtPause            "Pause"
+    IDS_TxtResume           "Weiter"
+    IDS_HeaderScore         "Punkte"
+    IDS_HeaderName          "Name"
+    IDS_HeaderLevel         "Level"
+    IDS_TxtSquareWidth      "Würfelbreite:"
+    IDS_TxtSquareHeight     "Würfelhöhe:"
+    IDS_TxtGrid             "Gitterlinien"
+    IDS_TxtEnableSound      "Sound verwenden"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TxtEnableMusic      "Musik verwenden"
+    IDS_TxtSoundCardRequired "Sound und Musik benötigen eine Soundkarte."
+    IDS_TxtSplashAgain      "Zeig mir nochmal dieses nette Eröffnungsbild"
+    IDS_TxtBoard            "Spielfläche"
+    IDS_TxtSound            "Sound"
+    IDS_TxtExFigureSet      "Erweiterten Figurensatz verwenden"
+    IDS_TxtChaikovsky       "Tschaikowski"
+    IDS_TxtScorpions        "Scorpions"
+    IDS_TxtKalinka          "Kalinka"
+    IDS_License             "Dies ist freie Software.|Sie können Sie beliebig|weitergeben, solange Sie nicht|ohne die schriftliche Zustimmung|des Autors Geld dafür verlangen.|"
+    IDS_Concept             "Konzept\n|Originalkonzept,|Design and Programmierung|durch Alexey Pajitnov.|"
+    IDS_Warrantee           "Garantie\n|Mit dieser Software ist|keinerlei Garantie verbunden.|Sie verwenden diese Software auf|eigene Gefahr. Sollten Sie durch|die Verwendung dieser Software|irgendwelchen Schaden erleiden,|ist das allein ihr Problem.|"
+    IDS_Disclosure          "Offenbarung\n|Die meisten Resourcen|(Bilder, Sounds und Musik),|die von diesem Spiel verwendet werden,|wurden irgendwo im Web geklaut.|"
+    IDS_SplashImage         "Eröffnungsbild\n|Lars Stroschen|www.propeller-island.net4.com/moskau/|"
+    IDS_Credits             "Danke\n|Dieses Spiel würde nicht in dieser Form|existieren ohne die Arbeit|all der 'CodeGurus' weltweit.|Vielen Dank an den Maintainer von|www.codeguru.com|Zafir Anjum|und an all die Codegurus|deren Code in diesem Spiel steckt.|"
+    IDS_TxtEndGame          "Beenden"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TitleGamePage       "Spiel"
+    IDS_TitleScorePage      "Die Besten"
+    IDS_TitleOptionsPage    "Optionen"
+    IDS_TitleAboutPage      "Über"
+    IDS_HelpPageDlg         "Hilfe"
+    IDS_HelpPrelude         "Wie funktionierts?|Die folgenden Tasten können|auf der ""Spiel"" Seite verwendet|werden, damit das Spiel läuft.||"
+    IDS_HelpKeys            "EINGABE   --   Start, Stop, Pause, Fortsetzen|LINKS   --   nach links bewegen|RECHTS   --   nach rechts bewegen|HOCH   --    in Uhrzeigerrichtung drehen|TIEF   --   gegen die Uhr drehen|LEERTASTE    --   Teil plazieren|"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

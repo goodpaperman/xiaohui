@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SDITest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPEB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/SDITest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.08\Samples\SDI\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.08\Samples\SDI\SDITest.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.08\Samples\SDI\SDITestDoc.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.08\Samples\SDI\SDITestView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPEB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPEC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/SDITest.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.08\Samples\SDI\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPEC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPED.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/sditest.pdb" /debug /machine:I386 /out:"..\..\lib\sditest.exe" /pdbtype:sept /libpath:"..\..\lib" 
+.\Debug\MainFrm.obj
+.\Debug\SDITest.obj
+.\Debug\SDITestDoc.obj
+.\Debug\SDITestView.obj
+.\Debug\StdAfx.obj
+.\Debug\SDITest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPED.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\ngtoolbar.h
+Automatically linking with ngtlb10d.dll
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\ngenerictoolbar.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\ngenericmenu.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\nmdimenuframewnd.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\nsdimenuframewnd.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\nmdiclient.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\sizecbar.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\sizingtabctrlbar.h
+Include e:\codes\mfc\09.xiaohui\2\03.toolbar\demo.08\include\nctrlsizebar.h
+Compiling...
+MainFrm.cpp
+SDITest.cpp
+SDITestDoc.cpp
+SDITestView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+sditest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

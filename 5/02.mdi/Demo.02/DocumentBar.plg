@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DocumentBar - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/DocumentBar.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\DocumentBar.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DocumentBar.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\ChildFrm.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\DocSelect.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\DocumentBar.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\DocumentBarDoc.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\DocumentBarView.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\MenuButton.cpp"
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\SwitcherButton.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DocumentBar.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\02.mdi\Demo.02\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DocumentBar.pdb" /debug /machine:I386 /out:"Debug/DocumentBar.exe" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\DocSelect.obj
+.\Debug\DocumentBar.obj
+.\Debug\DocumentBarDoc.obj
+.\Debug\DocumentBarView.obj
+.\Debug\MainFrm.obj
+.\Debug\MenuButton.obj
+.\Debug\StdAfx.obj
+.\Debug\SwitcherButton.obj
+.\Debug\DocumentBar.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+DocSelect.cpp
+DocumentBar.cpp
+Generating Code...
+Compiling...
+DocumentBarDoc.cpp
+DocumentBarView.cpp
+MainFrm.cpp
+Generating Code...
+Compiling...
+MenuButton.cpp
+SwitcherButton.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DocumentBar.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

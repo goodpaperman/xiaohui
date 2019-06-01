@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NumericEdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/NumericEdit.res" /d "NDEBUG" /d "_AFXDLL" "D:\Code\MFC\4\02.edit\Demo.07\NumericEdit.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/NumericEdit.pdb" /machine:I386 /out:"Release/NumericEdit.exe"  .\Release\NumEdit.obj .\Release\NumericEdit.obj .\Release\NumericEditDlg.obj .\Release\StdAfx.obj .\Release\NumericEdit.res "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+NumericEdit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

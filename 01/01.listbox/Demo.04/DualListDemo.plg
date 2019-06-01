@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DualListDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP17.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DualListDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\1\01.listbox\Demo.04\DualListManager.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP17.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DualListDemo.pdb" /debug /machine:I386 /out:"Debug/DualListDemo.exe" /pdbtype:sept 
+.\Debug\DualListDemo.obj
+.\Debug\DualListDemoDialog.obj
+.\Debug\DualListDemoDoc.obj
+.\Debug\DualListDemoPropPage.obj
+.\Debug\DualListDemoPropSheet.obj
+.\Debug\DualListDemoView.obj
+.\Debug\DualListManager.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\DualListDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP18.tmp"
+<h3>Output Window</h3>
+Compiling...
+DualListManager.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+DualListDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

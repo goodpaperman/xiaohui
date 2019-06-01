@@ -1,0 +1,57 @@
+// sndDoc.h : interface of the CSndDoc class
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_SNDDOC_H__2AAD228B_7424_11D2_8045_540610C10374__INCLUDED_)
+#define AFX_SNDDOC_H__2AAD228B_7424_11D2_8045_540610C10374__INCLUDED_
+
+#if _MSC_VER >= 1000
+#pragma once
+#endif // _MSC_VER >= 1000
+
+
+class CSndDoc : public CDocument
+{
+protected: // create from serialization only
+	CSndDoc();
+	DECLARE_DYNCREATE(CSndDoc)
+
+// Attributes
+public:
+
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CSndDoc)
+	public:
+	virtual BOOL OnNewDocument();
+	virtual void Serialize(CArchive& ar);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CSndDoc();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CSndDoc)
+		// NOTE - the ClassWizard will add and remove member functions here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Developer Studio will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_SNDDOC_H__2AAD228B_7424_11D2_8045_540610C10374__INCLUDED_)

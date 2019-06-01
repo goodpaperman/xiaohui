@@ -1,0 +1,181 @@
+﻿<html><!-- #BeginTemplate "/Templates/page.dwt" --><!-- DW6 --><head>
+<!-- #BeginEditable "e0" -->
+<title>显示动画GIF图像的控件 - 程序员小辉</title>
+<META NAME="Keywords" CONTENT="ACTIVEX, 源码下载, MFC, C/C++, VC++ 源码, 程序员, 程序">
+<META NAME="Description" CONTENT="本控件Gif89a用VC 6.0和ATL创建，在使用时不需要任何DLL（包括atl.dll和mfc....dll)。本控件提供7个属性和3个方法来播放动画gif文件： 属性： Filename - ...">
+<!-- #EndEditable -->
+<META NAME="Generator" CONTENT="XiaoHui's HTML Generator">
+<META NAME="Robots" CONTENT="all">
+<meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+<link rel='stylesheet' href='/img04/skin/xiaohui1.css' type='text/css'>
+<script src='/base/base.js' language='javascript' type='text/javascript'></script>
+</head>
+<body>
+<div id=bd1 align=center><div id=bd2 align=center><div id=bd align=center>
+<!-- begin: Header --><!-- #BeginLibraryItem "/Library/site-header.lbi" --><div id=tp>
+<div id=tp_l><span id=imglink>
+<a href="http://www.xiaohui.com"><img src="/img04/title_xiaohui01.gif" width="180" height="60" border="0" alt="小辉程序员之路, since 1996 http://www.xiaohui.com"></a></span></div><div id=tp_r>
+<!-- SiteSearch Google -->
+<form method=get action="/search.htm" ID=search>
+<input type=hidden name=domains value="www.xiaohui.com" ID=Hidden1>
+&nbsp;搜索: 
+<input type=text name=q size=16 maxlength=255 value="" id=sbi class=inputclass>
+<input type=submit name=sa value="GO" id=sbb class=buttonclass>
+<br>
+<input type=hidden name=sitesearch value="www.xiaohui.com" ID=ss0>
+<input type=hidden name=client value="pub-5801877696325956" ID=Hidden2>
+<input type=hidden name=forid value="1" ID=Hidden3>
+<input type=hidden name=channel value="5226520551" ID=Hidden4>
+<input type=hidden name=ie value="utf-8" ID=Hidden5>
+<input type=hidden name=oe value="utf-8" ID=Hidden6>
+<input type=hidden name=cof value="GALT:#000066;GL:1;DIV:#FFFFFF;VLC:660000;AH:center;BGC:FFFFFF;LBGC:F7EFD8;ALC:000066;LC:000066;T:000000;GFNT:000066;GIMP:000066;FORID:11" ID=Hidden7>
+<input type=hidden name=hl value="zh-CN" ID=Hidden8>
+</form><!-- SiteSearch Google -->
+</div><div id=tp_c><img src="/img04/title_happywork.gif" width=340 height=55 border=0 alt="乐走天涯: 工作并快乐着,职业并休闲着"></div></div>
+<div id=lmb><center>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/" title="小辉程序员之路首页">首页</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/weekly/" title="程序员随笔, 每周随笔">随笔</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/trip/" title="乐走天涯: 漂泊生活的见证, 所整理的相片游记">乐走天涯</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/dopoem/" title="猎户星自动在线写诗软件, 猎户星自动在线采访机">猎户星</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/google-earth/" title="Google Earth">Google Earth</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/dev/" title="编程资料, 源码下载, MMX 汇编程序优化">程序资料</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/prg/" title="程序员档案, 程序员文学, 程序员随笔">程序生活</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/msg/review_disp.php" title="本站所有的评论数据">评论中心</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/tag.htm" title="TAG">Tag</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.net" target="_blank" title="程序员论坛, 讨论C/C++, JAVA, VC, DELPHI等编程技术">论坛</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/link/" title="链接到其他网站的资源">其他资源</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/search.htm" title="搜索本站的数据">搜索</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="http://www.xiaohui.com/support/" title="网友与本人交流的消息中心">消息中心</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/contact.htm" title="通过表单, 发送联系消息给我">联系我</a></span>
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/" title="关于站长的一些资料, 以及本站的建站历史">关于</a></span>
+<span class=rss><a href="/rss/rss.htm" title="RSS 格式 FEED 订阅">RSS</a></span>
+</center></div><!-- #EndLibraryItem --><!-- end: Header -->
+<!-- #BeginEditable "e1" -->
+
+<div class="bt" align="left">
+&nbsp;<span id="c187">&#187;</span> <a href="http://www.xiaohui.com">首页</a> &gt; <a href='http://www.xiaohui.com/dev/vccool/activex.htm'>网络和数据库源码: ActiveX</a>
+<center>
+<h1>显示动画GIF图像的控件</h1>
+<hr width="80%">
+<a href="http://www.xiaohui.com">http://www.XiaoHui.com</a> 日期: 2002-02-01 14:00
+</center>
+<div id=bt_t>
+
+<script type="text/javascript"><!--
+ShowWelcome();
+//-->
+</script>
+
+
+<p> 
+本控件Gif89a用VC 6.0和ATL创建，在使用时不需要任何DLL（包括atl.dll和mfc....dll)。本控件提供7个属性和3个方法来播放动画gif文件：</p><p> 
+属性：</p><p> 
+<strong>Filename</strong> - GIF文件名；</p><p> 
+</p><p> 
+<strong>Autosize</strong> - 图片是否自动改变大小；</p><p> 
+</p><p> 
+<strong>Autostart</strong> - 是否自动显示图片；</p><p> 
+</p><p> 
+<strong>Speed</strong> - 延时1/100秒，如果未作设置，此为缺省值；</p><p> 
+</p><p> 
+<strong>Embed</strong> - 如果存储GIF文件到EXE中为真；</p><p> 
+</p><p> 
+<strong>Class</strong> - 如果用OleContainer的背景颜色绘制空区域为假；</p><p> 
+方法：</p><p> 
+<strong>Stop</strong> - 停止播放；</p><p> 
+</p><p> 
+<strong>Start</strong> - 开始；</p><p> 
+</p><p> 
+<strong>About</strong> - 介绍本控件。</p><p> 
+</p><p> 
+&gt;&gt;&gt; DOWN !!! &gt;&gt;&gt;<a href="http://download.xiaohui.com/dev/vccool/down/activex_3.zip">下载源代码及演示程序</a></p><p id='xh_fav_tag'>Tags: <a href='/tag/VC+%E6%BA%90%E7%A0%81%3A+ActiveX/'>VC 源码: ActiveX</a></p><script type="text/javascript"><!--
+AddFav();
+//-->
+</script>
+
+
+</div>
+</div>
+<div class="bt">
+<br>
+<div id="tb">
+<div id="tb_l">&nbsp;<b>文章评论</b></div>
+<div id="tb_r"><a href="#addreview">发表你的评论</a> | <a href="/msg/review_disp.php">评论中心</a> | <a href="/about/contact.htm">联系我</a> &nbsp;</div>
+</div>
+<br>
+<div id=rv_t>目前没有任何评论. <br><br> <font color=#ff0000>↓ 快抢占第1楼，发表你的评论和意见 ↓</font></div>
+<br>
+<a name="addreview"></a>
+
+
+<table width="95%" border="0" cellspacing="1" cellpadding="4" align="center" class="DarkLines">
+
+<form name="reviewform" action="/addcomment.php" method="POST">
+<tr><td colspan="2"  class="FieldTitle"><b>发表你的评论</b><br>如果你想针对此文发表评论, 请填写下列表单:</td></tr>
+
+<tr> 
+<td width="100" valign="top" class="FieldTitle">姓名:</td>
+<td valign="top" class="FieldBody"><input type="text" name="f_name" size="32" class="inputclass"> <font color=#ff000>*</font> 必填</td>
+</tr>
+
+<tr>
+<td width="100" class="FieldTitle">E-mail:</td>
+<td class="FieldBody" ><input type="text" name="f_email" size="32" class="inputclass"> 可选 (不会被公开) </td>
+</tr>
+
+<tr>
+<td width="100" class="FieldTitle">网站 / Blog:</td>
+<td class="FieldBody" ><input type="text" name="f_www" size="32" class="inputclass" value="http://"> 可选 </td>
+</tr>
+
+<tr>
+<td width="100" class="FieldTitle">反垃圾广告:</td>
+<td class="FieldBody" >为了防止广告机器人自动发贴, 请计算下列表达式的值:<br>3 + 14 = <input type='text' size='5' class='inputclass' value='' name='f_answer'><input type='hidden' name='f_r1' value='93'><input type='hidden' name='f_r2' value='434'> <font color=#ff000>*</font> 必填</td>
+</tr>
+
+
+
+<tr> 
+<td width="100"class="FieldTitle">评论内容:</td>
+<td valign="top" class="FieldBody"><textarea name="f_reviewtxt" cols="60" rows="10" class="inputclass" style="width:99%"></textarea><br><font color=#ff000>*</font> 必填<br>
+你可以使用下列标签修饰文字:<br>
+<font color="#0000aa">[b] 文字 [/b]</font>: 加粗文字<br>
+<font color="#0000aa">[quote] 文字 [/quote]</font>: 引用文字
+</td>
+</tr>
+
+<tr><td colspan="2" class="FieldTitle"><center><input type="submit" name="Submit" value="发表评论"  class="inputclass" style="width:110Px;"></center></td></tr>
+<input type="hidden" name="f_pageid" value="1069">
+<input type="hidden" name="f_action" value="review_submitted">              
+</form>
+</table>
+
+<br>
+&nbsp;
+</div>
+<!-- #EndEditable --> 
+<!-- Footer --><!-- #BeginLibraryItem "/Library/site-footer.lbi" --><div id=lbf>
+<div id=lmb>
+<center>
+<span class=lm>
+<span class=rss><a href="/rss/rss.htm" title="RSS 2.0 格式 FEED 订阅">RSS 2.0</a></span> | 
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/contact.htm">联系我</a></span> | 
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/sitemap.html">站内导航</a></span> | 
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/privacy.htm">隐私声明</a></span> | 
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/copyright.htm">版权声明</a></span> | 
+<span onMouseOver ="SB(this,1)" onMouseOut ="SB(this,0)" class=lm><a href="/about/maillist.htm">订阅邮件</a></span> | 
+</span>
+</center>
+</div>
+<br>
+<div id=bm>
+<a href="http://www.XiaoHui.com">小辉程序员之路</a> 建站于 1997 ◇ 做一名最好的开发者是我不变的理想……<br>
+Copyright(C) 1997-2009 XiaoHui.com &nbsp; All rights reserved <br></div>
+<div id=cp>声明：站内所有原创文字，未经许可，均可转载、复制。<br>
+转载时<b>必须以链接形式注明作者和原始出处</b>。<BR>&nbsp;
+</div>
+</div>
+<!-- #EndLibraryItem --></div>
+</div></div></body>
+<!-- #EndTemplate --></html>
+

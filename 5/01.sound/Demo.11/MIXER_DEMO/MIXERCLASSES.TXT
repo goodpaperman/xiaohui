@@ -1,0 +1,400 @@
+
+                        Audio Mixer Control Classes
+
+------------------------------------------------------------------------
+
+This article was contributed by Langis Pitre.
+
+New and improved...
+
+This is a new an improved version of the Audio Mixer Control Classes. The
+whole family of classes has undergone a major overhaul since this article
+was first posted. Bugs have been eliminated, code reuse through inheritance
+has been improved, one new class was added, and, yes, one class even
+disappeared! The CMixerSelector class has been merged with the CMixerSwitch
+class.
+
+It takes quite a bit of work just to get a simple volume control to work in
+an application. But with the following classes:
+
+     CMixerFader derived from CSliderCtrl
+     CMixerSwitch derived from CButton
+     CMixerNumber derived from CSpinButtonCtrl (new)
+     CMixerPeakMeter derived from CStatic
+
+all it takes is a few lines of code to get several controls up and running.
+
+For example: the CMixerFader class is derived from CSliderCtrl, so all it
+takes to have a fully functional volume control is a slider control in a
+dialog box, and 3 lines of code (plus the include directive!).
+
+Coming to terms with terms
+
+The Audio Mixer Service is made up of audio lines. An audio line can have
+one or more channels (usually two for stereo).
+There are two types of audio lines: Destination (output) lines, and Source
+(input) lines. To every destination line is attached one or more audio
+source lines. Every audio line -- either destination or source -- is
+controlled by the mixer controls associated with it.
+
+Mixer controls should not be confused with Windows controls, as they are
+NOT graphical objects.
+
+There are several types of mixer controls, the volume control being one of
+them. There are also mute controls, multiple selection controls, peak
+meters, just to name a few. Each audio line has certain types of mixer
+controls associated with it. A mixer control can perform any number of
+functions (such as control volume), depending on the characteristics of the
+associated audio line.
+For example, the speakers line is a destination line. It has several mixer
+controls attached to it (volume, mute, bass, treble, etc.), and it has
+several source lines attached to it: Line-In, Auxiliary, Synthesizer, CD
+audio, etc.. In turn these source lines may have several mixer controls
+attached that control their behavior.
+
+Audio Mixer Controls
+
+There are several families of audio mixer controls. Not all audio mixer
+controls are implemented in the classes. Maybe eventually...
+Here is a short description of these families, and of the mixer controls
+they contain:
+
+     Faders (Implemented by the CMixerFader class)
+
+     Fader controls are controls that can be adjusted up or down along a
+     linear scale. Their range is from 0 to 65,535. The fader family of
+     controls includes the following types:
+     Fader, Volume, Bass, Treble, Equalizer.
+
+     Lists (Implemented by the CMixerSwitch class)
+
+     List controls provide single-select or multiple-select states for
+     complex audio lines. The list family of controls includes the
+     following types:
+     Single-select, Multiplexer (MUX), Multiple-select, Mixer.
+
+     Meters
+
+     Meter controls measure data passing through an audio line. Their range
+     varies according to their type. The meter family of controls includes
+     the following types:
+     Boolean, Peak (Implemented by the CMixerPeakMeter class) , Signed,
+     Unsigned.
+
+     Numbers (Implemented by the CMixerNumber class)
+
+     Number controls allow the user to enter numerical data associated with
+     a line. The numerical data is expressed as signed integers, unsigned
+     integers, or integer decibel values.
+
+     Sliders
+
+     Slider controls are horizontal controls that can be adjusted to the
+     left or right. This type of control is not implemented by this
+     package.
+
+     Switches (implemented by the CMixerSwitch class)
+
+     Switch controls are boolean switches. The switch family of controls
+     includes the following types:
+     Boolean, Button, On/Off, Mute, Mono, Loudness, Stereo Enhanced.
+
+     Time Controls
+
+     Time controls allow the user to enter timing-related data, such as an
+     echo delay or reverberation. The time control is not implemented by
+     this package.
+
+About the classes
+
+All the classes presented here are derived from a Windows control. They use
+message reflection to handle specific messages internally. This way, the
+communication between the Windows control and its associated mixer control
+is taken care of inside the class.
+All that is needed to get the control to work is to instantiate an object
+of a given class, and to call the Init() member function specific to each
+class to associate the Windows control and the mixer control.
+
+     CMixerBase
+
+     Base class of all the mixer classes. It takes care of opening the
+     mixer device to get a valid handler. This handle, along with the
+     number of channels is stored in member variables. It also tries to
+     find the desired audio line. You don't use this class directly unless
+     you want to derive new classes from it.
+
+     CMixerFader
+
+     Since this class is derived from CSliderCtrl, it allows the user to
+     associate a slider control with a mixer fader control.
+
+     CMixerSwitch
+
+     Since this class is derived from CButton, it allows the user to
+     associate a check box or radio button with a mixer switch control or
+     to associate one or more CheckBoxes with a mixer selector (list)
+     control. Selectors are used to select one or more input audio line
+     associated with a given output line. For example, my SoundBlaster
+     enables the selection of the CD audio, microphone, and line-in input
+     lines associated with the speakers' output line.
+     Selectors are multiple mixer controls, the number of items they
+     contain is variable. Each item of the selector control is a boolean
+     value. When you initialize a selector control, an appropriate internal
+     table of boolean values is created. You should create as many check
+     boxes or radio buttons as there are items items in the mixer list
+     control. When you call Init(), the last argument passed is the index
+     of the item a given button will control.
+
+     These switches work on both channels simultaneously.
+
+     CMixerNumber
+
+     Since this class is derived from CSpinButtonCtrl, it allows the user
+     to associate a static control with a mixer number control.
+
+     CMixerPeakMeter
+
+     Since this class is derived from CStatic, it allows the user to
+     associate a static control with a mixer peak meter control.
+
+     The peak meter works like the CProgressCtrl, except that it is
+     vertical. It displays the audio level of the line it is associated
+     with.
+
+Which is which... and who is who!
+
+Basically, what you have to do before using these classes, is to find out
+which mixer controls are available on your system, to determine to which
+destination or source line each control belongs to, and to determine which
+class implements a given mixer control.
+
+To find out which types of audio lines and controls are available on your
+system, I have included a utility function you can use to determine the
+capabilities of your sound card and the available audio services. Its
+header file is MixerInfo.h, and its impementation file is MixerInfo.cpp.
+The function name is GetDevicesInfo(), and it takes as argument a filename
+for logging the results of the query.
+I recommend you use it before doing anything else. It will list all
+available destination lines, and the source lines attached to every
+destination line. It will also list all the controls attached to a given
+line. The information is arranged in a tree-like structure:
+
+Destination Line 0
+
+     List of Controls ...
+     Source Line 0
+          List of Controls ...
+     Source Line 1
+          List of Controls ...
+     Source Line 2
+          List of Controls ...
+
+Destination Line 1
+
+     List of Controls ...
+     Source Line 0
+          List of Controls ...
+     Source Line 1
+          List of Controls ...
+
+etc...
+
+For every available line, note the "Line type" information. It corresponds
+to the DstType and SrcType parameters of the Init() member function.
+For every available control, note the "Control type" information. It
+corresponds to the ControlType parameter of most of the Init() member
+functions.
+
+The supplied Demo Project has a special dialog ( CInfoDlg class ) that
+displays the same information in a tree control. Just click on an item in
+the tree to display some information on it.
+
+[Image]
+
+Here is a table that lists the Mixer Classes and the mixer control types
+each one can be associated with :
+
+ Mixer Class                      Mixer Control Type Implemented
+
+ CMixerFader                      MIXERCONTROL_CONTROLTYPE_FADER
+                                  MIXERCONTROL_CONTROLTYPE_VOLUME
+                                  MIXERCONTROL_CONTROLTYPE_BASS
+                                  MIXERCONTROL_CONTROLTYPE_TREBLE
+                                  MIXERCONTROL_CONTROLTYPE_EQUALIZER
+
+ CMixerSwitch                     Selectors
+                                  MIXERCONTROL_CONTROLTYPE_SINGLESELECT
+                                  MIXERCONTROL_CONTROLTYPE_MUX
+                                  MIXERCONTROL_CONTROLTYPE_MULTIPLESELECT
+                                  MIXERCONTROL_CONTROLTYPE_MIXER
+
+                                  Switches
+                                  MIXERCONTROL_CONTROLTYPE_BOOLEAN
+                                  MIXERCONTROL_CONTROLTYPE_ONOFF
+                                  MIXERCONTROL_CONTROLTYPE_MUTE
+                                  MIXERCONTROL_CONTROLTYPE_MONO
+                                  MIXERCONTROL_CONTROLTYPE_LOUDNESS
+                                  MIXERCONTROL_CONTROLTYPE_STEREOENH
+
+ CMixerNumber                     MIXERCONTROL_CONTROLTYPE_UNSIGNED
+
+ CMixerPeakMeter                  MIXERCONTROL_CONTROLTYPE_PEAKMETER
+
+There's nothing like a little example...
+
+Implementing a speaker volume control:
+
+First of all, add the "MixerFader.h" header file and the MixerFader.cpp
+source file to your project, include the header file where necessary, and
+REMEMBER to link with winmm.lib
+
+     Note: the other files are: MixerClasses.h (which includes all other
+     class headers),
+     MixerBase.h, MixerPeakMeter.h, MixerNumber.h, MixerSwitch.h,
+     MixerBase.cpp, MixerPeakMeter.cpp, MixerNumber.cpp, and
+     MixerSwitch.cpp
+
+In resource editor, add a slider control and give it a meaningful ID, say
+IDC_MAIN_VOLUME.
+
+Now you have two choices: either use DDE to create and associate a variable
+of type CMixerFader with the slider control, or subclass the slider
+control. object.
+
+     With DDE: the problem is that ClassWizard will not recognize class
+     CMixerFader as a valid type for associating with the control, because
+     it doesn't know about it. To solve this problem, delete your .clw file
+     from your project directory. Then, invoke Class Wizard. It will
+     complain that it cannot find its database file and ask you if you want
+     to create it from your source files. Click yes, and in the dialog box
+     that appears, you'll see that it lists all your source files. Click
+     OK.
+     Now, in Class Wizard, select the Member Variables tab. Select your
+     dialog class from the Class Name combo box. In the list of control
+     IDs, select the ID of your slider control, and click on Add
+     Variable... Type a name for your variable, say m_mainVolume. Select
+     CMixerFader from the Variable Type combo box and click OK.
+     That's it! For now...
+
+     With subclassing: in your CDialog-derived class, add a member variable
+     of type CMixerFader, say m_mainVolume. Go to your dialog class'
+     OnInitDialog() member function (add one with Class Wizard if you don't
+     have one). There, add this line after the call to
+     CDialog::OnInitDialog():
+
+     m_mainVolume.SubclassDlgItem( IDC_MAIN_VOLUME, this );
+
+Ok, now you have to initialize your CMixerFader object. For this, you call
+CMixerFader::Init() from OnInitDialog(); like this:
+
+     m_mainVolume.Init( MIXERLINE_COMPONENTTYPE_DST_SPEAKERS,//destination line
+                        NO_SOURCE, //control is attached to destination line only
+                        MIXERCONTROL_CONTROLTYPE_VOLUME, //control type
+                        CMixerFader::MAIN );
+
+The first argument to Init() is the destination line you want. The
+speakers' line is an ouput line, and its type is
+MIXERLINE_COMPONENTTYPE_DST_SPEAKERS.
+The second argument to Init() is the source line you want. Since the main
+volume is not attached to a source line, we specify NO_SOURCE (if you
+wanted to create a volume control for, say, the cd audio source line, this
+argument would have been MIXERLINE_COMPONENTTYPE_SRC_COMPACTDISC).
+The third argument is the type of control you want to use. Since you want a
+volume control, you specify MIXERCONTROL_CONTROLTYPE_VOLUME. Init() will
+query the mixer device to find out if there actually is a volume control
+for this type of line. If the query is successful, Init() returns 1;
+otherwise, it returns 0. These first three arguments are specific to the
+Audio Mixer services, but the last argument (SubType) is there because on a
+stereo audio line you might want to create a main volume that controls both
+channels, or create a balance control to fade out the left or right
+channel, or create two sliders to control the channels separately. For each
+of these cases, the arguments would be respectively: CMixerFader::MAIN,
+CMixerFader::BALANCE, CMixerFader::LEFT, and CMixerFader::RIGHT.
+
+That's it, you're done! To check if everything went OK, compile and run
+your program, and start the system's Volume Control (from the System Tray).
+You should see both main volume sliders work in conjunction.
+
+Creating controls using the other classes is very similar. See their
+implementation source file for more details on how to use their Init()
+function.
+
+Don't lose sight of the view
+
+If you want to use a volume control in a view for example, you dont call
+SubclassDlgItem of course. In your CView-derived class declaration, declare
+a member variable of type CMixerFader, and in your view class' OnCreate(),
+create the windows control by calling CSliderCtrl::Create().
+Like this for example:
+
+     m_mainVolume.Create( WS_VISIBLE|TBS_VERT|TBS_BOTH|TBS_NOTICKS,
+                          CRect(10,100, 30,200), this, IDC_MAIN_VOLUME);
+
+     m_mainVolume.Init( MIXERLINE_COMPONENTTYPE_DST_SPEAKERS,
+                        NO_SOURCE,
+                        MIXERCONTROL_CONTROLTYPE_VOLUME, //control type
+                        CMixerFader::MAIN );
+
+     NOTE: Because the CMixerFader objects use message reflection to detect
+     slider movements, you have to be aware that if the parent window class
+     has a handler for the WM_HSCROLL or WM_VSCROLL message, and if the
+     base class handler is not called from that handler, the scrolling
+     messages will not be sent back to the controls.
+     Also, be aware that CFrameWnd and derived classes have a default
+     handler for scrolling events, so a CMixerFader won't work in such a
+     window. One way to circumvent this is to call ReflectLastMsg from the
+     handler before you do your normal processing:
+
+     void CMyView::OnVScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
+     {
+         ReflectLastMsg( pScrollBar->GetSafeHwnd() );
+
+         // blah, blah, blah...
+     }
+
+...and a little demo!
+
+You can download a new Demo Project that implements most of the
+functionality of the system's Volume Control (the one that pops up when you
+double click on the little speaker on the Task Bar). The main window is an
+empty dialog box used only to enclose child dialogs. When the user selects
+an item from the 'View' menu, a new dialog is displayed as a child of the
+main dialog (in the client area), which resizes to accomodate the child.
+Three child dialogs are defined: one for playback controls, one for
+recording controls, and one for voice controls. Check their implementation
+files (SpeakerDlg.pp, WaveDlg.cpp, VoiceDlg.cpp) to get a feel of how work
+with the classes.
+
+When you start the program, it may tell you that certain mixer controls
+were not found and that the corresponding Windows control will be disabled.
+This is normal, because which controls are found depends on the drivers
+installed. This is not critical though. You just won't be able to use
+certain controls. In fact, the demo tries on purpose to create a balance
+control for the microphone source line. On NT, it triggers a warning, but
+when I switch OS to Windows 95, it works.
+The demo has a "Device Info" command, which calls GetDeviceInfo() to query
+the capabilities of your system, and then launches Notepad to display the
+log file.
+It also has a "Device Caps" command, which displays an explorer-like dialog
+box. The tree control displays the hierarchy of available mixer lines and
+controls. Click on any item to see information about it.
+
+If you prefer, you can also download the classes' source code only.
+
+Both the Demo and Source Zip file contain a file named MixerClasses.txt, a
+text version of this page.
+
+These classes will work on Windows95 or NT only.
+The code was written with Developer Studio 97 and VC++ 5.0 with MFC 4.21
+
+Thanks to Keith Rule for his CMemDC class, which I use to draw the
+CMixerPeakMeter flicker-free.
+
+Comments, suggestions and, yes, even bug reports are more than welcome!
+
+Last updated: 23 August 1998
+
+------------------------------------------------------------------------
+
+Goto HomePage               © 1997 Zafir Anjum                  Contact me:
+                                                            zafir@home.com

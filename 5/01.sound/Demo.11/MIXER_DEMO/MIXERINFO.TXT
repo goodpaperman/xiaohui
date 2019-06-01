@@ -1,0 +1,1008 @@
+Name of device: AD1815/6 Mixer (100)
+Number of destination lines: 3
+
+
+Pay particular attention to the "Line type" and "Control type" lines.
+You will pass these to the Init() functions of the various CMixerBase-derived classes
+to specify which type of control you want to use.
+
+***************************************************************************************************
+** Destination line. Index = 0  *******************************************************************
+***************************************************************************************************
+ -----------------------------------------------------------------------
+ Line type : MIXERLINE_COMPONENTTYPE_DST_SPEAKERS
+ -----------------------------------------------------------------------
+ Audio line is an adjustable (gain and/or attenuation) destination intended to drive speakers.
+ Name: Master Volume
+ Short Name: Master
+
+ Number of source lines associated with destination line: 8
+ Number of channels: 2
+ Number of controls: 4
+ List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Master Volume
+		     Name: Master Volume Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 32
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Master Mute
+		     Name: Master Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_ONOFF
+		   -----------------------------------------------------------------
+		     Short Name: XC0
+		     Name: External Control Zero
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_ONOFF
+		   -----------------------------------------------------------------
+		     Short Name: XC1
+		     Name: External Control One
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 0 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_WAVEOUT
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the waveform-audio output digital-to-analog converter (DAC).
+	 Name: Wave Output
+	 Short Name: Wave
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 1 --    MIXERLINE_TARGETTYPE_WAVEOUT
+	     Target name: AD1815/6 Playback (100)
+	     Manufacturer and product IDs: 65 -- 101 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 3
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Wave Volume
+		     Name: Wave Output Volume Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Wave Mute
+		     Name: Wave Output Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Wave Meter
+		     Name: Wave Output Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 1 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Internal CD
+	 Short Name: CD
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: CD
+		     Name: CD Volume Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 32
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: CD Mute
+		     Name: CD Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 2 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the output of an internal synthesizer.
+	 Name: FM Synthesizer
+	 Short Name: Synth
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 3 --    MIXERLINE_TARGETTYPE_MIDIOUT
+	     Target name: Yamaha OPL2/OPL3 Synthesis
+	     Manufacturer and product IDs: 1 -- 76 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Synth Volume
+		     Name: FM Synthesis Volume Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Synth Mute
+		     Name: FM Synthesis Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 3 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_MICROPHONE
+	 -----------------------------------------------------------------------
+	 Audio line is a microphone recording source.
+	 Name: Microphone
+	 Short Name: Mic
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	 Number of channels: 1
+	 Number of controls: 3
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Mic Out Volume
+		     Name: Microphone Output Volume
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 32
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Mic Mute
+		     Name: Microphone Output Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_ONOFF
+		   -----------------------------------------------------------------
+		     Short Name: 20dB
+		     Name: Mic 20dB Gain
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 4 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Auxiliary Input
+	 Short Name: AuxWT
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: AuxWT
+		     Name: Aux Volume Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 32
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Aux Mute
+		     Name: Aux Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 5 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Video Input
+	 Short Name: Video
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Video Volume
+		     Name: Video Volume Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 32
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Video Mute
+		     Name: Video Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 6 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Line Input
+	 Short Name: Line
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Line-In Volume
+		     Name: Line-In Output Volume
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 32
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: Line-In Mute
+		     Name: Line-In Output Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 7 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_DIGITAL
+	 -----------------------------------------------------------------------
+	 Audio line is a digital source (for example, digital output from a DAT or audio CD).
+	 Name: I2S Port One
+	 Short Name: I2S1
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: I2S1 Volume
+		     Name: I2S Port One Volume
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUTE
+		   -----------------------------------------------------------------
+		     Short Name: I2S1 Mute
+		     Name: I2S Port One Mute
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+***************************************************************************************************
+** Destination line. Index = 1  *******************************************************************
+***************************************************************************************************
+ -----------------------------------------------------------------------
+ Line type : MIXERLINE_COMPONENTTYPE_DST_WAVEIN
+ -----------------------------------------------------------------------
+ Audio line is a destination that will be the final recording source for the waveform-audio input (ADC).
+ Name: Recording Control
+ Short Name: Rec
+
+     Target type: 2 --    MIXERLINE_TARGETTYPE_WAVEIN
+     Target name: AD1815/6 Record (100)
+     Manufacturer and product IDs: 65 -- 100 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+ Number of source lines associated with destination line: 6
+ Number of channels: 2
+ Number of controls: 1
+ List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUX
+		   -----------------------------------------------------------------
+		     Short Name: Record Source
+		     Name: Record Input Source
+		     - Min: 0
+		     - Max: 0
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		         - Multiple control. The control has two or more possible settings.
+		             Number of items per channel: 6
+		              -------------- Item 0 -------------
+		              Name: Line Input
+		              -------------- Item 1 -------------
+		              Name: Line Output
+		              -------------- Item 2 -------------
+		              Name: Internal CD
+		              -------------- Item 3 -------------
+		              Name: Microphone
+		              -------------- Item 4 -------------
+		              Name: Auxiliary Input
+		              -------------- Item 5 -------------
+		              Name: Video Input
+
+	======================================================================================
+	== Source line. Index = 0 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Line Input
+	 Short Name: Line
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Line Input
+		     Name: Line-In Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Line Meter
+		     Name: Line Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 1 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_DIGITAL
+	 -----------------------------------------------------------------------
+	 Audio line is a digital source (for example, digital output from a DAT or audio CD).
+	 Name: Line Output
+	 Short Name: LOut
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: LOut Input
+		     Name: Line-Out Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: LOut Meter
+		     Name: LOut Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 2 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Internal CD
+	 Short Name: CD
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: CD Input
+		     Name: CD Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: CD Meter
+		     Name: CD Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 3 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_MICROPHONE
+	 -----------------------------------------------------------------------
+	 Audio line is a microphone recording source.
+	 Name: Microphone
+	 Short Name: Mic
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	 Number of channels: 1
+	 Number of controls: 3
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Mic Input
+		     Name: Microphone Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Mic Meter
+		     Name: Microphone Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_ONOFF
+		   -----------------------------------------------------------------
+		     Short Name: AGC
+		     Name: Wave AGC
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 4 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Auxiliary Input
+	 Short Name: AuxWT
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Aux Input
+		     Name: Aux Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Aux Meter
+		     Name: Aux Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 5 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Video Input
+	 Short Name: Video
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Video Input
+		     Name: Video Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Video Meter
+		     Name: Video Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+***************************************************************************************************
+** Destination line. Index = 2  *******************************************************************
+***************************************************************************************************
+ -----------------------------------------------------------------------
+ Line type : MIXERLINE_COMPONENTTYPE_DST_VOICEIN
+ -----------------------------------------------------------------------
+ Audio line is a destination that will be the final recording source for voice input.
+ Name: Voice Commands
+ Short Name: Voice
+
+     Target type: 2 --    MIXERLINE_TARGETTYPE_WAVEIN
+     Target name: AD1815/6 Record (100)
+     Manufacturer and product IDs: 65 -- 100 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+ Number of source lines associated with destination line: 6
+ Number of channels: 2
+ Number of controls: 1
+ List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_MUX
+		   -----------------------------------------------------------------
+		     Short Name: Voice Source
+		     Name: Voice Input Source
+		     - Min: 0
+		     - Max: 0
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		         - Multiple control. The control has two or more possible settings.
+		             Number of items per channel: 6
+		              -------------- Item 0 -------------
+		              Name: Line Input
+		              -------------- Item 1 -------------
+		              Name: Line Output
+		              -------------- Item 2 -------------
+		              Name: Internal CD
+		              -------------- Item 3 -------------
+		              Name: Microphone
+		              -------------- Item 4 -------------
+		              Name: Auxiliary Input
+		              -------------- Item 5 -------------
+		              Name: Video Input
+
+	======================================================================================
+	== Source line. Index = 0 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Line Input
+	 Short Name: Line
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Line Input
+		     Name: Line-In Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Line Meter
+		     Name: Line Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 1 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_DIGITAL
+	 -----------------------------------------------------------------------
+	 Audio line is a digital source (for example, digital output from a DAT or audio CD).
+	 Name: Line Output
+	 Short Name: LOut
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: LOut Input
+		     Name: Line-Out Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: LOut Meter
+		     Name: LOut Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 2 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Internal CD
+	 Short Name: CD
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: CD Input
+		     Name: CD Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: CD Meter
+		     Name: CD Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 3 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_MICROPHONE
+	 -----------------------------------------------------------------------
+	 Audio line is a microphone recording source.
+	 Name: Microphone
+	 Short Name: Mic
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	 Number of channels: 1
+	 Number of controls: 3
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Mic Input
+		     Name: Microphone Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Mic Meter
+		     Name: Microphone Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_ONOFF
+		   -----------------------------------------------------------------
+		     Short Name: AGC
+		     Name: Voice AGC
+		     - Min: 0
+		     - Max: 1
+		     - Steps: 0
+		     Status and support flags:
+		         - Uniform control
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 4 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Auxiliary Input
+	 Short Name: AuxWT
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Aux Input
+		     Name: Aux Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Aux Meter
+		     Name: Aux Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0
+
+	======================================================================================
+	== Source line. Index = 5 ===========================================================
+	======================================================================================
+	 -----------------------------------------------------------------------
+	 Line type :	 MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY
+	 -----------------------------------------------------------------------
+	 Audio line is a source originating from the auxiliary audio line.
+	 Name: Video Input
+	 Short Name: Video
+
+	 Audio line is an audio source line associated with a single audio destination line.
+	     Target type: 5 --    MIXERLINE_TARGETTYPE_AUX
+	     Target name: AD1815/6 Aux (100)
+	     Manufacturer and product IDs: 65 -- 103 (see mmreg.h or help subject: "Manufacturer and Product Identifiers")
+
+	 Number of channels: 2
+	 Number of controls: 2
+	 List of controls follows:
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_VOLUME
+		   -----------------------------------------------------------------
+		     Short Name: Video Input
+		     Name: Video Input Level
+		     - Min: 0
+		     - Max: 65535
+		     - Steps: 16
+		     Status and support flags:
+		             Number of items per channel: 0
+
+		   ---------------------------- Control ----------------------------
+		     Control type:	MIXERCONTROL_CONTROLTYPE_PEAKMETER
+		   -----------------------------------------------------------------
+		     Short Name: Video Meter
+		     Name: Video Input Meter
+		     - Min: -32768
+		     - Max: 32767
+		     - Steps: 64
+		     Status and support flags:
+		             Number of items per channel: 0

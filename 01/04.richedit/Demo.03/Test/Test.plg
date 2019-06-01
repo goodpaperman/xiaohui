@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RichEd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP66.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Z7 /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "RICHED_IMPL" /D "_AFXDLL" /Fp"Debug/RichEd.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.03\RichEditCtrlEx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP66.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\RichEd.lib"  .\Debug\RichEditCtrlEx.obj "
+<h3>Output Window</h3>
+Compiling...
+RichEditCtrlEx.cpp
+Creating library...
+<h3>
+--------------------Configuration: Test - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP67.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/Test.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.03\Test\Test.cpp"
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.03\Test\TestDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP67.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP68.tmp" with contents
+[
+../debug/RichEd.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Test.pdb" /debug /machine:I386 /out:"Debug/Test.exe" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\Test.obj
+.\Debug\TestDlg.obj
+.\Debug\Test.res
+\codes\mfc\09.xiaohui\1\04.richedit\Demo.03\Debug\RichEd.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP68.tmp"
+<h3>Output Window</h3>
+Compiling...
+TestDlg.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+Test.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Test.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

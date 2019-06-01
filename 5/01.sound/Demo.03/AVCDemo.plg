@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AVCDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP167.tmp" with contents
+[
+/nologo /G5 /Zp1 /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/AVCDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.03\AVICtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP167.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP168.tmp" with contents
+[
+vfw32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/AVCDemo.pdb" /debug /machine:I386 /out:"Debug/AVCDemo.exe" /pdbtype:sept 
+.\Debug\AVCDemo.obj
+.\Debug\AVCDemoDlg.obj
+.\Debug\AVICtrl.obj
+.\Debug\BitmapDialog.obj
+.\Debug\DIB256.OBJ
+.\Debug\DIBPAL.OBJ
+.\Debug\StdAfx.obj
+.\Debug\AVCDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP168.tmp"
+<h3>Output Window</h3>
+Compiling...
+AVICtrl.cpp
+c:\program files\microsoft visual studio\vc98\include\mmsystem.h(1623) : warning C4201: nonstandard extension used : nameless struct/union
+c:\program files\microsoft visual studio\vc98\include\mmsystem.h(1627) : warning C4201: nonstandard extension used : nameless struct/union
+c:\program files\microsoft visual studio\vc98\include\mmsystem.h(1648) : warning C4201: nonstandard extension used : nameless struct/union
+c:\program files\microsoft visual studio\vc98\include\mmsystem.h(1652) : warning C4201: nonstandard extension used : nameless struct/union
+Linking...
+
+
+
+<h3>Results</h3>
+AVCDemo.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

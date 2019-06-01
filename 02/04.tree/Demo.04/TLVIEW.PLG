@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TLView - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40d /fo"Debug/TLView.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\TLView.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP311.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/TLView.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\NewHeaderCtrl.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\NewTreeListCtrl.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\TLFrame.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\TLView.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\TLViewDoc.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\TLViewView.cpp"
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\TreeListView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP311.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP312.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/TLView.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\02\04.tree\Demo.04\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP312.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP313.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TLView.pdb" /debug /machine:I386 /out:"Debug/TLView.exe" /pdbtype:sept 
+.\Debug\MainFrm.obj
+.\Debug\NewHeaderCtrl.obj
+.\Debug\NewTreeListCtrl.obj
+.\Debug\StdAfx.obj
+.\Debug\TLFrame.obj
+.\Debug\TLView.obj
+.\Debug\TLViewDoc.obj
+.\Debug\TLViewView.obj
+.\Debug\TreeListView.obj
+.\Debug\TLView.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP313.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+NewHeaderCtrl.cpp
+NewTreeListCtrl.cpp
+TLFrame.cpp
+TLView.cpp
+TLViewDoc.cpp
+TLViewView.cpp
+TreeListView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TLView.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

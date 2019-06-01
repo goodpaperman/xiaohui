@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CBCPTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/CBCPTest.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\3\01.combobox\Demo.07\CBCPTest.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/CBCPTest.pdb" /debug /machine:I386 /out:"Debug/CBCPTest.exe" /pdbtype:sept  .\Debug\CBCPTest.obj .\Debug\CBCPTestDlg.obj .\Debug\ColorPickerCB.obj .\Debug\StdAfx.obj .\Debug\CBCPTest.res "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+CBCPTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

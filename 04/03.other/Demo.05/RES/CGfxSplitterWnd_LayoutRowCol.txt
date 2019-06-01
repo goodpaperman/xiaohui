@@ -1,0 +1,90 @@
+
+static void AFXAPI LayoutRowCol(CSplitterWnd::CRowColInfo* pInfoArray,
+	int nMax, int nSize, int nSizeSplitter)
+{
+	ASSERT(pInfoArray != NULL);
+	ASSERT(nMax > 0);
+	ASSERT(nSizeSplitter > 0);
+
+	CSplitterWnd::CRowColInfo* pInfo;
+	int i;
+
+	if (nSize < 0)
+		nSize = 0;  // if really too small, layout as zero size
+
+	// start with ideal sizes
+	for (i = 0, pInfo = pInfoArray; i < nMax-1; i++, pInfo++)
+	{
+		if (pInfo->nIdealSize < pInfo->nMinSize)
+			pInfo->nIdealSize = 0;      // too small to see
+		pInfo->nCurSize = pInfo->nIdealSize;
+	}
+	pInfo->nCurSize = INT_MAX;  // last row/column takes the rest
+
+	for (i = 0, pInfo = pInfoArray; i < nMax; i++, pInfo++)
+	{
+		ASSERT(nSize >= 0);
+		if (nSize == 0)
+		{
+			// no more room (set pane to be invisible)
+			pInfo->nCurSize = 0;
+			continue;       // don't worry about splitters
+		}
+		else if (nSize < pInfo->nMinSize && i != 0)
+		{
+			// additional panes below the recommended minimum size
+			//   aren't shown and the size goes to the previous pane
+			pInfo->nCurSize = 0;
+
+			// previous pane already has room for splitter + border
+			//   add remaining size and remove the extra border
+			ASSERT(CX_BORDER*2 == CY_BORDER*2);
+			(pInfo-1)->nCurSize += nSize + CX_BORDER*2;
+			nSize = 0;
+		}
+		else
+		{
+			// otherwise we can add the second pane
+			ASSERT(nSize > 0);
+			if (pInfo->nCurSize == 0)
+			{
+				// too small to see
+				if (i != 0)
+					pInfo->nCurSize = 0;
+			}
+			else if (nSize < pInfo->nCurSize)
+			{
+				// this row/col won't fit completely - make as small as possible
+				pInfo->nCurSize = nSize;
+				nSize = 0;
+			}
+			else
+			{
+				// can fit everything
+				nSize -= pInfo->nCurSize;
+			}
+		}
+
+		// see if we should add a splitter
+		ASSERT(nSize >= 0);
+		if (i != nMax - 1)
+		{
+			// should have a splitter
+			if (nSize > nSizeSplitter)
+			{
+				nSize -= nSizeSplitter; // leave room for splitter + border
+				ASSERT(nSize > 0);
+			}
+			else
+			{
+				// not enough room - add left over less splitter size
+				ASSERT(CX_BORDER*2 == CY_BORDER*2);
+				pInfo->nCurSize += nSize;
+				if (pInfo->nCurSize > (nSizeSplitter - CX_BORDER*2))
+					pInfo->nCurSize -= (nSizeSplitter - CY_BORDER*2);
+				nSize = 0;
+			}
+		}
+	}
+	ASSERT(nSize == 0); // all space should be allocated
+}

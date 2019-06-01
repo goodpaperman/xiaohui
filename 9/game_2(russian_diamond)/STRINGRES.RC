@@ -1,0 +1,140 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "StringRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "StringRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CGTetris"
+    IDS_GameOver            "Game Over"
+    IDS_TxtScore            "Score:"
+    IDS_TxtLines            "Lines:"
+    IDS_TxtLevel            "Level:"
+    IDS_TxtStart            "Start"
+    IDS_TxtStop             "Stop"
+    IDS_TxtPause            "Pause"
+    IDS_TxtResume           "Resume"
+    IDS_HeaderScore         "Score"
+    IDS_HeaderName          "Name"
+    IDS_HeaderLevel         "Level"
+    IDS_TxtSquareWidth      "SquareWidth:"
+    IDS_TxtSquareHeight     "SquareHeight:"
+    IDS_TxtGrid             "Grid"
+    IDS_TxtEnableSound      "Enable Sound"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TxtEnableMusic      "Enable Music"
+    IDS_TxtSoundCardRequired "Enabling Sound / Music requires a soundcard."
+    IDS_TxtSplashAgain      "Show me that exciting splash image again"
+    IDS_TxtBoard            "Board"
+    IDS_TxtSound            "Sound"
+    IDS_TxtExFigureSet      "Use extended figure set."
+    IDS_TxtChaikovsky       "Chaikovsky"
+    IDS_TxtScorpions        "Scorpions"
+    IDS_TxtKalinka          "Kalinka"
+    IDS_License             "This is free software.|You may redistribute it|by any means providing|it is not sold for profit|without the authors written|consent.|"
+    IDS_Concept             "Concept\n|Original Concept,|Design and Programming|by Alexey Pajitnov.|"
+    IDS_Warrantee           "Warrantee\n|No warrantee of any kind,|expressed or implied,|is included with this software;|use at your own risk,|responsibility for damages (if any)|to anyone resulting from the|use of this software rests|entirely with the user.|"
+    IDS_Disclosure          "Disclosure\n|Most of the resources|(images, sounds and music)|used by this game were stolen|somewhere on the web.|"
+    IDS_SplashImage         "Splash image\n|Lars Stroschen|www.propeller-island.net4.com/moskau/|"
+    IDS_Credits             "Credits\n|This program would not exist as is|without the work of the 'codegurus'|all over the world.|Many thanks to the maintainer of|www.codeguru.com|Zafir Anjum|and to all the codegurus|whose code is inside this game.|"
+    IDS_TxtEndGame          "End Game"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TitleGamePage       "Game"
+    IDS_TitleScorePage      "Score"
+    IDS_TitleOptionsPage    "Options"
+    IDS_TitleAboutPage      "About"
+    IDS_HelpPageDlg         "Help"
+    IDS_HelpPrelude         "How to play the game.|The following keys can be used|at the ""Game"" page to play|and handle the game.||"
+    IDS_HelpKeys            "RETURN   --   start, stop, pause, resume|LEFT   --   move piece left|RIGHT   --   move piece right|UP   --    rotate piece clockwise|DOWN   --   rotate piece against the clock|SPACE    --   place piece|"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

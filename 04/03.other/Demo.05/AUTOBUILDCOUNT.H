@@ -1,0 +1,6 @@
+// 390
+#ifndef AUTOBUILDCOUNT_H
+#define AUTOBUILDCOUNT_H
+#define BUILDCOUNT_NUM 390
+#define BUILDCOUNT_STR "390"
+#endif

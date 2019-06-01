@@ -1,0 +1,253 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Zafir Anjum">
+<meta name="description"
+content="Source code for various windows controls">
+<meta name="keywords" content>
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title></title>
+</head>
+
+<body background="/fancyhome/back.gif" bgcolor="#FFFFFF">
+<script language="JavaScript"><!--
+var adcategory = "controls";
+// -->
+</script><script
+language="JavaScript"><!--
+var nfrm = location.href.indexOf("_nfrm_");
+var validframes = (top.frames.length > 0 && top.frames['ad'] && top.frames['logo'] );
+
+if( !validframes && nfrm == -1)
+{
+	var dclkPage = "www.codeguru.com/";
+	if( self.adcategory )
+		dclkPage += adcategory;
+	else
+		dclkPage += "mfc";
+	var random = Math.random();
+	document.write('<nolayer><center>');
+	document.write('<iframe src="http://ad.doubleclick.net/adi/' + dclkPage + ';ord='
+	 + random + '" width=470 height=62 marginwidth=0 marginheight=0 hspace=0 vspace=0 '
+	 + 'frameborder=0 scrolling=no bordercolor="#000000">');
+	document.write('<a href="http://ad.doubleclick.net/jump/' + dclkPage + ';ord='
+	 + random + '">');
+	document.write('<img src="http://ad.doubleclick.net/ad/' + dclkPage + ';ord='
+	 + random + '" height=60 width=468>' + '</a>');
+	document.write('</iframe>');
+	document.write('</center></nolayer>');
+	document.write('<layer  src="http://ad.doubleclick.net/adl/' + dclkPage + 
+	 ';ord=' + random + '"></layer>');
+	document.write('<ilayer visibility=hide width=468 height=83></ilayer>');
+}
+
+
+//		top.location = "/show.cgi?" + adcategory + "=" + location.pathname;
+
+
+// -->
+</script><noscript>
+
+<p align="center"><a
+href="http://ad.doubleclick.net/jump/www.codeguru.com/controls;ord=NkdFdtFCY34ssQAAIaw"><img
+src="http://ad.doubleclick.net/ad/www.codeguru.com/controls;ord=NkdFdtFCY34ssQAAIaw"></a>
+</p>
+</noscript>
+<h3 align="center"><font color="#00000A"> Sound_Output class for
+a Generator like</font></h3>
+
+<hr>
+<!-- Author and contact details -->
+<p>This article was contributed by <a
+href="mailto:yannstrc@mail.dotcom.fr">Yannick Sustrac</a>. </p>
+
+<p><img src="gene_output_sound_class.gif" width="322"
+height="253"></p>
+
+<p><strong>Description</strong>: </p>
+
+<p>In the previous article <a
+href="http://www.codeguru.com/multimedia/scope_input_sound_class.shtml">http://www.codeguru.com/multimedia/scope_input_sound_class.shtml</a>
+we discussed about the SoundIn class<br>
+which was provided to interface a sound card for input signal.
+The idea is now to create a class for an Output sound .</p>
+
+<p>The Sound Output class which is provided now, to be used as a
+generator, is very similar to the Input class one. In fact, it
+has been<br>
+realised in a very short time by replacing all the &quot;In&quot;
+string in the CSoundIn class by the &quot;Out&quot; and by
+replacing the correct names in the base functions<br>
+of the Win32 Sound Api .</p>
+
+<p>The<font color="#800000"> CSoundOut::OpenOutput()</font> is
+now the main start procedure. It initialise all the parametres of
+the sound card, create an EVENT object <br>
+and start the sound thread. The thread procedure is now used to
+signal to the sound class, (instead that a buffer is filled for
+the Input) ,that <br>
+it has been transmited to the Sound card and the Win Sound system
+is now requiring some new datas for transmiting. </p>
+
+<p>The constructor of the <font color="#800000">CSoundOut:: </font>class
+initialise a sin signal at 500hz in the Output Buffer. The size
+of the sound buffer is large enough<br>
+to have a continus signal during a long periode. The problem
+which remain unresolved for me is the behaviour when the sound
+process ends, and<br>
+signals that the buffer has to be filled. This can produce a time
+leak during which the signal is not feed to the sound card and
+unfortunatly produce a sound loose.<br>
+If you got an answer for this please informs us with <a
+href="/cgi-bin/addpage/addpage.cgi?cfg=addcomment&amp;action=Comment"><strong>Add
+Comment</strong></a><strong> </strong></p>
+
+<h4>How to use it</h4>
+
+<ul>
+    <li>In the same way that the way we use for the Input Sound
+        you just have to include the 2 Sound Output class files
+        in ur project </li>
+    <li>The sample demo program use ....the same &quot;quick
+        &amp; dirty&quot; global declaration <font
+        color="#800000">CSoundOut SoundOut;</font> in
+        CSndApp.cpp.</li>
+    <li>Call the function <font color="#800000">OpenOutput();</font>
+        in the InitInstance App procedure. (the <font
+        color="#800000">CloseOutput()</font> at ExitIntance is
+        optional)</li>
+</ul>
+
+<p>This is all you need to start the Sound process for audio
+Output. </p>
+
+<p><strong>The Scope View:</strong></p>
+
+<p>Is unchanged. it will display the Input which is a mix of the
+Input (Equvalent to the Mic) and the Output (Equivalent to the
+Wave).</p>
+
+<p><strong>Run the scope/generator demo program</strong>: </p>
+
+<p>In the new Demo sample the SoundIn class is still active, a
+menu has been added to start/Stop the both Sound process.<br>
+Because some Sound system does'nt provide full duplex
+Input/Output you may be required to start &amp; stop selectively
+the 2 process.<br>
+If you modify the sampling rate, you must also take into account
+that the Sound card use the same frequency rate for both
+Input/Ouput<br>
+and that the classes parametres must be set at the same one.</p>
+
+<p>Before running it, let's have a look at the
+&quot;reame.txt&quot; file included in the project demo. </p>
+
+<p><a href="scope_output_sound_class.zip">Download the new demo
+code</a> 75k</p>
+
+<p>Ps: If you are a little bit lasy to enhance the program by
+yourself..., you can get my full application for signal
+processing here: <br>
+<a href="http://www.mygale.org/~yannstrc">http://www.mygale.org/~yannstrc</a>
+go to Visual Sound Processing Studio page and enjoy it!</p>
+
+<p>&nbsp;</p>
+
+<p>Posted: 24 November 1998 </p>
+<!-- Posted / Update  date Month day, year (eg August 11, 1998) - add to the list -->
+<p><a
+href="/cgi-bin/addpage/addpage.cgi?cfg=addcomment&amp;action=Comment"><strong>Add
+Comment</strong></a> </p>
+
+<hr>
+
+<table border="0" width="100%">
+    <tr>
+        <td width="33%"><a
+        href="http://www.codeguru.com/multimedia" target="_top"><font
+        size="2">Goto Index</font></a></td>
+        <td width="33%"><font size="1">© Copyright 1997-1998
+        CodeGuru</font>&nbsp; </td>
+        <td width="34%"><font size="2">Contact : </font><a
+        href="mailto:webmaster@codeguru.com"><font size="2">webmaster@codeguru.com</font></a><font
+        size="2">&nbsp;</font> </td>
+    </tr>
+</table>
+<script language="JavaScript"><!--
+function explodeframes()
+{
+	var w1;
+
+	if( self.adcategory )
+		w1 = open("/cgi-bin/openad.cgi?" + adcategory);
+	else
+		w1 = open("/cgi-bin/openad.cgi");
+	var w = open(location.pathname + "?_nfrm_");
+}
+
+//if( self.focus )
+//	self.focus();
+
+
+var adurl = "/cgi-bin/doubleclick.cgi?";
+
+if( self.adcategory )
+	adurl += adcategory;
+else
+	adurl += "mfc";
+
+if( self.parent.norefreshad )
+	parent.norefreshad = false;
+else if( validframes )
+	parent.frames['ad'].location = adurl;
+
+
+
+if( !validframes && nfrm == -1)
+{
+	var dclkPage = "www.codeguru.com/";
+	if( self.adcategory )
+		dclkPage += adcategory;
+	else 
+		dclkPage += "mfc";
+	var random = Math.random();
+	document.write('<nolayer><center>');
+//  document.write('<iframe src="http://ad.doubleclick.net/adi/' + dclkPage + ';ord='
+//   + random + '" width=470 height=62 marginwidth=0 marginheight=0 hspace=0 vspace=0 '
+//   + 'frameborder=0 scrolling=no bordercolor="#000000">');
+
+    document.write('<iframe id="bai" name="bai" ' 
+		+ ' src="http://www.codeguru.com/cgi-bin/dci.cgi?controls"'
+     	+ ' width=470 height=62 marginwidth=0 marginheight=0 hspace=0 vspace=0 '
+     	+ 'frameborder=0 scrolling=no bordercolor="#000000">');
+	document.write('<a href="http://ad.doubleclick.net/jump/' + dclkPage + ';ord='
+	 + random + '">');
+	document.write('<img src="http://ad.doubleclick.net/ad/' + dclkPage + ';ord='
+	 + random + '" height=60 width=468>' + '</a>');
+	document.write('</iframe>');
+	document.write('</center></nolayer>');
+	document.write('<layer  id="bal" src="http://www.codeguru.com/cgi-bin/dcl.cgi?'
+	 		+ 'controls' + '"></layer>');
+	document.write('<ilayer visibility=hide width=468 height=83></ilayer>');
+}
+
+// to explode frames 
+else if( nfrm == -1 )
+{
+	document.write('<p align=center>');
+	document.write('<small><a href="JavaScript:explodeframes();">Explode Frames (for printing & saving to file)</a></small>');
+}
+
+// -->
+</script><!-- SCRIPT LANGUAGE="JavaScript" SRC="/global/fscript.js">
+//
+</SCRIPT --><noscript>
+
+<p align="center"><a
+href="http://ad.doubleclick.net/jump/www.codeguru.com/controls;ord=NkdFdtFCY34ssQAAIaw"><img
+src="http://ad.doubleclick.net/ad/www.codeguru.com/controls;ord=NkdFdtFCY34ssQAAIaw"></a>
+</p>
+</noscript></body>
+</html>

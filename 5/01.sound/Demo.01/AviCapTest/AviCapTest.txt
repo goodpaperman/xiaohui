@@ -1,0 +1,15 @@
+// Additional notes about AviCap class
+
+This class was successfully tested with follow capture devices:
+
+1. VideoBlaster RT300 (in-cheap Intel Indeo codec).
+  The driver of this device works strange: it returns compressed buffer although the bitmap header was as for "uncompressed" image. After testing with this device a special protected member  _IsImageCompressed() was added.
+2. Videotizer  by DARIM Vision Co., Ltd. It works correctly.EnumValidFrameSize returns the available formats list which is the same as "public"(from driver dialog). This driver has 2-4 internal buffer.
+3. ATI All-in-Wonder(with TV input). Everything OK.
+4. ASUS V3000 (with TV input). EnumValidFrameSize returns the available formats list which rather differents with "public"(from driver dialog)! You can setup all of them, but the doesn't works!
+The main lack with this driver - it uses non-standard frame sizes (352x288??).
+
+Please, E-Mail me about yours results.
+
+Vadim Gorbatenko
+gvv@mail.tomsknet.ru

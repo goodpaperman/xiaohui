@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ProgressDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP64.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/ProgressDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\1\03.progress\Demo.02\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\1\03.progress\Demo.02\ProgressWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP64.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP65.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ProgressDemo.pdb" /debug /machine:I386 /out:"Debug/ProgressDemo.exe" /pdbtype:sept 
+.\Debug\MainFrm.obj
+.\Debug\ProgressDemo.obj
+.\Debug\ProgressWnd.obj
+.\Debug\StdAfx.obj
+.\Debug\ProgressDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP65.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+ProgressWnd.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ProgressDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

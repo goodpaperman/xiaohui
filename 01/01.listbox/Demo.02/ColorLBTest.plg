@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ColorLBTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/ColorLBTest.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\1\01.listbox\Demo.02\ColorLBTest.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E7.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ColorLBTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\1\01.listbox\Demo.02\ColorLBTest.cpp"
+"E:\codes\mfc\09.xiaohui\1\01.listbox\Demo.02\ColorLBTestDlg.cpp"
+"E:\codes\mfc\09.xiaohui\1\01.listbox\Demo.02\ColorListBox.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E7.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E8.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ColorLBTest.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\1\01.listbox\Demo.02\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ColorLBTest.pdb" /debug /machine:I386 /out:"Debug/ColorLBTest.exe" /pdbtype:sept 
+.\Debug\ColorLBTest.obj
+.\Debug\ColorLBTestDlg.obj
+.\Debug\ColorListBox.obj
+.\Debug\StdAfx.obj
+.\Debug\ColorLBTest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP1E9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ColorLBTest.cpp
+ColorLBTestDlg.cpp
+ColorListBox.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ColorLBTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

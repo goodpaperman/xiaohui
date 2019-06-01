@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FloatTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP38.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/FloatTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Code\MFC\4\02.edit\Demo.11\FloatEdit.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP38.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/FloatTest.pdb" /debug /machine:I386 /out:"Debug/FloatTest.exe" /pdbtype:sept  .\Debug\FloatEdit.obj .\Debug\FloatTest.obj .\Debug\FloatTestDlg.obj .\Debug\StdAfx.obj .\Debug\FloatTest.res "
+<h3>Output Window</h3>
+Compiling...
+FloatEdit.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/FloatTest.bsc"  .\Debug\StdAfx.sbr .\Debug\FloatEdit.sbr .\Debug\FloatTest.sbr .\Debug\FloatTestDlg.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+FloatTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

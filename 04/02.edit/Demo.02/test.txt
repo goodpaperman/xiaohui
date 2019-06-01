@@ -1,0 +1,13 @@
+REM this is a comment line
+For i = 1 to 100 step 5
+    Print "Hello"
+    If i < 20 then ' auto indent
+        Print "under 20"
+    else
+    Print "over 20"
+end if
+Next 'End of Loop
+
+'User defined Function in 
+'alternate color
+a = GetAttrValInt(12, 49)

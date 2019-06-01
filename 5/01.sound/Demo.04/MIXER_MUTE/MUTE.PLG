@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Mute - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Mute.res" /d "_DEBUG" "E:\codes\mfc\09.xiaohui\5\01.sound\Demo.04\MIXER_MUTE\Mute.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP17B.tmp" with contents
+[
+/nologo /MTd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/Mute.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.04\MIXER_MUTE\Mute.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.04\MIXER_MUTE\MuteDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP17B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP17C.tmp" with contents
+[
+/nologo /MTd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/Mute.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.04\MIXER_MUTE\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP17C.tmp" 
+Creating command line "link.exe winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Mute.pdb" /debug /machine:I386 /out:"Debug/Mute.exe" /pdbtype:sept  .\Debug\Mute.obj .\Debug\MuteDlg.obj .\Debug\StdAfx.obj .\Debug\Mute.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Mute.cpp
+MuteDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Mute.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

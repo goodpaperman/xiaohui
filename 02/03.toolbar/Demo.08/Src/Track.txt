@@ -1,0 +1,63 @@
+
+BOOL CDockContext::Track()
+{
+	// don't handle if capture already set
+	if (::GetCapture() != NULL)
+		return FALSE;
+
+	// set capture to the window which received this message
+	m_pBar->SetCapture();
+	ASSERT(m_pBar == CWnd::GetCapture());
+
+	// get messages until capture lost or cancelled/accepted
+	while (CWnd::GetCapture() == m_pBar)
+	{
+		MSG msg;
+		if (!::GetMessage(&msg, NULL, 0, 0))
+		{
+			AfxPostQuitMessage(msg.wParam);
+			break;
+		}
+
+		switch (msg.message)
+		{
+		case WM_LBUTTONUP:
+			if (m_bDragging)
+				EndDrag();
+			else
+				EndResize();
+			return TRUE;
+		case WM_MOUSEMOVE:
+			if (m_bDragging)
+				Move(msg.pt);
+			else
+				Stretch(msg.pt);
+			break;
+		case WM_KEYUP:
+			if (m_bDragging)
+				OnKey((int)msg.wParam, FALSE);
+			break;
+		case WM_KEYDOWN:
+			if (m_bDragging)
+				OnKey((int)msg.wParam, TRUE);
+			if (msg.wParam == VK_ESCAPE)
+			{
+				CancelLoop();
+				return FALSE;
+			}
+			break;
+		case WM_RBUTTONDOWN:
+			CancelLoop();
+			return FALSE;
+
+		// just dispatch rest of the messages
+		default:
+			DispatchMessage(&msg);
+			break;
+		}
+	}
+
+	CancelLoop();
+
+	return FALSE;
+}

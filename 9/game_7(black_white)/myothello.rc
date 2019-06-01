@@ -1,0 +1,256 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\myothello.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\myothello.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 238, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于黑白棋"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,134,62,21,21
+    LTEXT           "黑白棋 1.0 版",IDC_STATIC,134,17,75,8,SS_NOPREFIX
+    LTEXT           "bjwf  版权所有 (C) 2001",IDC_STATIC,134,33,93,8
+    DEFPUSHBUTTON   "确定",IDOK,165,70,50,14,WS_GROUP
+    LTEXT           "wangfei@hanwang.com.cn",IDC_STATIC,134,50,92,10
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,3,
+                    123,90,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+END
+
+IDD_MYOTHELLO_DIALOG DIALOGEX 0, 0, 263, 277
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "黑白棋"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "ccc",IDC_STATUS,2,263,260,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "黑白棋\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "黑白棋\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "othello.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "黑白棋\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_MYOTHELLO_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 262
+        BOTTOMMARGIN, 276
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BLACKCHESS          BITMAP  DISCARDABLE     "res\\chessblack.bmp"
+IDB_WHITECHESS          BITMAP  DISCARDABLE     "res\\chesswhite.bmp"
+IDB_CHESSBOARD          BITMAP  DISCARDABLE     "res\\chessboard.bmp"
+IDB_TURN1               BITMAP  DISCARDABLE     "res\\turn1.bmp"
+IDB_TURN2               BITMAP  DISCARDABLE     "res\\turn2.bmp"
+IDB_TURN3               BITMAP  DISCARDABLE     "res\\turn3.bmp"
+IDB_TURN4               BITMAP  DISCARDABLE     "res\\turn4.bmp"
+IDB_TURN5               BITMAP  DISCARDABLE     "res\\turn5.bmp"
+IDB_TURN6               BITMAP  DISCARDABLE     "res\\turn6.bmp"
+IDB_XIAOYAO             BITMAP  DISCARDABLE     "res\\xiaoyaoname.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "退    出(&X)",                IDOK
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "新游戏(&N) ",                 ID_NEWGAME
+        MENUITEM SEPARATOR
+        MENUITEM "初级(&E)",                    ID_EASY
+        MENUITEM "中级(&M)",                    ID_MID, CHECKED
+        MENUITEM "高级(&A) ",                   ID_ADV
+        MENUITEM SEPARATOR
+        MENUITEM "悔棋(&B) ",                   ID_MOVEBACK
+        MENUITEM SEPARATOR
+        MENUITEM "电脑先走(&C)",                IDC_BUTTON1
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于黑白棋(&A)... ",          IDM_ABOUTBOX
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于黑白棋(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\myothello.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

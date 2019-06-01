@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TreeExample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/TreeExample.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\TreeExample.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP187.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/TreeExample.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\FileName.cpp"
+"E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\ShellPidl.cpp"
+"E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\ShellTree.cpp"
+"E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\TreeExample.cpp"
+"E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\TreeExampleDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP187.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP188.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/TreeExample.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\04\01.dialog\Demo.12\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP188.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP189.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TreeExample.pdb" /debug /machine:I386 /out:"Debug/TreeExample.exe" /pdbtype:sept 
+.\Debug\FileName.obj
+.\Debug\ShellPidl.obj
+.\Debug\ShellTree.obj
+.\Debug\StdAfx.obj
+.\Debug\TreeExample.obj
+.\Debug\TreeExampleDlg.obj
+.\Debug\TreeExample.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP189.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+FileName.cpp
+ShellPidl.cpp
+ShellTree.cpp
+TreeExample.cpp
+TreeExampleDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TreeExample.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

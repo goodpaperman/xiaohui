@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DropDownBoxDlg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x406 /fo"Debug/DropDownBoxDlg.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\3\04.button\Demo.15\DropDownBoxDlg.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP97.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "D:\Dev\Components\ITCLib\Include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DropDownBoxDlg.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\3\04.button\Demo.15\ChoiceWindow.cpp"
+"E:\codes\mfc\09.xiaohui\3\04.button\Demo.15\ChoiceWindowBtn.cpp"
+"E:\codes\mfc\09.xiaohui\3\04.button\Demo.15\DropDownBoxDlg.cpp"
+"E:\codes\mfc\09.xiaohui\3\04.button\Demo.15\DropDownBoxDlgDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP97.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP98.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "D:\Dev\Components\ITCLib\Include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DropDownBoxDlg.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\3\04.button\Demo.15\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP98.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP99.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DropDownBoxDlg.pdb" /debug /machine:I386 /out:"Debug/DropDownBoxDlg.exe" /pdbtype:sept /libpath:"D:\Dev\Components\ITCLib\Lib" 
+.\Debug\ChoiceWindow.obj
+.\Debug\ChoiceWindowBtn.obj
+.\Debug\DropDownBoxDlg.obj
+.\Debug\DropDownBoxDlgDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\DropDownBoxDlg.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP99.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChoiceWindow.cpp
+ChoiceWindowBtn.cpp
+DropDownBoxDlg.cpp
+DropDownBoxDlgDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DropDownBoxDlg.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

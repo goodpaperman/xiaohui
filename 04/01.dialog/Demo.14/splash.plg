@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: splash - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/splash.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Code\MFC\4\01.Dialog\Demo.14\MainFrm.cpp"
+"D:\Code\MFC\4\01.Dialog\Demo.14\MySplashThread.cpp"
+"D:\Code\MFC\4\01.Dialog\Demo.14\splash.cpp"
+"D:\Code\MFC\4\01.Dialog\Demo.14\SplashThread.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/splash.pdb" /debug /machine:I386 /out:"Debug/splash.exe" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\MainFrm.obj
+.\Debug\MySplashThread.obj
+.\Debug\splash.obj
+.\Debug\splashDoc.obj
+.\Debug\SplashThread.obj
+.\Debug\splashView.obj
+.\Debug\StdAfx.obj
+.\Debug\splash.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP45.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Generating Code...
+Compiling...
+MySplashThread.cpp
+splash.cpp
+SplashThread.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+splash.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

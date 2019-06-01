@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/Sample.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\Code\MFC\4\02.edit\Demo.10\CCrystalTextView2.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Sample.pdb" /debug /machine:I386 /out:"Debug/Sample.exe" /pdbtype:sept 
+.\Debug\CCrystalEditView.obj
+.\Debug\CCrystalTextBuffer.obj
+.\Debug\CCrystalTextView.obj
+.\Debug\CCrystalTextView2.obj
+.\Debug\CEditReplaceDlg.obj
+.\Debug\CFindTextDlg.obj
+.\Debug\ChildFrm.obj
+.\Debug\cplusplus.obj
+.\Debug\MainFrm.obj
+.\Debug\Sample.obj
+.\Debug\SampleDoc.obj
+.\Debug\SampleView.obj
+.\Debug\StdAfx.obj
+.\Debug\Sample.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F.tmp"
+<h3>Output Window</h3>
+Compiling...
+CCrystalTextView2.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Sample.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

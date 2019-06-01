@@ -1,0 +1,102 @@
+// Create the Control
+LISTITEM* pParentItem = NULL;
+m_pCheckList = new CCheckList();
+if( !m_pCheckList->Create( CRect(50,50,300,300), this, 10001,
+IDB_CHECK, IDB_UNCHECK, IDB_MIDDLECHECK ))
+{
+ return;
+}
+
+// Add some items
+
+// Root Item
+pParentItem = m_pCheckListStandard->AddString("Exotics");
+
+// Sub Item
+m_ pCheckList ->AddString("Lamborghini", pParentItem );
+
+// Sub Item
+m_ pCheckList ->AddString("Corvette", pParentItem );
+
+// Sub Item
+m_ pCheckList ->AddString("Vector", pParentItem );
+
+// Sub Item
+m_ pCheckList ->AddString("Hummer", pParentItem );
+
+//  Sub-Sub Item
+pParentItem = m_ pCheckList ->AddString("Porsche", pParentItem );
+
+//  Sub-Sub Item
+m_ pCheckList ->AddString("Boxster", pParentItem );
+
+//  Sub-Sub Item
+m_ pCheckList ->AddString("928 S4", pParentItem);
+
+//  Sub-Sub Item
+m_ pCheckList ->AddString("959", pParentItem );
+
+// Root Item
+m_ pCheckList ->AddString("Luxury");
+
+// Root Item
+m_ pCheckList ->AddString("Trucks");
+
+// Root Item
+m_ pCheckList ->AddString("Sport Utility Vehicles");
+
+// Root Item
+m_ pCheckList ->AddString("Classics");
+
+
+// Function uses
+// Get Total Count
+CString csMessage;
+csMessage.Format("There are a total of %d items",
+ m_pCheckListStandard->GetCount() );
+
+AfxMessageBox(csMessage);
+
+// Get and Set the top index
+csMessage.Format("The top index is: %d",
+ m_pCheckListStandard->GetTopIndex() );
+
+AfxMessageBox(csMessage);
+m_pCheckListStandard->SetTopIndex(6);
+
+// Different ways to get an item
+LISTITEM* pItem =
+ m_pCheckListStandard->GetItem(
+  m_pCheckListStandard->GetTopIndex());
+
+AfxMessageBox(pItem->csText);
+pItem = m_pCheckList->GetItem((DWORD)5000);
+AfxMessageBox(pItem->csText);
+
+// Get and Set the Item data
+DWORD dwID =
+ m_pCheckListStandard->GetItemData(
+  m_pCheckListStandard->GetTopIndex());
+
+csMessage.Format("The Data for this item is: %ld", dwID );
+AfxMessageBox(csMessage);
+m_pCheckListStandard->SetItemData(6, 2000);
+
+// Get the text and text length
+CString csText;
+m_pCheckListStandard->GetText( 6, &csText );
+int nTemp = m_pCheckListStandard->GetTextLen( 7 );
+
+// Get and set the current selection
+m_pCheckListStandard->SetCurSel(6);
+nTemp = m_pCheckListStandard->GetCurSel();
+
+// Get and Set Checks
+m_pCheckListStandard->SetCheck(6, CHECKED);
+nTemp = m_pCheckListStandard->GetCheck(6);
+
+// Remove one item and all its subitems (if it has them)
+m_pCheckListStandard->DeleteString(6);
+
+// Delete eveything
+m_pCheckListStandard->ResetContent();

@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: JMultiColSample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/JMultiColSample.pch" /YX"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\3\01.combobox\Demo.05\JComboBx.cpp"
+"E:\codes\mfc\09.xiaohui\3\01.combobox\Demo.05\JMultiColSample.cpp"
+"E:\codes\mfc\09.xiaohui\3\01.combobox\Demo.05\JMultiColSampleDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP93.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/JMultiColSample.pdb" /debug /machine:I386 /out:"Debug/JMultiColSample.exe" /pdbtype:sept 
+.\Debug\JComboBx.obj
+.\Debug\JMultiColSample.obj
+.\Debug\JMultiColSampleDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\JMultiColSample.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP94.tmp"
+<h3>Output Window</h3>
+Compiling...
+JComboBx.cpp
+JMultiColSample.cpp
+JMultiColSampleDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+JMultiColSample.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

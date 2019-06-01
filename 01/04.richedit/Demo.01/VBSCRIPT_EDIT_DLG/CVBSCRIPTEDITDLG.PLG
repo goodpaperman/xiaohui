@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CVBScriptEditDlg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/CVBScriptEditDlg.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.01\VBSCRIPT_EDIT_DLG\CVBScriptEditDlg.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/CVBScriptEditDlg.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.01\VBSCRIPT_EDIT_DLG\CVBScriptEditDlg.cpp"
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.01\VBSCRIPT_EDIT_DLG\TWScriptEdit.cpp"
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.01\VBSCRIPT_EDIT_DLG\VBScriptEditDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPAF.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/CVBScriptEditDlg.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\1\04.richedit\Demo.01\VBSCRIPT_EDIT_DLG\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB0.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB1.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/CVBScriptEditDlg.pdb" /debug /machine:I386 /out:"Debug/CVBScriptEditDlg.exe" /pdbtype:sept 
+.\Debug\CVBScriptEditDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TWScriptEdit.obj
+.\Debug\VBScriptEditDlg.obj
+.\Debug\CVBScriptEditDlg.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CVBScriptEditDlg.cpp
+TWScriptEdit.cpp
+VBScriptEditDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+CVBScriptEditDlg.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

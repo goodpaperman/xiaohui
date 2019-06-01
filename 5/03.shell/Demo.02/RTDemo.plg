@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RTDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP199.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/RTDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\codes\mfc\09.xiaohui\5\03.shell\Demo.02\RTDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP199.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP19A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RTDemo.pdb" /debug /machine:I386 /out:"Debug/RTDemo.exe" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\ColorBtn.obj
+.\Debug\MainFrm.obj
+.\Debug\msflexgrid.obj
+.\Debug\OwnList.obj
+.\Debug\RTDemo.obj
+.\Debug\RTDemoDoc.obj
+.\Debug\RTDemoView.obj
+.\Debug\RTDlg.obj
+.\Debug\RTForm.obj
+.\Debug\RTSlider.obj
+.\Debug\StdAfx.obj
+.\Debug\TimerSpeed.obj
+.\Debug\graphics.obj
+.\Debug\random.obj
+.\Debug\RealTime.obj
+.\Debug\Str.obj
+.\Debug\RTDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP19A.tmp"
+<h3>Output Window</h3>
+Compiling...
+RTDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+RTDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

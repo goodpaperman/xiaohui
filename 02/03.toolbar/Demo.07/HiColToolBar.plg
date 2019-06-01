@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HiColToolBar - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40e /fo"Debug/HiColToolBar.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.07\HiColToolBar.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/HiColToolBar.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.07\HiColToolBar.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.07\HiColToolBarDoc.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.07\HiColToolBarView.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.07\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/HiColToolBar.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.07\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP10F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP110.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/HiColToolBar.pdb" /debug /machine:I386 /out:"Debug/HiColToolBar.exe" /pdbtype:sept 
+.\Debug\HiColToolBar.obj
+.\Debug\HiColToolBarDoc.obj
+.\Debug\HiColToolBarView.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\HiColToolBar.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP110.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+HiColToolBar.cpp
+HiColToolBarDoc.cpp
+HiColToolBarView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+HiColToolBar.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

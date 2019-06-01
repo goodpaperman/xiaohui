@@ -1,0 +1,18 @@
+#ifndef IDB_CHHCTRL_TB
+#include "chhres.h"
+#endif
+
+#ifdef APSTUDIO_INVOKED
+    #error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+// These are the images for the CHHCtrl navigation buttons
+
+IDB_CHHCTRL_TB          BITMAP  DISCARDABLE     "chhctrl\\res\\chhctrl.bmp"
+IDB_CHHCTRL_TBGRAY      BITMAP  DISCARDABLE     "chhctrl\\res\\chhctrlg.bmp"
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HHCTRL_NO_CHM       "Cannot find the \042%1\042 file. Check to see that the file exists on your disk. If it doesn't, you need to reinstall it."
+    IDS_HHCTRL_TBSTRINGS    "Home|Back|Forward|Print|Close|"
+END

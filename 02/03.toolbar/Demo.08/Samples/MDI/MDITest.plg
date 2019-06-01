@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MDITest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP194.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/MDITest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.08\Samples\MDI\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP194.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP195.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/mditest.pdb" /debug /machine:I386 /out:"..\..\lib\mditest.exe" /pdbtype:sept /libpath:"..\..\lib" 
+.\Debug\ChildFrm.obj
+.\Debug\ClassView.obj
+.\Debug\FileView.obj
+.\Debug\MainFrm.obj
+.\Debug\MDITest.obj
+.\Debug\MDITestDoc.obj
+.\Debug\MDITestView.obj
+.\Debug\StdAfx.obj
+.\Debug\MDITest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP195.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+mditest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

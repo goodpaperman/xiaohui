@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML//EN">
+<HTML>
+<HEAD>
+
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type><TITLE>CHHCtrl</TITLE>
+<META content='"MSHTML 4.72.3110.7"' name=GENERATOR>
+</HEAD>
+<BODY>
+<P>The source code for CHHCtrl and CItsFile is provided as is. No warranty of 
+any form is implied. You may use and modify the code as you see fit, including 
+redistributing any products derived from the code. </P>
+<H2>What is CHHCtrl?</H2>CHHCtrl is an MFC class designed for placing an 
+embedded help window inside of a dialog, property sheet, or window. The CHHCtrl 
+class hosts shdocvw directly rather then using the HtmlHelp API. With CHHCtrl, 
+you get access to all IWebBrowser methods, along with the following additional 
+support for HTML Help CHM files: 
+<UL>
+    <LI>Mapped IDs -- this allows you to use numeric values that your help 
+    author can alias into the HTML file he/she chooses. Using mapped ids means 
+    the author can change what file is displayed without having to recompile 
+    your project. 
+    <LI>CHM file searching -- this uses the same algorithm as HTML Help for 
+    locating your CHM file so you don't need to give a path to the CHM file. 
+    </LI></UL>
+<P>Like the HtmlHelp API, CHHCtrl lets you specify a toolbar with the following 
+differences: 
+<UL>
+    <LI>You can choose to display or not display text labels. 
+    <LI>You can add any custom buttons you want. 
+    <LI>The Home button will appear before the Back button (more appropriate for 
+    embedded help windows)</LI></UL>
+<H2>Incorporating CHHCtrl into your project.</H2>The first thing you need to do 
+is merge the resource files into your project. This includes merging two bitmaps 
+and a string resource. You can either merge these in by hand into your existing 
+resource file, or you can #include chhctrl.rc2.
+<P>After merging or including the resources, you need to add hhctrl.cpp and 
+cits.cpp to your project. The cits.cpp file is used to read the map section out 
+of a CHM file. The hhctrl.cpp file is where the hosting is handled. 
+<P>If your project isn't ole enabled, you need to add AfxOleInit to the 
+InitInstance function of your application. 
+<P>
+<H2>Adding an embedded help window to a dialog.</H2>In your dialog template, 
+create a static text control. Set the placement and size to be where you want 
+the embedded help window to be, including the toolbar if you are going to use 
+one. If you use a sunken style then it will be easier to visually see where the 
+embedded help window will appear. In the header file for your dialog, #include 
+&quot;hhctrl.h&quot;. To the dialog class, add the member &quot;CHHCtrl 
+m_hhctrl&quot;. In either DoDataExchange() or OnInitDialog(), add the following 
+code: 
+<DL>
+    <DD>m_hhctrl.ReplaceControl(this, <I>static text id</I>, <I>buttons (if 
+    any)</I>, <I>home url if HHCTRL_BTN_HOME is used</I>); </DD></DL>
+<P>This will replace the static control with the embedded help window. Next, you 
+need to tell it what CHM file to use. For example: 
+<DL>
+    <DD>m_hhctrl.SetChmFile(&quot;myfile.chm&quot;); </DD></DL>
+<P>Note that if your chm file is in the same directory as your application, or is registered, 
+or is in the windows\help directory, then you don't need a path to it. 
+<P>Now whenever you want to jump to an HTML file, or mapped id, use the 
+NavigateCHM method of CHHCtrl. 
+<P>If you used the toolbar, then you need to add and OnCommand() method to your 
+class (or edit an existing one). Within this method, call 
+m_hhctrl.OnCommand(wParam). This will enable CHHCtrl to process clicking of the 
+toolbar buttons. 
+<H2>CHHCtrl methods</H2>Besides the methods for accessing IWebBrowser, the 
+following methods can be called: 
+<UL>
+    <LI><STRONG>LPCTSTR GetChmFile()</STRONG> -- returns a pointer to the 
+    current CHM file. This is a fully qualified path. 
+    <LI><STRONG>bool SetChmFile(LPCTSTR pszChm)</STRONG> -- specifies the CHM 
+    file to use for calls to NavigateCHM. Returns false if the CHM file cannot 
+    be found. 
+    <LI><STRONG>bool FindChmFile(LPCTSTR pszFile, LPTSTR pszDst)</STRONG> -- 
+    finds the specified CHM file and copies it to the destination buffer. That 
+    buffer should be MAX_PATH in size. Returns false if the CHM file cannot be 
+    found. 
+    <LI><STRONG>void SetHomeFile(LPCTSTR pszUrl)</STRONG> -- changes the URL to 
+    jump to when the Home button is clicked. 
+    <LI>void MoveWindow(CRect* prc, BOOL fRepaint) -- call this to change the 
+    position and size of the embedded help window. 
+    <LI><STRONG>HRESULT NavigateChm(LPCTSTR URL, LPCTSTR lpszTargetFrameName = 
+    NULL) </STRONG>-- navigates to an HTML file within the previous set CHM 
+    file. For example, if your CHM file was called &quot;myfile.chm&quot; you 
+    could specify &quot;html/myfile.htm&quot; which is equivalent to 
+    &quot;ms-its:c:\windows\help\myfile.chm::/html/myfile.htm&quot;. 
+    <LI><STRONG>HRESULT NavigateChm(UINT mapID, LPCTSTR lpszTargetFrameName = 
+    NULL)</STRONG> -- same as above, only you specify a mapped id number. For 
+    more detailed information about mapped ids, look at the &quot;mapping topic 
+    IDS&quot; keyword in the HTML Help Index that comes with HTML Help 
+    Workshop.</LI></UL>
+<H2>Additional notes</H2>
+<P>If you aren't using Visual Studio 6, then you need the updated header files 
+from the Internet Explorer Client SDK.</P>
+<P>The class CItsFile is a wrapper around the IStorage interface used to read 
+CHM and ITS files. It's used by CHHCtrl to read the map section out of a CHM 
+file, but you can also use it to read HTML files, graphics, or any file that you 
+want. Look at the NavigateCHM(UINT mapID, ...) method in hhctrl.cpp for an 
+example of how to read a file from within a CHM file.</P>
+<P>The HTML Help ActiveX control will have the same limitations in your embedded 
+window as it would in a web page. That means associative links and training card 
+commands will not work. KeyWorks is currently working on an 
+extension to the CHHCtrl class that will provide scripting capability that will 
+provide the functionality of most of these commands without having to load an 
+ActiveX control to do it.</P>
+<P>&nbsp;</P></BODY></HTML>

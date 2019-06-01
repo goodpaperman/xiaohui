@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pushpinsheet - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPD4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Debug/pushpinsheet.pch" /YX /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\3\03.tab\Demo.03\pushpin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPD4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPD5.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:".\Debug/pushpinsheet.pdb" /debug /machine:I386 /out:".\Debug/pushpinsheet.exe" 
+.\Debug\MyPropertyPage1.obj
+.\Debug\MyPropertySheet.obj
+.\Debug\pushpin.obj
+.\Debug\pushpinFrame.obj
+.\Debug\PushPinSheet.obj
+.\Debug\PushPinSheetDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\PushPinSheet.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPD5.tmp"
+<h3>Output Window</h3>
+Compiling...
+pushpin.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+pushpinsheet.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

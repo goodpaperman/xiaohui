@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ListTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP7A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ListTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"E:\codes\mfc\09.xiaohui\1\02.listview\Demo.06\ListTest.cpp"
+"E:\codes\mfc\09.xiaohui\1\02.listview\Demo.06\ListTestDlg.cpp"
+"E:\codes\mfc\09.xiaohui\1\02.listview\Demo.06\ListCtrlEx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP7A.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ListTest.pdb" /debug /machine:I386 /out:"Debug/ListTest.exe" /pdbtype:sept  .\Debug\ListTest.obj .\Debug\ListTestDlg.obj .\Debug\StdAfx.obj .\Debug\ListTest.res .\Debug\ListCtrlEx.obj "
+<h3>Output Window</h3>
+Compiling...
+ListTest.cpp
+ListTestDlg.cpp
+ListCtrlEx.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ListTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

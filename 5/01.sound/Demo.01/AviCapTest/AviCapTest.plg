@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AviCapTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/AviCapTest.res" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\AviCapTest.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/AviCapTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\AviCapTest.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\AviCapTestDoc.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\AviCapTestView.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\Cavicap.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\EnhCtl.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\Info.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\ProgDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/AviCapTest.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.01\AviCapTest\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB9.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPBA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/AviCapTest.pdb" /debug /machine:I386 /out:"Debug/AviCapTest.exe" /pdbtype:sept 
+.\Debug\AviCapTest.obj
+.\Debug\AviCapTestDoc.obj
+.\Debug\AviCapTestView.obj
+.\Debug\Cavicap.obj
+.\Debug\EnhCtl.obj
+.\Debug\Info.obj
+.\Debug\MainFrm.obj
+.\Debug\ProgDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\AviCapTest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPBA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AviCapTest.cpp
+AviCapTestDoc.cpp
+Generating Code...
+Compiling...
+AviCapTestView.cpp
+Cavicap.cpp
+Generating Code...
+Compiling...
+EnhCtl.cpp
+Info.cpp
+Generating Code...
+Compiling...
+MainFrm.cpp
+ProgDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+AviCapTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

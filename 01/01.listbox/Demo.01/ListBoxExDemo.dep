@@ -1,0 +1,22 @@
+# Microsoft Developer Studio Generated Dependency File, included by ListBoxExDemo.mak
+
+.\ListBoxExDemo.cpp : \
+	".\ListBoxExDemo.h"\
+	".\ListBoxExDemoDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\ListBoxExDemo.rc : \
+	".\res\ListBoxExDemo.ico"\
+	".\res\ListBoxExDemo.rc2"\
+	
+
+.\ListBoxExDemoDlg.cpp : \
+	".\ListBoxExDemo.h"\
+	".\ListBoxExDemoDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

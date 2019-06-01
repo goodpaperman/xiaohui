@@ -1,0 +1,35 @@
+
+// repositions client area of specified window
+// assumes everything has WS_BORDER or is inset like it does
+//  (includes scroll bars)
+static void AFXAPI DeferClientPos(AFX_SIZEPARENTPARAMS* lpLayout,
+	CWnd* pWnd, int x, int y, int cx, int cy, BOOL bScrollBar)
+{
+	ASSERT(pWnd != NULL);
+	ASSERT(pWnd->m_hWnd != NULL);
+
+	if (bScrollBar)
+	{
+		// if there is enough room, draw scroll bar without border
+		// if there is not enough room, set the WS_BORDER bit so that
+		//   we will at least get a proper border drawn
+		BOOL bNeedBorder = (cx <= CX_BORDER || cy <= CY_BORDER);
+		pWnd->ModifyStyle(bNeedBorder ? 0 : WS_BORDER,
+			bNeedBorder ? WS_BORDER : 0);
+	}
+	CRect rect(x, y, x+cx, y+cy);
+
+	// adjust for border size (even if zero client size)
+
+	// adjust for 3d border (splitter windows have implied border)
+	if ((pWnd->GetExStyle() & WS_EX_CLIENTEDGE) ||
+		  pWnd->IsKindOf(RUNTIME_CLASS(CSplitterWnd)))
+		rect.InflateRect(CX_BORDER*2, CY_BORDER*2);
+
+	// first check if the new rectangle is the same as the current
+	CRect rectOld;
+	pWnd->GetWindowRect(rectOld);
+	pWnd->GetParent()->ScreenToClient(&rectOld);
+	if (rect != rectOld)
+		AfxRepositionWindow(lpLayout, pWnd->m_hWnd, rect);
+}

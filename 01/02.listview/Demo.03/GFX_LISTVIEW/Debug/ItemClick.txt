@@ -1,0 +1,94 @@
+	if (GetFocus() != this) SetFocus();
+
+	CPoint point;
+	GetCursorPos(&point);
+	ScreenToClient(&point);
+
+	int index, colnum;
+	if ((index = HitTestEx(point, &colnum)) != -1)
+	{
+		int cate = -1;
+		if (pCategoryManager != NULL) 
+		{
+			cate = pCategoryManager->IsListItemACategory(GetListCtrl().GetItemData(index));
+			if (cate >= 0)
+			{
+				if (colnum == 0)
+				{
+					if (pCategoryManager->pCategory[cate].bExpanded)
+					{
+						pCategoryManager->RemoveCategoryItems(cate, index, this);
+						CRect rcAllLabels;
+						GetListCtrl().GetItemRect(index,rcAllLabels,LVIR_BOUNDS);
+						CRect rc;
+						GetClientRect(&rc);
+						if (rc.right > rcAllLabels.right)
+						{
+							rc.left = rcAllLabels.right;
+							rc.top = rcAllLabels.bottom;
+							InvalidateRect(rc, true);
+						}
+					}
+					else
+					{
+						pCategoryManager->FillCategoryItems(cate, index, this);
+					}
+
+					pCategoryManager->pCategory[cate].bExpanded = !(pCategoryManager->pCategory[cate].bExpanded);
+
+					CRect rcLittleBox;
+					GetSubItemRect(index, 0, rcLittleBox);
+					rcLittleBox.bottom ++;
+					rcLittleBox.right ++;
+					InvalidateRect(rcLittleBox, false);
+
+
+
+					if (dwFlag&fScrollBarAlways) 
+					{
+						ShowScrollBar(SB_BOTH);
+						int iPageItem = GetListCtrl().GetCountPerPage();
+						int iItemCount = GetListCtrl().GetItemCount();
+						if (iItemCount < iPageItem) EnableScrollBar(SB_VERT, ESB_DISABLE_BOTH);
+						else EnableScrollBar(SB_VERT, ESB_ENABLE_BOTH);
+
+						CRect rcAllLabels;
+						GetListCtrl().GetItemRect(0,rcAllLabels,LVIR_BOUNDS);
+
+						EnableScrollBar(SB_HORZ, rcAllLabels.Width() < m_cxClient ? ESB_DISABLE_BOTH : ESB_ENABLE_BOTH);
+					}
+
+					*pResult = 1;
+					return;
+				}
+			}
+		}
+
+
+		if (iSubItemFocus != colnum)
+		{
+			CRect src;
+			GetSubItemRect(index, iSubItemFocus, src);
+			InvalidateRect(src);
+			iSubItemFocus = colnum;
+			GetSubItemRect(index, iSubItemFocus, src);
+			InvalidateRect(src);
+		}
+		UINT flag = LVIS_FOCUSED;
+		if ((GetListCtrl().GetItemState(index, flag) & flag) == flag)
+		{
+			if (cate < 0)
+			{
+				int irealcol = GetColumnIndex(colnum);
+				if (dwhEdit&(1 << irealcol)) EditSubLabel(index, colnum);
+				else if (dwhCombo&(1 << irealcol)) ComboSubLabel(index, colnum);
+				else if (dwhComboEx&(1 << irealcol)) ComboSubLabel(index, colnum, true);
+			}
+		}
+		else 
+		{
+			GetListCtrl().SetItemState(index, LVIS_SELECTED | LVIS_FOCUSED , LVIS_SELECTED | LVIS_FOCUSED);
+		}
+	}
+	
+	*pResult = 1;

@@ -1,0 +1,97 @@
+
+
+PLEASE BE AWARE THAT INSTALLATION AND USAGE OF THE WITHIN SOFTWARE IS PERMITTED ONLY IN CONJUCTION WITH TRUSTED PLATFORM MODULE CHIP PRODUCTS (“TPM CHIPS”) FOR WHICH YOU HAVE OBTAINED A LICENSE.  IF YOU HAVE NOT OBTAINED SUCH A LICENSE TO USE TPM CHIPS, YOU MUST NOT INSTALL OR USE THIS SOFTWARE. YOUR INSTALLATION AND/OR USAGE IN VIOLATION OF THIS RESTRICTION COULD SUBJECT YOU TO LEGAL LIABILITIES. 
+
+November 2007 - NTRU Cryptosystems, Inc. 
+
+                          Software License Agreement 
+
+The object code for the software and all documentation included on this installation (collectively, the “Software”) is licensed hereunder solely to you (the “End User”) by NTRU Cryptosystems, Inc (“NTRU”) under the following terms and conditions of this Software License Agreement (this “Agreement”). The Software is being provided to End User by the manufacturer (“TPM Vendor”) of the Trusted Platform Module Chip Products (“TPM CHIPS”) in connection with TPM Vendors TPM CHIPS. As stated above, if you have not obtained a license  for TPM CHIPS  sold by TPM Vendor, you must not install or use the within software; and in any event usage is only permitted in connection with such TPM Vendor TPM CHIPS. 
+
+This Agreement relates solely to End Users relationship with NTRU, and does not affect any rights or remedies that End User may have with respect to TPM Vendor.
+
+BY CLICKING THE BOX LABELLED "I ACCEPT" YOU ACKNOWLEDGE THAT YOU HAVE READ THE TERMS AND CONDITIONS OF THIS AGREEMENT, UNDERSTAND THEM AND AGREE TO BE BOUND BY THEM.  IF YOU DO NOT ACCEPT SUCH TERMS, CLICK THE BOX LABELLED "I DO NOT ACCEPT", AND THE INSTALLATION WILL BE ABORTED. 
+
+Grant of License.  
+Subject to the terms and conditions of this Agreement, NTRU hereby grants to End User a non-exclusive,  non-transferable, non-sublicensable license to use one copy of the Software in object code form only, solely for use on the system that includes the licensed TPM Vendor TPM CHIPS.
+
+Term.  This Agreement shall continue in full force and effect until End Users breach of this Agreement or termination of its rights to use TPM Vendor TPM CHIPS.  Promptly upon termination of this Agreement, End User shall return to TPM Vendor or destroy all copies of the Software, and all related materials.
+
+Permitted Use/Restrictions on Use.  
+
+End User shall use the Software solely in order to access the TSS functionality provided by the Software. In no event shall End User:  
+
+	modify or create derivative works of the Software;
+	disassemble, de-compile, reverse engineer, or otherwise attempt to discover the source code of the Software; 
+	utilize the Software except as expressly authorized hereby; or
+	remove any proprietary notices or labels on the Software.
+
+Ownership.  All right, title, and interest in and to the Software and all intellectual property embodied therein or related thereto shall be and shall remain the sole and exclusive property of NTRU.  End User shall have no licenses or rights, whether express or implied, to the Software or any other NTRU intellectual property except as expressly provided herein.  The license granted under this Agreement does not grant End User any right to any enhancements or updates to the Software. 
+
+DISCLAIMER OF WARRANTIES/ CRITICAL APPLICATIONS.  THE SOFTWARE AS PROVIDED BY NTRU IS PROVIDED “AS IS” WITH RESPECT TO NTRU WITHOUT WARRANTIES OF ANY KIND AND NTRU EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, WITH RESPECT TO THE SOFTWARE, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. NTRU MAKES NO REPRESENTATIONS CONCERNING THE QUALITY OF THE SOFTWARE OR AS TO THE NONINFRINGEMENT BY THE SOFTWARE OF ANY THIRD PARTY INTELLECTUAL PROPERTY RIGHTS. NTRU SOFTWARE IS NOT DESIGNED, AUTHORIZED, OR WARRANTED TO BE SUITABLE FOR USE IN CRITICAL APPLICATIONS REQUIRING FAIL-SAFE PERFORMANCE, such as in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, life support machines, or weapons systems, in which the failure of the Software could lead to death, personal injury, or severe physical or environmental damage (“CRITICAL APPLICATIONS”). NTRU and its suppliers specifically disclaim any express or implied warranty of fitness for Critical Applications.
+
+End User shall be responsible for ensuring that the Software is suitable for use in the intended application given the expected operating conditions. NTRU accepts no responsibility for the application of the Software or the inability to use the Software.
+
+Limitation of Liability.  IN NO EVENT SHALL NTRU HAVE ANY LIABILITY TO END USER FOR DAMAGES OF ANY KIND, INCLUDING DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Confidentiality.  The Software is confidential information of NTRU and shall not be disclosed to any third party.    End User shall promptly notify NTRU if  End User becomes aware of any breach of this confidentiality obligation and agrees to remedy any such breach.
+
+General.  This Agreement shall be governed by the laws of The Commonwealth of Massachusetts without reference to conflict of laws principles.  The application of each of (i) the United Nations Convention of Contracts for the International Sale of Goods, (ii) the 1974 Convention on the Limitation Period in the International Sale of Goods (the “1974 Convention”) and (iii) the Protocol amending the 1974 Convention, done at Vienna April 11, 1980 is expressly excluded.  End User shall not assign this Agreement in any manner, and any such purported assignment shall be void.  This Agreement constitutes the entire agreement and understanding of the parties relating to the subject matter hereof and supersedes all prior negotiations and understandings between the parties, both oral and written, regarding such subject matter.  No waiver or modification of this Agreement shall be valid unless in a formal writing signed by an officer of each party.  If any provision of this Agreement is held by a court of competent jurisdiction to be invalid or unenforceable, the remaining provisions of this Agreement shall remain in full force and effect.  
+
+U.S. Government End Users.  The Software is a "commercial item," as that term is defined in 48 C.F.R. 2.101 (Oct. 1995), consisting of "commercial computer software" and "commercial computer software documentation," as such terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent with 48 C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995), all U.S. Government End Users acquire the Software with only those rights set forth herein.
+
+Export.  The Software may be subject to United States export control laws, including the U.S. Export Administration Act and its associated regulations, and may be subject to export or import regulations in other countries.  End User must comply strictly with all such regulations that are now or later in effect.
+
+
+B- Open SSL License.
+
+This is a copy of the current LICENSE file inside the CVS repository. 
+
+LICENSE ISSUES
+
+ The OpenSSL toolkit stays under a dual license, i.e., both the conditions of the OpenSSL License and the original SSLeay license apply to the toolkit. See below for the actual license texts. Actually both licenses are BSD-style Open Source licenses. In case of any license issues related to OpenSSL please contact openssl-core@openssl.org.
+
+OpenSSL License Copyright (c) 1998-2003 The OpenSSL Project.  All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ 
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. All advertising materials mentioning features or use of this software must display the following acknowledgment: "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+
+4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact openssl-core@openssl.org.
+
+5. Products derived from this software may not be called "OpenSSL" nor may "OpenSSL" appear in their names without prior written permission of the OpenSSL Project.
+
+6. Redistributions of any form whatsoever must retain the following acknowledgment: "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+
+THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).  This product includes software written by Tim Hudson (tjh@cryptsoft.com).
+ 
+
+ Original SSLeay License Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.
+ 
+This package is an SSL implementation written by Eric Young (eay@cryptsoft.com). The implementation was written so as to conform with Netscapes SSL. This library is free for commercial and non-commercial use as long as the following conditions are adhered to.  The following conditions apply to all code found in this distribution, be it the RC4, RSA, lhash, DES, etc., code; not just the SSL code.  The SSL documentation included with this distribution is covered by the same copyright terms except that the holder is Tim Hudson (tjh@cryptsoft.com).
+
+Copyright remains Eric Young's, and as such any Copyright notices in the code are not to be removed. If this package is used in a product, Eric Young should be given attribution as the author of the parts of the library used. This can be in the form of a textual message at program startup or in documentation (online or textual) provided with the package. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. All advertising materials mentioning features or use of this software must display the following acknowledgement:
+
+"This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)" The word 'cryptographic' can be left out if the routines from the library being used are not cryptographic related.
+
+4. If you include any Windows specific code (or a derivative thereof) from the apps directory (application code) you must include an acknowledgement:
+
+"This product includes software written by Tim Hudson (tjh@cryptsoft.com)". THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+The license and distribution terms for any publically available version or derivative of this code cannot be changed.  i.e., this code cannot simply be copied and put under another distribution license including the GNU Public License.  
+
+
+By affirming your agreement to this SOFTWARE LICENSE AGREEMENT (clicking “I Accept”), and by using the Software, YOU, the END USER, acknowledge that you have read this Agreement, that you understand it, and that you agree to be bound by its terms and conditions. 
+
+
+

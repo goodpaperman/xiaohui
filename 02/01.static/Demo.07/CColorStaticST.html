@@ -1,0 +1,310 @@
+<HTML>
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <META NAME="Author" CONTENT="SoftechSoftware">
+  <TITLE>CColorStaticST documentation</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<FONT Face="Verdana,Arial" Size=2>
+
+<CENTER>
+  <FONT SIZE=+4>CColorStaticST v1.0</FONT><BR>
+  Copyright (C) 1998 by SoftechSoftware<BR>
+  Thank you for use this SoftechSoftware! Thanks very much!
+</CENTER>
+
+<BR><BR>
+<FONT SIZE=+2>Contact addresses</FONT><BR><BR>
+SoftechSoftware E-Mail: <BR>
+<A HREF="mailto:davide_calabro@yahoo.com">davide_calabro@yahoo.com</A>
+<BR>
+SoftechSoftware homepage: <BR>
+<A HREF="http://members.tripod.com/~SoftechSoftware/index.html">http://members.tripod.com/~SoftechSoftware/index.html</A>
+<BR>
+CColorStaticST homepage: <BR>
+<A HREF="http://members.tripod.com/~SoftechSoftware/colorstc.html">http://members.tripod.com/~SoftechSoftware/colorstc.html</A>
+
+<BR><BR><BR>
+<FONT SIZE=+2>Description</FONT>
+<BR><BR>
+CColorStaticST is a class derived from MFC CStatic class.<BR>
+This class lets put static controls inside your applications
+and easly make them colored or even blinking!
+
+<BR><BR>
+CColorStaticST features: <BR>
+<UL>
+<LI>Standard CStatic properties
+<LI>Customizable background color
+<LI>Customizable text color
+<LI>Background color can blink
+<LI>Text can blink
+<LI>Notification message can be sent on rising blinks
+<LI>Written in Visual C++ v5.0
+<LI>Full source code included!
+<LI>It's free!
+</UL>
+<BR>
+You are encouraged to use this class everywhere you want; there is no fee
+required for CColorStaticST. Freely add modifications and/or fix bugs, but please,
+send any of these to
+<A HREF="mailto:davide_calabro@yahoo.com">SoftechSoftware</A>!
+
+<BR><BR><BR>
+<FONT SIZE=+2>How to integrate CColorStaticST in your application</FONT>
+<BR><BR>
+<PRE>
+    In your project include the following files:
+    <FONT COLOR="#990000">
+        ColorStaticST.h
+        ColorStaticST.cpp
+    </FONT>
+    With dialog editor create a static text called, for example, IDC_DANGER
+    and create a member variable for it:
+    <FONT COLOR="#990000">
+        CColorStaticST m_stcDanger;
+    </FONT>
+
+    Now attach the static text to CColorStaticST. In your OnInitDialog procedure:
+    <FONT COLOR="#990000">
+        // Call the base method
+        CDialog::OnInitDialog();
+
+        // Create the IDC_DANGER text
+        m_stcDanger.SubclassDlgItem(IDC_DANGER, this);
+    </FONT>
+    By default the static text will have the standard system colors.
+    Both text and backgroud color can be customized:
+    <FONT COLOR="#990000">
+        // Change the text color to White
+        m_stcDanger.SetTextColor(RGB(255, 255, 255));
+        // Change the background color to Green
+        m_stcDanger.SetBkColor(RGB(0, 255, 0));
+    </FONT>
+    The text and/or the background can blink!
+    Two colors must be supplied for text and background blinks.
+    First color will be used for blink OFF state and second color for 
+    blink ON state (called also rising blink):
+    <FONT COLOR="#990000">
+        // Set blink colors for text
+        m_stcDanger.SetBlinkTextColors(RGB(128, 0, 0), RGB(255, 255, 255));
+        // Set blink colors for background
+        m_stcDanger.SetBlinkBkColors(RGB(128, 0, 0), RGB(255, 0, 0));
+
+        // Start text blinking
+        m_stcDanger.StartTextBlink(TRUE, CColorStaticST::ST_FLS_FAST);
+        // Start background blinking
+        m_stcDanger.StartBkBlink(TRUE, CColorStaticST::ST_FLS_FAST);
+    </FONT>
+    CColorStaticST can send a message to the parent window each time it has a
+    rising blink. To do this a user defined message and a parent window must be
+    supplied:    
+    <FONT COLOR="#990000">
+        // Enable notification message
+        m_stcDanger.EnableNotify(this, WM_USER + 10);
+    </FONT>
+    Your static text is now a CColorStaticST!
+
+    Look inside the demo program to learn more about CColorStaticST. This is the best way!
+</PRE>
+
+<BR><BR><BR>
+<FONT SIZE=+2>CColorStaticST members</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void SetTextColor(COLORREF crTextColor = 0xffffffff);
+</FONT>
+<BR>
+Set color for text (when not blinking)
+<BR><BR>
+Input values:
+<UL>
+<LI>crTextColor<BR>
+The new text color
+</UL>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.SetTextColor(RGB(255, 255, 255));<BR>
+m_stcDanger.SetTextColor(); // To restore the default system color
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+COLORREF GetTextColor();
+</FONT>
+<BR>
+Get current text color
+<BR><BR>
+Example:<BR>
+<FONT COLOR="#990000">
+COLORREF crRetValue = m_stcDanger.GetTextColor();
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void SetBkColor(COLORREF crBkColor = 0xffffffff);
+</FONT>
+<BR>
+Set color for background (when not blinking)
+<BR><BR>
+Input values:
+<UL>
+<LI>crBkColor<BR>
+The new background color
+</UL>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.SetBkColor(RGB(255, 0, 0));<BR>
+m_stcDanger.SetBkColor(); // To restore the default system color
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+COLORREF GetBkColor();
+</FONT>
+<BR>
+Get current background color
+<BR><BR>
+Example:<BR>
+<FONT COLOR="#990000">
+COLORREF crRetValue = m_stcDanger.GetBkColor();
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void SetBlinkTextColors(COLORREF crBlinkTextColor1, COLORREF crBlinkTextColor2);
+</FONT>
+<BR>
+Set colors for text (when blinking)
+<BR><BR>
+Input values:
+<UL>
+<LI>crBlinkTextColor1<BR>
+Text color for blink OFF state
+<LI>crBlinkTextColor2<BR>
+Text color for blink ON state (rising blink)
+</UL>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.SetBlinkTextColors(RGB(128, 0, 0), RGB(255, 255, 255));
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void StartTextBlink(BOOL bStart = TRUE, UINT nElapse = ST_FLS_NORMAL);
+</FONT>
+<BR>
+Start/stop text blinking
+<BR><BR>
+Input values:
+<UL>
+<LI>bStart<BR>
+TRUE starts blinking<BR>
+FALSE stops blinking<BR>
+<LI>nElapse<BR>
+Defines the text blinking intervall. Possible values are:<BR>
+ST_FLS_SLOW (2000 ms)<BR>
+ST_FLS_NORMAL (1000 ms)<BR>
+ST_FLS_FAST (500 ms)<BR>
+</UL>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.StartTextBlink(TRUE, CColorStaticST::ST_FLS_FAST);<BR>
+m_stcDanger.StartTextBlink(TRUE, 250); // To blink with custom intervall<BR>
+m_stcDanger.StartTextBlink(); // To stop blinking
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void SetBlinkBkColors(COLORREF crBlinkBkColor1, COLORREF crBlinkBkColor2);
+</FONT>
+<BR>
+Set colors for background (when blinking)
+<BR><BR>
+Input values:
+<UL>
+<LI>crBlinkBkColor1<BR>
+Background color for blink OFF state
+<LI>crBlinkBkColor2<BR>
+Background color for blink ON state (rising blink)
+</UL>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.SetBlinkBkColors(RGB(128, 0, 0), RGB(255, 0, 0));
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void StartBkBlink(BOOL bStart = TRUE, UINT nElapse = ST_FLS_NORMAL);
+</FONT>
+<BR>
+Start/stop background blinking
+<BR><BR>
+See StartTextBlink for possible input values
+<BR><BR>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.StartBkBlink(TRUE, CColorStaticST::ST_FLS_FAST);<BR>
+m_stcDanger.StartBkBlink(TRUE, 250); // To blink with custom intervall<BR>
+m_stcDanger.StartBkBlink(); // To stop blinking
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+void EnableNotify(CWnd* pParent = NULL, UINT nMsg = WM_USER);
+</FONT>
+<BR>
+Enable/Disable sending notification message on rising blinks
+<BR><BR>
+Input values:
+<UL>
+<LI>pParent<BR>
+Parent window of the static text
+<LI>nMsg<BR>
+Message to send
+</UL>
+Example:<BR>
+<FONT COLOR="#990000">
+m_stcDanger.EnableNotify(this, WM_USER + 10);<BR>
+m_stcDanger.EnableNotify(); // To disable message sending
+</FONT>
+
+<BR><BR>
+<FONT COLOR="#990000" SIZE=+1>
+static const short GetVersionI()<BR>
+static const char* GetVersionC()
+</FONT>
+<BR>
+Return CColorStaticST version
+<BR><BR>
+Example:<BR>
+<FONT COLOR="#990000">
+int nVer = CColorStaticST::GetVersionI();  // Divide by 10 to get actual version<BR>
+char szVer[20];<BR>
+strcpy(szVer, CColorStaticST::GetVersionC());
+</FONT>
+
+<BR><BR><BR>
+<FONT SIZE=+2>History</FONT>
+<BR><BR>
+<UL><LI>
+CColorStaticST v1.0<BR>
+First release
+</UL>
+
+<BR>
+<FONT SIZE=+2>Things to do</FONT>
+<BR><BR>
+<UL>
+<LI>Any suggestion?
+</UL>
+
+<P>
+<HR>
+<I>Copyright &copy; 1998 by SoftechSoftware.</I> <BR>
+<A HREF="mailto:davide_calabro@yahoo.com">davide_calabro@yahoo.com</A><BR>
+
+</FONT>
+</BODY></HTML>

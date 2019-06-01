@@ -1,0 +1,50 @@
+// MainFrm.h : interface of the CMainFrame class
+//
+/////////////////////////////////////////////////////////////////////////////
+
+class CMainFrame : public CFrameWnd
+{
+protected: // create from serialization only
+	CMainFrame();
+	DECLARE_DYNCREATE(CMainFrame)
+
+// Attributes
+public:
+	BOOL	m_bSpecialCaption;
+
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CMainFrame)
+	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CMainFrame();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:  // control bar embedded members
+	CStatusBar  m_wndStatusBar;
+	CToolBar    m_wndToolBar;
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CMainFrame)
+	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+	afx_msg void OnViewSpecialCaption();
+	afx_msg void OnUpdateViewSpecialCaption(CCmdUI* pCmdUI);
+	afx_msg void OnViewNetscapeSheet();
+	afx_msg void OnViewSimpleSheet();
+	afx_msg void OnViewFancySheet();
+	afx_msg void OnViewUsersSheet();
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+/////////////////////////////////////////////////////////////////////////////

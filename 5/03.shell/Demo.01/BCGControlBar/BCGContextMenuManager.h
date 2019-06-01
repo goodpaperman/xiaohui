@@ -1,0 +1,48 @@
+// BCGContextMenuManager.h: interface for the CBCGContextMenuManager class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_BCGCONTEXTMENUMANAGER_H__64F13A54_E5A9_11D1_A08F_00A0C9B05590__INCLUDED_)
+#define AFX_BCGCONTEXTMENUMANAGER_H__64F13A54_E5A9_11D1_A08F_00A0C9B05590__INCLUDED_
+
+#if _MSC_VER >= 1000
+#pragma once
+#endif // _MSC_VER >= 1000
+
+#ifndef __AFXTEMPL_H__
+	#include "afxtempl.h"
+#endif
+
+#include "bcgcontrolbar.h"
+
+class BCGCONTROLBARDLLEXPORT CBCGContextMenuManager
+{
+public:
+	CBCGContextMenuManager();
+	virtual ~CBCGContextMenuManager();
+
+// Opreations:
+public:
+	BOOL AddMenu (UINT uiMenuNameResId, UINT uiMenuResId);
+	BOOL AddMenu (LPCTSTR lpszName, UINT uiMenuResId);
+
+	BOOL ShowPopupMenu (UINT uiMenuResId, int x, int y, CWnd* pWndOwner);
+	BOOL ShowPopupMenu (HMENU hmenuPopup, int x, int y, CWnd* pWndOwner);	// Any menu,
+																			// maybe not added
+
+	BOOL LoadState (LPCTSTR lpszProfileName);
+	BOOL SaveState (LPCTSTR lpszProfileName);
+
+// Customization operations:
+	void GetMenuNames (CStringList& listOfNames) const;
+	HMENU GetMenuByName (LPCTSTR lpszName) const;
+
+// Attributes:
+protected:
+	CMap<UINT, UINT, HMENU, HMENU>			m_Menus;
+	CMap<CString, LPCTSTR, HMENU, HMENU> 	m_MenuNames;
+};
+
+extern CBCGContextMenuManager*	g_pContextMenuManager;
+
+#endif // !defined(AFX_BCGCONTEXTMENUMANAGER_H__64F13A54_E5A9_11D1_A08F_00A0C9B05590__INCLUDED_)

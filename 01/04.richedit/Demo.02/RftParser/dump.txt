@@ -1,0 +1,3761 @@
+
+Parsing Start:
+{
+    [rtf] = 1, skipped
+    [adeflang] = 1025, skipped
+    [ansi] = 0, skipped
+    [ansicpg] = 1252, skipped
+    [uc] = 1, skipped
+    [adeff] = 0, skipped
+    [deff] = 0, skipped
+    [stshfdbch] = 0, skipped
+    [stshfloch] = 0, skipped
+    [stshfhich] = 0, skipped
+    [stshfbi] = 0, skipped
+    [deflang] = 1033, skipped
+    [deflangfe] = 1033, skipped
+    {
+        [fonttbl] = 0, used
+        {
+            [f] = 0, skipped
+            [froman] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 1, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 2, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 1, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 36, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 38, skipped
+            [froman] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 39, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 40, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 41, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 128, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 42, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 128, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [panose] = 0, skipped
+            }
+        }
+        {
+            [f] = 43, skipped
+            [froman] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 44, skipped
+            [froman] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 46, skipped
+            [froman] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 47, skipped
+            [froman] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 48, skipped
+            [fbidi] = 0, skipped
+            [froman] = 0, skipped
+            [fcharset] = 177, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 49, skipped
+            [fbidi] = 0, skipped
+            [froman] = 0, skipped
+            [fcharset] = 178, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 50, skipped
+            [froman] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 51, skipped
+            [froman] = 0, skipped
+            [fcharset] = 163, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 53, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 54, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 56, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 57, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 58, skipped
+            [fbidi] = 0, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 177, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 59, skipped
+            [fbidi] = 0, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 178, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 60, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 61, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 163, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 63, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 64, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 66, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 67, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 68, skipped
+            [fbidi] = 0, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 177, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 69, skipped
+            [fbidi] = 0, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 178, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 70, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 71, skipped
+            [fmodern] = 0, skipped
+            [fcharset] = 163, skipped
+            [fprq] = 1, skipped
+        }
+        {
+            [f] = 403, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 404, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 406, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 407, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 408, skipped
+            [fbidi] = 0, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 177, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 409, skipped
+            [fbidi] = 0, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 178, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 410, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 411, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 163, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 412, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 222, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 423, skipped
+            [froman] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 424, skipped
+            [froman] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 426, skipped
+            [froman] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 427, skipped
+            [froman] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 430, skipped
+            [froman] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 433, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 434, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 436, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 437, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 440, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 443, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 444, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 446, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 447, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 450, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 455, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 453, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 454, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 456, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 457, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 460, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+            {
+                [*] = 0, used
+                [falt] = 0, skipped
+            }
+        }
+        {
+            [f] = 465, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 0, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 463, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 238, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 464, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 204, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 466, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 161, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 467, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 162, skipped
+            [fprq] = 2, skipped
+        }
+        {
+            [f] = 470, skipped
+            [fswiss] = 0, skipped
+            [fcharset] = 186, skipped
+            [fprq] = 2, skipped
+        }
+    }
+    {
+        [colortbl] = 0, used
+        [red] = 0, skipped
+        [green] = 0, skipped
+        [blue] = 0, skipped
+        [red] = 0, skipped
+        [green] = 0, skipped
+        [blue] = 255, skipped
+        [red] = 0, skipped
+        [green] = 255, skipped
+        [blue] = 255, skipped
+        [red] = 0, skipped
+        [green] = 255, skipped
+        [blue] = 0, skipped
+        [red] = 255, skipped
+        [green] = 0, skipped
+        [blue] = 255, skipped
+        [red] = 255, skipped
+        [green] = 0, skipped
+        [blue] = 0, skipped
+        [red] = 255, skipped
+        [green] = 255, skipped
+        [blue] = 0, skipped
+        [red] = 255, skipped
+        [green] = 255, skipped
+        [blue] = 255, skipped
+        [red] = 0, skipped
+        [green] = 0, skipped
+        [blue] = 128, skipped
+        [red] = 0, skipped
+        [green] = 128, skipped
+        [blue] = 128, skipped
+        [red] = 0, skipped
+        [green] = 128, skipped
+        [blue] = 0, skipped
+        [red] = 128, skipped
+        [green] = 0, skipped
+        [blue] = 128, skipped
+        [red] = 128, skipped
+        [green] = 0, skipped
+        [blue] = 0, skipped
+        [red] = 128, skipped
+        [green] = 128, skipped
+        [blue] = 0, skipped
+        [red] = 128, skipped
+        [green] = 128, skipped
+        [blue] = 128, skipped
+        [red] = 192, skipped
+        [green] = 192, skipped
+        [blue] = 192, skipped
+    }
+    {
+        [stylesheet] = 0, used
+        {
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 2, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 1, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 3, skipped
+            [qc] = 0, used
+            [fi] = 851, used
+            [li] = 0, used
+            [ri] = 0, used
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 2, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [ul] = 0, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [loch] = 0, skipped
+            [f] = 0, skipped
+            [hich] = 0, skipped
+            [af] = 0, skipped
+            [dbch] = 0, skipped
+            [af] = 41, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 4, skipped
+            [ql] = 0, used
+            [li] = 2160, used
+            [ri] = 0, used
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 3, skipped
+            [rin] = 0, skipped
+            [lin] = 2160, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 5, skipped
+            [qj] = 0, used
+            [fi] = 720, used
+            [li] = 0, used
+            [ri] = 0, used
+            [keep] = 0, skipped
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 4, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 6, skipped
+            [qj] = 0, used
+            [li] = 3600, used
+            [ri] = 0, used
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [tx] = 5040, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 5, skipped
+            [rin] = 0, skipped
+            [lin] = 3600, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 7, skipped
+            [qc] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [tx] = 1440, skipped
+            [tx] = 5040, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 6, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [s] = 8, skipped
+            [qc] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [keep] = 0, skipped
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 7, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [ab] = 0, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [b] = 0, used
+            [fs] = 24, skipped
+            [ul] = 0, skipped
+            [lang] = 1036, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1036, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+        }
+        {
+            [*] = 0, used
+            [cs] = 10, skipped
+            [additive] = 0, skipped
+            [ssemihidden] = 0, skipped
+        }
+        {
+            [*] = 0, used
+            [ts] = 11, skipped
+            [tsrowd] = 0, skipped
+            [trftsWidthB] = 3, skipped
+            [trpaddl] = 108, skipped
+            [trpaddr] = 108, skipped
+            [trpaddfl] = 3, skipped
+            [trpaddft] = 3, skipped
+            [trpaddfb] = 3, skipped
+            [trpaddfr] = 3, skipped
+            [tblind] = 0, skipped
+            [tblindtype] = 3, skipped
+            [tscellwidthfts] = 0, skipped
+            [tsvertalt] = 0, skipped
+            [tsbrdrt] = 0, skipped
+            [tsbrdrl] = 0, skipped
+            [tsbrdrb] = 0, skipped
+            [tsbrdrr] = 0, skipped
+            [tsbrdrdgl] = 0, skipped
+            [tsbrdrdgr] = 0, skipped
+            [tsbrdrh] = 0, skipped
+            [tsbrdrv] = 0, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [aspalpha] = 0, skipped
+            [aspnum] = 0, skipped
+            [faauto] = 0, skipped
+            [adjustright] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 20, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 20, skipped
+            [lang] = 1024, skipped
+            [langfe] = 1024, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1024, skipped
+            [langfenp] = 1024, skipped
+            [snext] = 11, skipped
+            [ssemihidden] = 0, skipped
+        }
+        {
+            [s] = 15, skipped
+            [qc] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [outlinelevel] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [ul] = 0, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 0, skipped
+            [spersonal] = 0, skipped
+        }
+        {
+            [s] = 16, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [tqc] = 0, skipped
+            [tx] = 4320, skipped
+            [tqr] = 0, skipped
+            [tx] = 8640, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 16, skipped
+        }
+        {
+            [s] = 17, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [tqc] = 0, skipped
+            [tx] = 4320, skipped
+            [tqr] = 0, skipped
+            [tx] = 8640, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 17, skipped
+        }
+        {
+            [*] = 0, used
+            [cs] = 18, skipped
+            [additive] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 20, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 20, skipped
+            [sbasedon] = 10, skipped
+        }
+        {
+            [s] = 19, skipped
+            [qc] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [sb] = 240, skipped
+            [sa] = 60, skipped
+            [nowidctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [ab] = 0, skipped
+            [af] = 1, skipped
+            [afs] = 32, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [b] = 0, used
+            [f] = 1, skipped
+            [fs] = 32, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [kerning] = 28, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 19, skipped
+        }
+        {
+            [s] = 20, skipped
+            [ql] = 0, used
+            [li] = 720, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 720, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 20, skipped
+        }
+        {
+            [s] = 21, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [nowidctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 21, skipped
+        }
+        {
+            [s] = 22, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [cbpat] = 9, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 36, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [f] = 36, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 22, skipped
+            [ssemihidden] = 0, skipped
+        }
+        {
+            [s] = 23, skipped
+            [ql] = 0, used
+            [li] = 720, used
+            [ri] = 0, used
+            [sb] = 120, skipped
+            [sa] = 120, skipped
+            [nowidctlpar] = 0, skipped
+            [tx] = 0, skipped
+            [tx] = 360, skipped
+            [tx] = 720, skipped
+            [wrapdefault] = 0, skipped
+            [hyphpar] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 720, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 1, skipped
+            [afs] = 20, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [f] = 1, skipped
+            [fs] = 20, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [snext] = 23, skipped
+        }
+        {
+            [*] = 0, used
+            [cs] = 24, skipped
+            [additive] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 20, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 20, skipped
+            [ul] = 0, skipped
+            [cf] = 2, skipped
+            [sbasedon] = 10, skipped
+        }
+        {
+            [s] = 25, skipped
+            [qc] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [sb] = 240, skipped
+            [sa] = 120, skipped
+            [keepn] = 0, skipped
+            [pagebb] = 0, skipped
+            [nowidctlpar] = 0, skipped
+            [tx] = 360, skipped
+            [wrapdefault] = 0, skipped
+            [hyphpar] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [ab] = 0, skipped
+            [af] = 1, skipped
+            [afs] = 20, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [b] = 0, used
+            [f] = 1, skipped
+            [fs] = 20, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 15, skipped
+            [snext] = 25, skipped
+        }
+        {
+            [s] = 26, skipped
+            [ql] = 0, used
+            [fi] = 720, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 26, skipped
+        }
+        {
+            [s] = 27, skipped
+            [qj] = 0, used
+            [fi] = 810, used
+            [li] = 810, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 810, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 27, skipped
+        }
+        {
+            [s] = 28, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [sb] = 40, skipped
+            [sl] = 320, skipped
+            [slmult] = 0, skipped
+            [widctlpar] = 0, skipped
+            [tx] = 450, skipped
+            [tqr] = 0, skipped
+            [tldot] = 0, skipped
+            [tx] = 8640, skipped
+            [wrapdefault] = 0, skipped
+            [aspalpha] = 0, skipped
+            [aspnum] = 0, skipped
+            [s] = 31, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [sa] = 120, skipped
+            [keep] = 0, skipped
+            [keepn] = 0, skipped
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [aspalpha] = 0, skipped
+            [aspnum] = 0, skipped
+            [faauto] = 0, skipped
+            [adjustright] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 38, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [f] = 38, skipped
+            [fs] = 24, skipped
+            [expnd] = 1, skipped
+            [expndtw] = 5, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 21, skipped
+            [snext] = 31, skipped
+        }
+        {
+            [s] = 32, skipped
+            [ql] = 0, used
+            [fi] = 450, used
+            [li] = 450, used
+            [ri] = 0, used
+            [sa] = 120, skipped
+            [keep] = 0, skipped
+            [widctlpar] = 0, skipped
+            [jclisttab] = 0, skipped
+            [tx] = 450, skipped
+            [wrapdefault] = 0, skipped
+            [hyphpar] = 0, skipped
+            [aspalpha] = 0, skipped
+            [aspnum] = 0, skipped
+            [faauto] = 0, skipped
+            [ls] = 1, skipped
+            [ilvl] = 1, skipped
+            [adjustright] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 450, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 24, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 24, skipped
+            [expnd] = 1, skipped
+            [expndtw] = 5, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 30, skipped
+            [snext] = 32, skipped
+        }
+        {
+            [s] = 33, skipped
+            [ql] = 0, used
+            [fi] = 720, used
+            [li] = 720, used
+            [ri] = 0, used
+            [sa] = 120, skipped
+            [keep] = 0, skipped
+            [widctlpar] = 0, skipped
+            [jclisttab] = 0, skipped
+            [tx] = 360, skipped
+            [wrapdefault] = 0, skipped
+            [hyphpar] = 0, skipped
+            [aspalpha] = 0, skipped
+            [aspnum] = 0, skipped
+            [faauto] = 0, skipped
+            [ls] = 1, skipped
+            [ilvl] = 2, skipped
+            [adjustright] = 0, skipped
+            [*] = 0, used
+            [cs] = 37, skipped
+            [additive] = 0, skipped
+            [uldb] = 0, skipped
+            [expnd] = 0, skipped
+            [expndtw] = 0, skipped
+            [cf] = 2, skipped
+        }
+        {
+            [*] = 0, used
+            [cs] = 38, skipped
+            [additive] = 0, skipped
+            [strike] = 0, skipped
+            [expnd] = 0, skipped
+            [expndtw] = 0, skipped
+            [cf] = 6, skipped
+        }
+        {
+            [s] = 39, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 36, skipped
+            [afs] = 16, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [f] = 36, skipped
+            [fs] = 16, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 39, skipped
+            [ssemihidden] = 0, skipped
+        }
+        {
+            [*] = 0, used
+            [cs] = 40, skipped
+            [additive] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [ul] = 0, skipped
+            [cf] = 12, skipped
+            [sbasedon] = 10, skipped
+        }
+        {
+            [s] = 41, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [aspalpha] = 0, skipped
+            [aspnum] = 0, skipped
+            [faauto] = 0, skipped
+            [adjustright] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 2, skipped
+            [afs] = 20, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [f] = 2, skipped
+            [fs] = 20, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 41, skipped
+        }
+        {
+            [s] = 42, skipped
+            [qj] = 0, used
+            [li] = 342, used
+            [s] = 43, skipped
+            [ql] = 0, used
+            [li] = 0, used
+            [ri] = 0, used
+            [widctlpar] = 0, skipped
+            [wrapdefault] = 0, skipped
+            [nooverflow] = 0, skipped
+            [faroman] = 0, skipped
+            [rin] = 0, skipped
+            [lin] = 0, skipped
+            [itap] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 20, skipped
+            [alang] = 1025, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 20, skipped
+            [lang] = 1033, skipped
+            [langfe] = 1033, skipped
+            [cgrid] = 0, skipped
+            [langnp] = 1033, skipped
+            [langfenp] = 1033, skipped
+            [sbasedon] = 0, skipped
+            [snext] = 43, skipped
+        }
+        {
+            [*] = 0, used
+            [cs] = 44, skipped
+            [additive] = 0, skipped
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [sbasedon] = 10, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [latentstyles] = 0, skipped
+        [lsdstimax] = 156, skipped
+        [lsdlockeddef] = 0, skipped
+    }
+    {
+        [*] = 0, used
+        [listtable] = 0, skipped
+        {
+            [list] = 0, skipped
+            [listtemplateid] = 1443806630, skipped
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 360, used
+                [li] = 360, used
+                [jclisttab] = 0, skipped
+                [tx] = 360, skipped
+                [lin] = 360, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [s] = 32, skipped
+                [fi] = 360, used
+                [jclisttab] = 0, skipped
+                [tx] = 720, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [s] = 33, skipped
+                [fi] = 504, used
+                [li] = 1224, used
+                [jclisttab] = 0, skipped
+                [tx] = 1440, skipped
+                [lin] = 1224, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 648, used
+                [li] = 1728, used
+                [jclisttab] = 0, skipped
+                [tx] = 2160, skipped
+                [lin] = 1728, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 792, used
+                [li] = 2232, used
+                [jclisttab] = 0, skipped
+                [tx] = 2520, skipped
+                [lin] = 2232, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 936, used
+                [li] = 2736, used
+                [jclisttab] = 0, skipped
+                [tx] = 3240, skipped
+                [lin] = 2736, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1080, used
+                [li] = 3240, used
+                [jclisttab] = 0, skipped
+                [tx] = 3600, skipped
+                [lin] = 3240, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1224, used
+                [li] = 3744, used
+                [jclisttab] = 0, skipped
+                [tx] = 4320, skipped
+                [lin] = 3744, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 360, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1440, used
+                [li] = 4320, used
+                [jclisttab] = 0, skipped
+                [tx] = 5040, skipped
+                [lin] = 4320, skipped
+            }
+            {
+                [listname] = 0, skipped
+            }
+            [listid] = 694616917, skipped
+        }
+        {
+            [list] = 0, skipped
+            [listtemplateid] = 1952059528, skipped
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [s] = 30, skipped
+                [fi] = 720, used
+                [li] = 720, used
+                [jclisttab] = 0, skipped
+                [tx] = 720, skipped
+                [lin] = 720, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 720, used
+                [li] = 720, used
+                [jclisttab] = 0, skipped
+                [tx] = 720, skipped
+                [lin] = 720, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 720, used
+                [li] = 720, used
+                [jclisttab] = 0, skipped
+                [tx] = 720, skipped
+                [lin] = 720, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 864, used
+                [li] = 864, used
+                [jclisttab] = 0, skipped
+                [tx] = 864, skipped
+                [lin] = 864, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1008, used
+                [li] = 1008, used
+                [jclisttab] = 0, skipped
+                [tx] = 1008, skipped
+                [lin] = 1008, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1152, used
+                [li] = 1152, used
+                [jclisttab] = 0, skipped
+                [tx] = 1152, skipped
+                [lin] = 1152, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1296, used
+                [li] = 1296, used
+                [jclisttab] = 0, skipped
+                [tx] = 1296, skipped
+                [lin] = 1296, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1440, used
+                [li] = 1440, used
+                [jclisttab] = 0, skipped
+                [tx] = 1440, skipped
+                [lin] = 1440, skipped
+            }
+            {
+                [listlevel] = 0, skipped
+                [levelnfc] = 0, skipped
+                [levelnfcn] = 0, skipped
+                [leveljc] = 0, skipped
+                [leveljcn] = 0, skipped
+                [levelfollow] = 0, skipped
+                [levelstartat] = 1, skipped
+                [levelspace] = 0, skipped
+                [levelindent] = 0, skipped
+                {
+                    [leveltext] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                {
+                    [levelnumbers] = 0, skipped
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                    ['] = 0, used
+                }
+                [rtlch] = 0, skipped
+                [fcs] = 1, skipped
+                [af] = 0, skipped
+                [ltrch] = 0, skipped
+                [fcs] = 0, skipped
+                [fbias] = 0, skipped
+                [fi] = 1584, used
+                [li] = 1584, used
+                [jclisttab] = 0, skipped
+                [tx] = 1584, skipped
+                [lin] = 1584, skipped
+            }
+            {
+                [listname] = 0, skipped
+            }
+            [listid] = 702949877, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [listoverridetable] = 0, skipped
+        {
+            [listoverride] = 0, skipped
+            [listid] = 694616917, skipped
+            [listoverridecount] = 0, skipped
+            [ls] = 1, skipped
+        }
+        {
+            [listoverride] = 0, skipped
+            [listid] = 702949877, skipped
+            [listoverridecount] = 0, skipped
+            [ls] = 2, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [rsidtbl] = 0, skipped
+        [rsid] = 396165, skipped
+        [rsid] = 1005330, skipped
+        [rsid] = 3434608, skipped
+        [rsid] = 4794967, skipped
+        [rsid] = 5718253, skipped
+        [rsid] = 6241009, skipped
+        [rsid] = 6246530, skipped
+        [rsid] = 7550258, skipped
+        [rsid] = 8722037, skipped
+        [rsid] = 9061096, skipped
+        [rsid] = 10823213, skipped
+        [rsid] = 11473789, skipped
+        [rsid] = 11679666, skipped
+        [rsid] = 11996118, skipped
+        [rsid] = 12793781, skipped
+        [rsid] = 13255377, skipped
+        [rsid] = 13588469, skipped
+        [rsid] = 15405924, skipped
+        [rsid] = 15493325, skipped
+        [rsid] = 15622889, skipped
+        [rsid] = 15952172, skipped
+        [rsid] = 16068085, skipped
+        [rsid] = 16590924, skipped
+    }
+    {
+        [*] = 0, used
+        [generator] = 0, skipped
+    }
+    {
+        [info] = 0, used
+        {
+            [title] = 0, used
+        }
+        {
+            [author] = 0, used
+        }
+        {
+            [operator] = 0, used
+        }
+        {
+            [creatim] = 0, used
+            [yr] = 2004, skipped
+            [mo] = 6, skipped
+            [dy] = 29, skipped
+            [hr] = 13, skipped
+            [min] = 55, skipped
+        }
+        {
+            [revtim] = 0, used
+            [yr] = 2007, skipped
+            [mo] = 10, skipped
+            [dy] = 25, skipped
+            [hr] = 12, skipped
+            [min] = 46, skipped
+        }
+        {
+            [printim] = 0, used
+            [yr] = 2005, skipped
+            [mo] = 5, skipped
+            [dy] = 31, skipped
+            [hr] = 9, skipped
+            [min] = 56, skipped
+        }
+        {
+            [version] = 42, skipped
+        }
+        {
+            [edmins] = 280, skipped
+        }
+        {
+            [nofpages] = 1, skipped
+        }
+        {
+            [nofwords] = 48, skipped
+        }
+        {
+            [nofchars] = 262, skipped
+        }
+        {
+            [*] = 0, used
+            [company] = 0, skipped
+        }
+        {
+            [nofcharsws] = 304, skipped
+        }
+        {
+            [vern] = 24611, skipped
+        }
+        {
+            [*] = 0, used
+            [password] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [userprops] = 0, skipped
+        {
+            [propname] = 0, skipped
+        }
+        [proptype] = 3, skipped
+        {
+            [staticval] = 0, skipped
+        }
+        {
+            [propname] = 0, skipped
+        }
+        [proptype] = 30, skipped
+        {
+            [staticval] = 0, skipped
+        }
+        {
+            [propname] = 0, skipped
+        }
+        [proptype] = 30, skipped
+        {
+            [staticval] = 0, skipped
+        }
+        {
+            [propname] = 0, skipped
+        }
+        [proptype] = 30, skipped
+        {
+            [staticval] = 0, skipped
+        }
+        {
+            [propname] = 0, skipped
+        }
+        [proptype] = 3, skipped
+        {
+            [staticval] = 0, skipped
+        }
+        {
+            [propname] = 0, skipped
+        }
+        [proptype] = 30, skipped
+        {
+            [staticval] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [xmlnstbl] = 0, skipped
+        {
+            [xmlns] = 1, skipped
+        }
+    }
+    [paperw] = 12240, used
+    (DOP) = 12240
+    [paperh] = 15840, used
+    (DOP) = 15840
+    [margl] = 1440, used
+    (DOP) = 1440
+    [margr] = 1440, used
+    (DOP) = 1440
+    [margt] = 1440, used
+    (DOP) = 1440
+    [margb] = 1440, used
+    (DOP) = 1440
+    [gutter] = 0, skipped
+    [ltrsect] = 0, skipped
+    [widowctrl] = 0, skipped
+    [ftnbj] = 0, skipped
+    [aenddoc] = 0, skipped
+    [donotembedsysfont] = 0, skipped
+    [donotembedlingdata] = 1, skipped
+    [grfdocevents] = 0, skipped
+    [validatexml] = 0, skipped
+    [showplaceholdtext] = 0, skipped
+    [ignoremixedcontent] = 0, skipped
+    [saveinvalidxml] = 0, skipped
+    [showxmlerrors] = 0, skipped
+    [noxlattoyen] = 0, skipped
+    [expshrtn] = 0, skipped
+    [noultrlspc] = 0, skipped
+    [dntblnsbdb] = 0, skipped
+    [nospaceforul] = 0, skipped
+    [lytprtmet] = 0, skipped
+    [hyphcaps] = 0, skipped
+    [formshade] = 0, skipped
+    [horzdoc] = 0, skipped
+    [dgmargin] = 0, skipped
+    [dghspace] = 90, skipped
+    [dgvspace] = 245, skipped
+    [dghorigin] = 1440, skipped
+    [dgvorigin] = 1440, skipped
+    [dghshow] = 2, skipped
+    [dgvshow] = 0, skipped
+    [jexpand] = 0, skipped
+    [viewkind] = 1, skipped
+    [viewscale] = 100, skipped
+    [pgbrdrhead] = 0, skipped
+    [pgbrdrfoot] = 0, skipped
+    [bdrrlswsix] = 0, skipped
+    [nolnhtadjtbl] = 0, skipped
+    [rsidroot] = 396165, skipped
+    [fet] = 0, skipped
+    {
+        [*] = 0, used
+        [wgrffmtfilter] = 0, skipped
+    }
+    [ilfomacatclnup] = 0, skipped
+    {
+        [*] = 0, used
+        [docvar] = 0, skipped
+        {
+        }
+        {
+        }
+    }
+    {
+        [*] = 0, used
+        [docvar] = 0, skipped
+        {
+        }
+        {
+        }
+    }
+    {
+        [*] = 0, used
+        [docvar] = 0, skipped
+        {
+        }
+        {
+        }
+    }
+    {
+        [*] = 0, used
+        [ftnsep] = 0, used
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [chftnsep] = 0, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [*] = 0, used
+        [ftnsepc] = 0, used
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [chftnsepc] = 0, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [*] = 0, used
+        [aftnsep] = 0, skipped
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [chftnsep] = 0, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [*] = 0, used
+        [aftnsepc] = 0, skipped
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [chftnsepc] = 0, skipped
+            [par] = 0, used
+        }
+    }
+    [ltrpar] = 0, skipped
+    [sectd] = 0, skipped
+    [ltrsect] = 0, skipped
+    [psz] = 1, skipped
+    [linex] = 0, skipped
+    [endnhere] = 0, skipped
+    [titlepg] = 0, skipped
+    [sectlinegrid] = 245, skipped
+    [sectdefaultcl] = 0, skipped
+    [sftnbj] = 0, skipped
+    {
+        [headerr] = 0, used
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [s] = 16, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [tqc] = 0, skipped
+        [tx] = 4320, skipped
+        [tqr] = 0, skipped
+        [tx] = 8640, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [footerr] = 0, used
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [s] = 17, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [tqc] = 0, skipped
+        [tx] = 4320, skipped
+        [tqr] = 0, skipped
+        [tx] = 9360, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [tab] = 0, used
+        }
+        {
+            [field] = 0, skipped
+            {
+                [*] = 0, used
+                [fldinst] = 0, skipped
+                {
+                    [rtlch] = 0, skipped
+                    [fcs] = 1, skipped
+                    [af] = 38, skipped
+                    [ltrch] = 0, skipped
+                    [fcs] = 0, skipped
+                    [f] = 38, skipped
+                    [insrsid] = 5718253, skipped
+                    [\] = 0, used
+                }
+            }
+            {
+                [fldrslt] = 0, skipped
+                {
+                    [rtlch] = 0, skipped
+                    [fcs] = 1, skipped
+                    [af] = 38, skipped
+                    [ltrch] = 0, skipped
+                    [fcs] = 0, skipped
+                    [f] = 38, skipped
+                    [lang] = 1024, skipped
+                    [langfe] = 1024, skipped
+                    [noproof] = 0, skipped
+                    [insrsid] = 5718253, skipped
+                }
+            }
+        }
+        [sectd] = 0, skipped
+        [linex] = 0, skipped
+        [endnhere] = 0, skipped
+        [sectdefaultcl] = 0, skipped
+        [sftnbj] = 0, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 38, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [f] = 38, skipped
+            [insrsid] = 5718253, skipped
+            [par] = 0, used
+        }
+        [pard] = 0, skipped
+        [ltrpar] = 0, skipped
+        [s] = 17, skipped
+        [qr] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [tqc] = 0, skipped
+        [tx] = 4320, skipped
+        [tqr] = 0, skipped
+        [tx] = 9360, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 14, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [fs] = 14, skipped
+            [insrsid] = 5718253, skipped
+            [tab] = 0, used
+            [par] = 0, used
+        }
+        {
+            [field] = 0, skipped
+            {
+                [*] = 0, used
+                [fldinst] = 0, skipped
+                {
+                    [rtlch] = 0, skipped
+                    [fcs] = 1, skipped
+                    [af] = 0, skipped
+                    [ltrch] = 0, skipped
+                    [fcs] = 0, skipped
+                    [insrsid] = 5718253, skipped
+                    [\] = 0, used
+                }
+            }
+            {
+                [fldrslt] = 0, skipped
+                {
+                    [rtlch] = 0, skipped
+                    [fcs] = 1, skipped
+                    [ab] = 0, skipped
+                    [af] = 0, skipped
+                    [ltrch] = 0, skipped
+                    [fcs] = 0, skipped
+                    [b] = 0, used
+                    [insrsid] = 5718253, skipped
+                }
+            }
+        }
+        [sectd] = 0, skipped
+        [linex] = 0, skipped
+        [endnhere] = 0, skipped
+        [sectdefaultcl] = 0, skipped
+        [sftnbj] = 0, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [headerf] = 0, used
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [s] = 16, skipped
+        [ql] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [tqc] = 0, skipped
+        [tx] = 4320, skipped
+        [tqr] = 0, skipped
+        [tx] = 8640, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [footerf] = 0, used
+        [ltrpar] = 0, skipped
+        [pard] = 0, skipped
+        [plain] = 0, skipped
+        [ltrpar] = 0, skipped
+        [s] = 17, skipped
+        [qc] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [tqc] = 0, skipped
+        [tx] = 4320, skipped
+        [tqr] = 0, skipped
+        [tx] = 8640, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [afs] = 24, skipped
+        [alang] = 1025, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [fs] = 24, skipped
+        [lang] = 1033, skipped
+        [langfe] = 1033, skipped
+        [cgrid] = 0, skipped
+        [langnp] = 1033, skipped
+        [langfenp] = 1033, skipped
+        {
+            [field] = 0, skipped
+            {
+                [*] = 0, used
+                [fldinst] = 0, skipped
+                {
+                    [rtlch] = 0, skipped
+                    [fcs] = 1, skipped
+                    [af] = 0, skipped
+                    [afs] = 16, skipped
+                    [ltrch] = 0, skipped
+                    [fcs] = 0, skipped
+                    [cs] = 18, skipped
+                    [fs] = 16, skipped
+                    [insrsid] = 5718253, skipped
+                }
+            }
+            {
+                [fldrslt] = 0, skipped
+                {
+                    [rtlch] = 0, skipped
+                    [fcs] = 1, skipped
+                    [af] = 0, skipped
+                    [afs] = 16, skipped
+                    [ltrch] = 0, skipped
+                    [fcs] = 0, skipped
+                    [cs] = 18, skipped
+                    [fs] = 16, skipped
+                    [lang] = 1024, skipped
+                    [langfe] = 1024, skipped
+                    [noproof] = 0, skipped
+                    [insrsid] = 16590924, skipped
+                }
+            }
+        }
+        [sectd] = 0, skipped
+        [linex] = 0, skipped
+        [endnhere] = 0, skipped
+        [sectdefaultcl] = 0, skipped
+        [sftnbj] = 0, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [afs] = 16, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [cs] = 18, skipped
+            [fs] = 16, skipped
+            [insrsid] = 5718253, skipped
+            [par] = 0, used
+        }
+        [pard] = 0, skipped
+        [ltrpar] = 0, skipped
+        [s] = 17, skipped
+        [qr] = 0, used
+        [li] = 0, used
+        [ri] = 0, used
+        [widctlpar] = 0, skipped
+        [tqc] = 0, skipped
+        [tx] = 4320, skipped
+        [tqr] = 0, skipped
+        [tx] = 8640, skipped
+        [wrapdefault] = 0, skipped
+        [nooverflow] = 0, skipped
+        [faroman] = 0, skipped
+        [rin] = 0, skipped
+        [lin] = 0, skipped
+        [itap] = 0, skipped
+        {
+            [rtlch] = 0, skipped
+            [fcs] = 1, skipped
+            [af] = 0, skipped
+            [ltrch] = 0, skipped
+            [fcs] = 0, skipped
+            [insrsid] = 5718253, skipped
+            [par] = 0, used
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 1, skipped
+        [pnucrm] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 2, skipped
+        [pnucltr] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 3, skipped
+        [pndec] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 4, skipped
+        [pnlcltr] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 5, skipped
+        [pndec] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxtb] = 0, skipped
+        }
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 6, skipped
+        [pnlcltr] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxtb] = 0, skipped
+        }
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 7, skipped
+        [pnlcrm] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxtb] = 0, skipped
+        }
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 8, skipped
+        [pnlcltr] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxtb] = 0, skipped
+        }
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    {
+        [*] = 0, used
+        [pnseclvl] = 9, skipped
+        [pnlcrm] = 0, skipped
+        [pnstart] = 1, skipped
+        [pnindent] = 720, skipped
+        [pnhang] = 0, skipped
+        {
+            [pntxtb] = 0, skipped
+        }
+        {
+            [pntxta] = 0, skipped
+        }
+    }
+    [pard] = 0, skipped
+    [plain] = 0, skipped
+    [ltrpar] = 0, skipped
+    [s] = 2, skipped
+    [ql] = 0, used
+    (PAP) = 0
+    [li] = 0, used
+    (PAP) = 0
+    [ri] = 0, used
+    (PAP) = 0
+    [keepn] = 0, skipped
+    [widctlpar] = 0, skipped
+    [wrapdefault] = 0, skipped
+    [nooverflow] = 0, skipped
+    [faroman] = 0, skipped
+    [outlinelevel] = 1, skipped
+    [rin] = 0, skipped
+    [lin] = 0, skipped
+    [itap] = 0, skipped
+    [rtlch] = 0, skipped
+    [fcs] = 1, skipped
+    [af] = 0, skipped
+    [afs] = 24, skipped
+    [alang] = 1025, skipped
+    [ltrch] = 0, skipped
+    [fcs] = 0, skipped
+    [fs] = 24, skipped
+    [lang] = 1033, skipped
+    [langfe] = 1033, skipped
+    [cgrid] = 0, skipped
+    [langnp] = 1033, skipped
+    [langfenp] = 1033, skipped
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 16590924, skipped
+        N
+        o
+        v
+        e
+        m
+        b
+        e
+        r
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15405924, skipped
+         
+        2
+        0
+        0
+        7
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 5718253, skipped
+         
+        N
+        T
+        R
+        U
+         
+        C
+        r
+        y
+        p
+        t
+        o
+        s
+        y
+        s
+        t
+        e
+        m
+        s
+        ,
+         
+        I
+        n
+        c
+        [par] = 0, used
+        
+
+    }
+    [pard] = 0, skipped
+    [plain] = 0, skipped
+    [ltrpar] = 0, skipped
+    [ql] = 0, used
+    (PAP) = 0
+    [li] = 0, used
+    (PAP) = 0
+    [ri] = 0, used
+    (PAP) = 0
+    [widctlpar] = 0, skipped
+    [tx] = 720, skipped
+    [tx] = 5040, skipped
+    [wrapdefault] = 0, skipped
+    [nooverflow] = 0, skipped
+    [faroman] = 0, skipped
+    [rin] = 0, skipped
+    [lin] = 0, skipped
+    [itap] = 0, skipped
+    [rtlch] = 0, skipped
+    [fcs] = 1, skipped
+    [af] = 0, skipped
+    [afs] = 24, skipped
+    [alang] = 1025, skipped
+    [ltrch] = 0, skipped
+    [fcs] = 0, skipped
+    [fs] = 24, skipped
+    [lang] = 1033, skipped
+    [langfe] = 1033, skipped
+    [cgrid] = 0, skipped
+    [langnp] = 1033, skipped
+    [langfenp] = 1033, skipped
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 5718253, skipped
+        {
+            [*] = 0, used
+            [bkmkstart] = 0, skipped
+        }
+        {
+            [*] = 0, used
+            [bkmkstart] = 0, skipped
+        }
+        {
+            [*] = 0, used
+            [bkmkend] = 0, skipped
+        }
+        {
+            [*] = 0, used
+            [bkmkend] = 0, skipped
+        }
+        [par] = 0, used
+        
+
+    }
+    [pard] = 0, skipped
+    [ltrpar] = 0, skipped
+    [qj] = 0, used
+    (PAP) = 3
+    [li] = 0, used
+    (PAP) = 0
+    [ri] = 0, used
+    (PAP) = 0
+    [widctlpar] = 0, skipped
+    [tx] = 720, skipped
+    [tx] = 5040, skipped
+    [wrapdefault] = 0, skipped
+    [nooverflow] = 0, skipped
+    [faroman] = 0, skipped
+    [rin] = 0, skipped
+    [lin] = 0, skipped
+    [itap] = 0, skipped
+    [pararsid] = 15952172, skipped
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15952172, skipped
+        T
+        h
+        i
+        s
+         
+        p
+        a
+        c
+        k
+        a
+        g
+        e
+         
+        i
+        n
+        s
+        t
+        a
+        l
+        l
+        s
+         
+        a
+        n
+         
+        N
+        T
+        R
+        U
+         
+        T
+        C
+        G
+         
+        S
+        o
+        f
+        t
+        w
+        a
+        r
+        e
+         
+        S
+        t
+        a
+        c
+        k
+         
+        (
+        T
+        S
+        S
+        )
+         
+        u
+        s
+        i
+        n
+        g
+         
+        t
+        h
+        e
+         
+        W
+        i
+        n
+        d
+        o
+        w
+        s
+         
+        I
+        n
+        s
+        t
+        a
+        l
+        l
+        e
+        r
+        .
+         
+         
+        I
+        t
+         
+        i
+        n
+        s
+        t
+        a
+        l
+        l
+        s
+         
+        t
+        h
+        e
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15493325, skipped
+        N
+        T
+        R
+        U
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 6246530, skipped
+        C
+        o
+        r
+        e
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15493325, skipped
+        T
+        S
+        S
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15952172, skipped
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 6246530, skipped
+        (
+        C
+        T
+        S
+        S
+        )
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 16590924, skipped
+        v
+        e
+        r
+        s
+        i
+        o
+        n
+         
+        1
+        .
+        2
+        .
+        1
+        .
+        2
+        5
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15952172, skipped
+         
+        a
+        n
+        d
+         
+        w
+        i
+        l
+        l
+         
+        r
+        e
+        p
+        l
+        a
+        c
+        e
+         
+        a
+        n
+        y
+         
+        v
+        e
+        r
+        s
+        i
+        o
+        n
+         
+        o
+        f
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15493325, skipped
+        N
+        T
+        R
+        U
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15952172, skipped
+        H
+        y
+        b
+        r
+        i
+        d
+         
+        T
+        S
+        S
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 11996118, skipped
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15493325, skipped
+        (
+        H
+        T
+        S
+        S
+        )
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15952172, skipped
+        o
+        r
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 11996118, skipped
+        a
+        n
+        y
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15493325, skipped
+        l
+        o
+        w
+        e
+        r
+        -
+        n
+        u
+        m
+        b
+        e
+        r
+        e
+        d
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 11996118, skipped
+         
+        v
+        e
+        r
+        s
+        i
+        o
+        n
+         
+        o
+        f
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15493325, skipped
+        N
+        T
+        R
+        U
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 6246530, skipped
+        C
+        o
+        r
+        e
+         
+    }
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 38, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [f] = 38, skipped
+        [insrsid] = 15952172, skipped
+        T
+        S
+        S
+         
+        t
+        h
+        a
+        t
+         
+        i
+        s
+         
+        c
+        u
+        r
+        r
+        e
+        n
+        t
+        l
+        y
+         
+        i
+        n
+        s
+        t
+        a
+        l
+        l
+        e
+        d
+        .
+        [par] = 0, used
+        
+
+    }
+    [pard] = 0, skipped
+    [ltrpar] = 0, skipped
+    [qj] = 0, used
+    (PAP) = 3
+    [li] = 0, used
+    (PAP) = 0
+    [ri] = 0, used
+    (PAP) = 0
+    [widctlpar] = 0, skipped
+    [tx] = 720, skipped
+    [tx] = 5040, skipped
+    [wrapdefault] = 0, skipped
+    [nooverflow] = 0, skipped
+    [faroman] = 0, skipped
+    [rin] = 0, skipped
+    [lin] = 0, skipped
+    [itap] = 0, skipped
+    [pararsid] = 11679666, skipped
+    {
+        [rtlch] = 0, skipped
+        [fcs] = 1, skipped
+        [af] = 0, skipped
+        [ltrch] = 0, skipped
+        [fcs] = 0, skipped
+        [insrsid] = 5718253, skipped
+        [par] = 0, used
+        
+
+    }
+}
+Parsing End.
+

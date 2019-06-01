@@ -1,0 +1,26 @@
+
+		// Don't add end of track event 'til we're done
+		if( m_teTemp.byShortData[0] == MIDI_META && m_teTemp.byShortData[1] == MIDI_META_EOT ) {
+			if( m_dwMallocBlocks ) {
+				delete [] m_teTemp.pLongData;
+				--m_dwMallocBlocks;
+			}
+			continue;
+		}
+
+		if(( nChkErr = AddEventToStreamBuffer( &m_teTemp, lpciInfo )) != CONVERTERR_NOERROR ) {
+			if( nChkErr == CONVERTERR_BUFFERFULL ) {
+				// Do some processing and tell somebody this buffer is full...
+				m_dwStatus |= CONVERTF_STATUS_GOTEVENT;
+				return CONVERTERR_NOERROR;
+			} else if( nChkErr == CONVERTERR_METASKIP ) {
+				// We skip by all meta events that aren't tempo changes...
+			} else {
+				TRACE0("Unable to add event to stream buffer.\n");
+				if( m_dwMallocBlocks ) {
+					delete [] m_teTemp.pLongData;
+					m_dwMallocBlocks--;
+				}
+				return TRUE;
+			}
+		}

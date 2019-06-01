@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ColorSpace - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPCC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Debug/ColorSpace.pch" /Yu"stdafx.h" /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\4\01.Dialog\Demo.01\ColorPickerDlg.cpp"
+"E:\codes\mfc\09.xiaohui\4\01.Dialog\Demo.01\ColorSpaceView.cpp"
+"E:\codes\mfc\09.xiaohui\4\01.Dialog\Demo.01\DIB.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPCC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPCD.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:".\Debug/ColorSpace.pdb" /debug /machine:I386 /out:".\Debug/ColorSpace.exe" 
+.\Debug\ColorPickerDlg.obj
+.\Debug\ColorSpace.obj
+.\Debug\ColorSpaceDoc.obj
+.\Debug\ColorSpaceView.obj
+.\Debug\Common.obj
+.\Debug\DIB.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\ColorSpace.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPCD.tmp"
+<h3>Output Window</h3>
+Compiling...
+DIB.cpp
+E:\codes\mfc\09.xiaohui\4\01.Dialog\Demo.01\DIB.cpp(735) : warning C4101: 'n' : unreferenced local variable
+E:\codes\mfc\09.xiaohui\4\01.Dialog\Demo.01\DIB.cpp(816) : warning C4018: '<' : signed/unsigned mismatch
+E:\codes\mfc\09.xiaohui\4\01.Dialog\Demo.01\DIB.cpp(826) : warning C4018: '<' : signed/unsigned mismatch
+Generating Code...
+Skipping... (no relevant changes detected)
+ColorPickerDlg.cpp
+ColorSpaceView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ColorSpace.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: snd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB2.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/snd.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.10\SoundOut.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB3.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/snd.pdb" /machine:I386 /out:"Release/snd.exe" 
+.\Release\MainFrm.obj
+.\Release\snd.obj
+.\Release\sndDoc.obj
+.\Release\sndView.obj
+.\Release\SoundIn.obj
+.\Release\SoundOut.obj
+.\Release\StdAfx.obj
+.\Release\snd.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPB3.tmp"
+<h3>Output Window</h3>
+Compiling...
+SoundOut.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+snd.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

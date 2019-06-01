@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ExToolBar - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "_DEBUG" /tlb "Debug/ExToolBar.tlb" /mktyplib203 /o "NUL" /win32 "E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\ExToolBar.odl""
+Creating command line "rc.exe /l 0x409 /fo"Debug/ExToolBar.res" /i "Debug" /d "_DEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\ExToolBar.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP4E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "CoolBar" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/ExToolBar.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\ChildFrm.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\ExToolBar.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\ExToolBarDoc.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\ExToolBarView.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\MainFrm.cpp"
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\OOExToolBar.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP4E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP4F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "CoolBar" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/ExToolBar.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\codes\mfc\09.xiaohui\2\03.toolbar\Demo.01\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP4F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP50.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ExToolBar.pdb" /debug /machine:I386 /out:"Debug/ExToolBar.exe" /pdbtype:sept 
+.\Debug\ChildFrm.obj
+.\Debug\ExToolBar.obj
+.\Debug\ExToolBarDoc.obj
+.\Debug\ExToolBarView.obj
+.\Debug\MainFrm.obj
+.\Debug\OOExToolBar.obj
+.\Debug\StdAfx.obj
+.\Debug\ExToolBar.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSP50.tmp"
+<h3>Output Window</h3>
+Creating Type Library...
+ExToolBar.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+ExToolBar.cpp
+ExToolBarDoc.cpp
+ExToolBarView.cpp
+MainFrm.cpp
+OOExToolBar.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ExToolBar.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

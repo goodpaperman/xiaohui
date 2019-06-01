@@ -1,0 +1,89 @@
+Ever wanted one of those fancy color picking dialogs that apps
+like Corel PhotoHouse have ? If you did, here it is !!
+
+IMPORTANT : Please copy the 2 bitmap files 
+		CCRGB.BMP and CCHSB.BMP into your C:\temp directory.
+		The demo depends on those files. You can change 
+		these values from the OnInitDialog member function
+		in CColorPickerDlg .
+
+
+First, some general stuff about how I got this stuff together.
+
+   The most important part, obviously , is the color space
+   conversion from RGB to HSB. I got some help ( lots actually)
+   on this from one of the discussion boards on Codeguru ( Thanks !)
+
+   Once you have this piece of code, you have the next problem,
+   which is to create proper bitmaps which are required for displaying
+   the color spaces. 
+   
+	Creating the Hue bitmap is quite easy as you just have to 
+	go through each of the hue values (0-360) and iterate 
+	through each of the saturation values (0-255). I used a 
+	standard brightness value of 255 for the bitmap as 
+	other values give pretty dull results. 
+
+	Next , and this is the difficult part - comes the part 
+	where you create the RGB bitmap. This is a little tough
+	as you have to not only create gradients but also fit
+	them together seamlessly . I accomplished this by first
+	creating rectangular gradients and then using some 
+	texture mapping code ( courtesy Micheal Abrash - Zen )
+	to fit them together . 
+
+
+	Now the next part is to give the whole thing a user 
+	interface. Again the HSB part is easy as finding
+	the angle of a point as well as its distance from 
+	another are pretty straightforward. And to those
+	math gurus who are fuming at the code - please forgive
+	me - I took the simplest approach I knew of -
+		x2 + y2 = a2 . 
+
+	Then we come to the RGB space. Again, this requires a 
+	lot of 3d math -  I again took the easiest route - As
+	I knew which bitmap I was using as well as the coordinates
+	of the vertices, I used some 2d math to map points
+	from the 3d space to 2d and vice versa. It`s not
+	terribly elegant , but it works , and thats what I get
+	paid for.
+
+	If you look at the contructor of the CColorPickerDlg, 
+	you`ll notice that I set up certain values for the
+	vertices and centre. This I got from the bitmap I`m 
+	using. You could quite easily use a different bitmap
+	if you don`t like the one I provide ( can`t imagine why
+	though ) , by just setting differnt values here . The
+	code which actually does the math should adjust accordingly.
+
+
+	Now - for the important stuff - how do you use it ?
+	Simple - Copy the Dialog resource - IDD_DIALOG_COLORS from
+	the resource file of the demo project into your project.
+	Then, include ColorPickerDlg.h in the file you want to 
+	call it from ( the view in the demo ) and use the following
+	bit of code :
+		CColorPickerDlg dlg(m_color) // where m_color is the
+									// color you want to inialize
+									// with.
+		if(dlg.DoModal() == IDOK)
+		{
+			// User pressed ok 
+			m_color = dlg.GetColor();
+		}
+	That is it. And yes, please include 
+			ColorPickerDlg.cpp 
+			Dib.cpp
+			Common.cpp
+		in your project. 
+	The latter two are support files which provide some
+	DIB manipulation routines as well as some of the
+	math stuff.
+	
+	
+
+	The demo app which I have provided uses red as the default
+	background. Choose View | Color Space to invoke the color 
+	picker . When you choose a different color, it is
+	used as the background.

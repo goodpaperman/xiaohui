@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MidiPlayer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x410 /fo".\Release/MidiPlayer.res" /d "NDEBUG" /d "_AFXDLL" "E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\MidiPlayer.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPA7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/MidiPlayer.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\HyperLink.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\Mci.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\MidiPlayer.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\MidiPlayerDlg.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\Sequencer.cpp"
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\SingleInstanceApp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPA7.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPA8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/MidiPlayer.pch" /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPA8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPA9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:".\Release/MidiPlayer.pdb" /machine:I386 /out:".\Release/MidiPlayer.exe" 
+.\Release\HyperLink.obj
+.\Release\Mci.obj
+.\Release\MidiPlayer.obj
+.\Release\MidiPlayerDlg.obj
+.\Release\Sequencer.obj
+.\Release\SingleInstanceApp.obj
+.\Release\StdAfx.obj
+.\Release\MidiPlayer.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.BFC\LOCALS~1\Temp\RSPA9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+HyperLink.cpp
+E:\codes\mfc\09.xiaohui\5\01.sound\Demo.08\HyperLink.cpp(283) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+Mci.cpp
+MidiPlayer.cpp
+Generating Code...
+Compiling...
+MidiPlayerDlg.cpp
+Sequencer.cpp
+SingleInstanceApp.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MidiPlayer.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

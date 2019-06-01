@@ -1,0 +1,234 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.xiaohui.com/dev/vccool/listbox/4.htm -->
+<HTML><HEAD><TITLE>A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉</TITLE><!-- #BeginTemplate "/Templates/page.dwt" --><!-- DW6 --><!-- #BeginEditable "e0" -->
+<META 
+content="listbox, Dual ListBox, Selection Manager, 列表选择管理器, 列表框, 源码下载, MFC, C/C++, VC++ 源码, 程序员, 程序" 
+name=Keywords>
+<META 
+content="本程序实现双列表选择管理器(A Dual ListBox Selection Manager), 在 OnInitialUpdate 加入下列代码：void CDualListDemoView::OnInitialUpdate()" 
+name=Description><!-- #EndEditable -->
+<META content="MSHTML 6.00.2900.3492" name=GENERATOR>
+<META content=all name=Robots>
+<META http-equiv=CONTENT-TYPE content="text/html; charset=utf-8"><LINK 
+href="A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉.files/xiaohui1.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=javascript 
+src="A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉.files/base.js" 
+type=text/javascript></SCRIPT>
+</HEAD>
+<BODY>
+<DIV id=bd1 align=center>
+<DIV id=bd2 align=center>
+<DIV id=bd align=center><!-- begin: Header --><!-- #BeginLibraryItem "/Library/site-header.lbi" -->
+<DIV id=tp>
+<DIV id=tp_l><SPAN id=imglink><A href="http://www.xiaohui.com/"><IMG height=60 
+alt="小辉程序员之路, since 1996 http://www.xiaohui.com" 
+src="A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉.files/title_xiaohui01.gif" 
+width=180 border=0></A></SPAN></DIV>
+<DIV id=tp_r><!-- SiteSearch Google -->
+<FORM id=search action=/search.htm method=get><INPUT id=Hidden1 type=hidden 
+value=www.xiaohui.com name=domains> &nbsp;搜索: <INPUT class=inputclass id=sbi 
+maxLength=255 size=16 name=q> <INPUT class=buttonclass id=sbb type=submit value=GO name=sa> <BR><INPUT id=ss0 
+type=hidden value=www.xiaohui.com name=sitesearch> <INPUT id=Hidden2 type=hidden 
+value=pub-5801877696325956 name=client> <INPUT id=Hidden3 type=hidden value=1 
+name=forid> <INPUT id=Hidden4 type=hidden value=5226520551 name=channel> <INPUT 
+id=Hidden5 type=hidden value=utf-8 name=ie> <INPUT id=Hidden6 type=hidden 
+value=utf-8 name=oe> <INPUT id=Hidden7 type=hidden 
+value=GALT:#000066;GL:1;DIV:#FFFFFF;VLC:660000;AH:center;BGC:FFFFFF;LBGC:F7EFD8;ALC:000066;LC:000066;T:000000;GFNT:000066;GIMP:000066;FORID:11 
+name=cof> <INPUT id=Hidden8 type=hidden value=zh-CN name=hl> </FORM><!-- SiteSearch Google --></DIV>
+<DIV id=tp_c><IMG height=55 alt="乐走天涯: 工作并快乐着,职业并休闲着" 
+src="A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉.files/title_happywork.gif" 
+width=340 border=0></DIV></DIV>
+<DIV id=lmb>
+<CENTER><SPAN class=lm onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+title=小辉程序员之路首页 href="http://www.xiaohui.com/">首页</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="程序员随笔, 每周随笔" 
+href="http://www.xiaohui.com/weekly/">随笔</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="乐走天涯: 漂泊生活的见证, 所整理的相片游记" 
+href="http://www.xiaohui.com/trip/">乐走天涯</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="猎户星自动在线写诗软件, 猎户星自动在线采访机" 
+href="http://www.xiaohui.com/dopoem/">猎户星</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="Google Earth" 
+href="http://www.xiaohui.com/google-earth/">Google Earth</A></SPAN> <SPAN 
+class=lm onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+title="编程资料, 源码下载, MMX 汇编程序优化" 
+href="http://www.xiaohui.com/dev/">程序资料</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="程序员档案, 程序员文学, 程序员随笔" 
+href="http://www.xiaohui.com/prg/">程序生活</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title=本站所有的评论数据 
+href="http://www.xiaohui.com/msg/review_disp.php">评论中心</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title=TAG 
+href="http://www.xiaohui.com/tag.htm">Tag</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+title="程序员论坛, 讨论C/C++, JAVA, VC, DELPHI等编程技术" href="http://www.xiaohui.net/" 
+target=_blank>论坛</A></SPAN> <SPAN class=lm onmouseover=SB(this,1) 
+onmouseout=SB(this,0)><A title=链接到其他网站的资源 
+href="http://www.xiaohui.com/link/">其他资源</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title=搜索本站的数据 
+href="http://www.xiaohui.com/search.htm">搜索</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title=网友与本人交流的消息中心 
+href="http://www.xiaohui.com/support/">消息中心</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="通过表单, 发送联系消息给我" 
+href="http://www.xiaohui.com/about/contact.htm">联系我</A></SPAN> <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A title="关于站长的一些资料, 以及本站的建站历史" 
+href="http://www.xiaohui.com/about/">关于</A></SPAN> <SPAN class=rss><A 
+title="RSS 格式 FEED 订阅" href="http://www.xiaohui.com/rss/rss.htm">RSS</A></SPAN> 
+</CENTER></DIV><!-- #EndLibraryItem --><!-- end: Header --><!-- #BeginEditable "e1" -->
+<DIV class=bt align=left>&nbsp;<SPAN id=c187>»</SPAN> <A 
+href="http://www.xiaohui.com/">首页</A> &gt; <A 
+href="http://www.xiaohui.com/dev/vccool/listbox.htm">GUI界面处理源码: 
+列表框(ListBox)控制</A> 
+<CENTER>
+<H1>A Dual ListBox Selection Manager - 双列表选择管理器</H1>
+<HR width="80%">
+<A href="http://www.xiaohui.com/">http://www.xiaohui.com/</A> 日期: 2000-02-11 
+14:00 </CENTER>
+<DIV id=bt_t>
+<SCRIPT type=text/javascript><!--
+ShowWelcome();
+//-->
+</SCRIPT>
+
+<DIV style="FLOAT: left; MARGIN: 4px">
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-5801877696325956";
+/* XH.COM_Page_300x250 */
+google_ad_slot = "8419884738";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</SCRIPT>
+
+<SCRIPT 
+src="A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉.files/show_ads.js" 
+type=text/javascript>
+</SCRIPT>
+</DIV>
+<P>本程序实现双列表选择管理器(A Dual ListBox Selection Manager), 如图：</P>
+<P></P>
+<P>
+<CENTER><IMG class=imgb height=437 
+src="A Dual ListBox Selection Manager - 双列表选择管理器 - 程序员小辉.files/listbox-4.jpg" 
+width=573></CENTER>
+<P></P>
+<P>
+<OL>
+  <LI>工作环境：VC++ 6.0 
+  <LI>作者：Steve Aube 
+  <LI>下载地址：<A 
+  href="http://download.xiaohui.com/dev/vccool/down/listbox-4.zip">下载双列表选择管理器源代码及演示程序</A> 
+  </LI></OL>
+<P></P>
+<P>
+<H3>A Dual ListBox Selection Manager 示例代码</H3>
+<P>在 OnInitialUpdate 加入下列代码： <PRE>void CDualListDemoView::OnInitialUpdate()
+{
+ ... // Normal processing
+ // ADDED TO DEFAULT THE LISTS.
+ // This code will need to be replaced with your
+ // application specific  code that knows what belongs
+ // in each list.
+ m_DualListManager.AddItemToAvailableList(_T("Red"), 0);
+ m_DualListManager.AddItemToAvailableList(_T("Green"), 1);
+ m_DualListManager.AddItemToAvailableList(_T("Blue"), 2);
+ m_DualListManager.AddItemToChoosenList(_T("Yellow"), 3);
+ m_DualListManager.AddItemToChoosenList(_T("Purple"), 4);
+ m_DualListManager.AddItemToChoosenList(_T("Orange"), 5);
+
+ // ADDED TO INITIALIZE THE MANAGER CLASS
+ m_DualListManager.InitializeControls(this,
+  IDC_FV_LIST_AVAILABLE,
+  IDC_FV_LIST_CHOOSEN,
+  IDC_FV_ADD,
+  IDC_FV_ADD_ALL,
+  IDC_FV_REMOVE,
+  IDC_FV_REMOVE_ALL,
+  IDC_FV_MOVE_UP,
+  IDC_FV_MOVE_DOWN);
+}
+</PRE>
+<P>重载 OnCmdMsg methodm 然后调用在 Dual List Manager Object　中调用 ProcessCmdMsg. </P><PRE>BOOL CDualListDemoView::OnCmdMsg(UINT nID, int nCode,
+void* pExtra, AFX_CMDHANDLERINFO* pHandlerInfo)
+{
+ // ADDED TO INTERCEPT MESSAGE THAT THE DUAL
+ // LIST MANAGER NEEDS
+ m_DualListManager.ProcessCmdMsg(nID, nCode);
+
+ // NOW CALL THE BASE CLASS
+ return CFormView::OnCmdMsg(nID, nCode, pExtra, pHandlerInfo);
+}
+</PRE>
+<P>加入下列成员到你的　header file. <PRE>CDualListManager m_DualListManager;
+</PRE>
+<P></P>
+<P></P>
+<P id=xh_fav_tag>Tags: <A 
+href="http://www.xiaohui.com/tag/VC+æºç&nbsp;:+ListBox/" target=_blank>VC 源码: 
+ListBox</A></P>
+<SCRIPT type=text/javascript><!--
+AddFav();
+//-->
+</SCRIPT>
+</DIV></DIV>
+<DIV class=bt><BR>﻿
+<DIV id=tb>
+<DIV id=tb_l>&nbsp;<B>文章评论</B></DIV>
+<DIV id=tb_r><A 
+href="http://www.xiaohui.com/dev/vccool/listbox/4.htm#addreview">发表你的评论</A> | <A 
+href="http://www.xiaohui.com/msg/review_disp.php">评论中心</A> | <A 
+href="http://www.xiaohui.com/about/contact.htm">联系我</A> 
+&nbsp;</DIV></DIV><BR>目前没有任何评论. <BR><BR><FONT color=#ff0000>↓ 快抢占第1楼，发表你的评论和意见 
+↓</FONT><BR>&nbsp; <BR><A name=addreview></A>
+<TABLE class=DarkLines cellSpacing=1 cellPadding=4 width="95%" align=center 
+border=0>
+  <FORM name=reviewform action=/addcomment.php method=post>
+  <TBODY>
+  <TR>
+    <TD class=FieldTitle colSpan=2><B>发表你的评论</B><BR>如果你想针对此文发表评论, 
+  请填写下列表单:</TD></TR>
+  <TR>
+    <TD class=FieldTitle vAlign=top width=100>姓名:</TD>
+    <TD class=FieldBody vAlign=top><INPUT class=inputclass size=32 
+      name=f_name> <FONT color=#ff000>*</FONT> 必填</TD></TR>
+  <TR>
+    <TD class=FieldTitle width=100>E-mail:</TD>
+    <TD class=FieldBody><INPUT class=inputclass size=32 name=f_email> 可选 
+      (不会被公开) </TD></TR>
+  <TR>
+    <TD class=FieldTitle width=100>反垃圾广告:</TD>
+    <TD class=FieldBody>为了防止广告机器人自动发贴, 请计算下列表达式的值:<BR>8 + 15 = <INPUT 
+      class=inputclass size=5 name=f_answer><INPUT type=hidden value=248 
+      name=f_r1><INPUT type=hidden value=465 name=f_r2> <FONT 
+      color=#ff000>*</FONT> 必填</TD></TR>
+  <TR>
+    <TD class=FieldTitle width=100>评论内容:</TD>
+    <TD class=FieldBody vAlign=top><TEXTAREA class=inputclass style="WIDTH: 99%" name=f_reviewtxt rows=10 cols=60></TEXTAREA><BR><FONT 
+      color=#ff000>*</FONT> 必填<BR>你可以使用下列标签修饰文字:<BR><FONT color=#0000aa>[b] 文字 
+      [/b]</FONT>: 加粗文字<BR><FONT color=#0000aa>[quote] 文字 [/quote]</FONT>: 引用文字 
+    </TD></TR>
+  <TR>
+    <TD class=FieldTitle colSpan=2>
+      <CENTER><INPUT class=inputclass style="WIDTH: 110px" type=submit value=发表评论 name=Submit></CENTER></TD></TR><INPUT 
+  type=hidden value=1254 name=f_pageid> <INPUT type=hidden 
+  value=review_submitted name=f_action> </FORM></TBODY></TABLE><BR>&nbsp; </DIV><!-- #EndEditable --><!-- Footer --><!-- #BeginLibraryItem "/Library/site-footer.lbi" -->
+<DIV id=lbf>
+<DIV id=lmb>
+<CENTER><SPAN class=lm><SPAN class=rss><A title="RSS 2.0 格式 FEED 订阅" 
+href="http://www.xiaohui.com/rss/rss.htm">RSS 2.0</A></SPAN> | <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+href="http://www.xiaohui.com/about/contact.htm">联系我</A></SPAN> | <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+href="http://www.xiaohui.com/about/sitemap.html">站内导航</A></SPAN> | <SPAN 
+class=lm onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+href="http://www.xiaohui.com/about/privacy.htm">隐私声明</A></SPAN> | <SPAN class=lm 
+onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+href="http://www.xiaohui.com/about/copyright.htm">版权声明</A></SPAN> | <SPAN 
+class=lm onmouseover=SB(this,1) onmouseout=SB(this,0)><A 
+href="http://www.xiaohui.com/about/maillist.htm">订阅邮件</A></SPAN> | 
+</SPAN></CENTER></DIV><BR>
+<DIV id=bm><A href="http://www.xiaohui.com/">小辉程序员之路</A> 建站于 1997 ◇ 
+做一名最好的开发者是我不变的理想……<BR>Copyright(C) 1997-2009 XiaoHui.com &nbsp; All rights 
+reserved <BR></DIV>
+<DIV id=cp>声明：站内所有原创文字，未经许可，均可转载、复制。<BR>转载时<B>必须以链接形式注明作者和原始出处</B>。<BR>&nbsp; 
+</DIV></DIV><!-- #EndLibraryItem --></DIV></DIV></DIV><!-- #EndTemplate --></BODY></HTML>
+
